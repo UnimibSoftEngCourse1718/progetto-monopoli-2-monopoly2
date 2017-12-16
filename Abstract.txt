@@ -1,0 +1,44 @@
+Progetto scelto: NewMonopoly: An Adapted Monopoly Game
+
+Breve Descrizione: Rivisitazione del tradizionale gioco monopoly, con l'aggiunta di una distribuzione casuale delle caselle
+
+Gruppo: 3 componenti, studenti dell'universita milano bicocca, corso di laurea triennare, Informatica
+
+Docente: Arcelli Fontana Francesca, Claudia Raibulet, dobbiamo aggiungere ilaria? (Ilaria Pigazzini)
+
+Tecnologie e tool Utilizzati: 
+
+- Linguaggio c#: Utilizzato all'interno di visul studio come linguaggio principale 
+
+- StarUml: Utilizzato per la realizzazione dei diversi diagrammi (attività, casi d'uso, stati ecc..) 
+  	ai fini di una buona progettazione e implementazione del codice
+
+- Unity 2017: Utilizzato per la realizzazione della componente grafica del progetto, come ad esempio il layout finale da presentare all'utente, gli oggetti di scena
+
+- Microsoft Visual Studio Community 2015: Utilizzato per implementare il codice con cui far interagire gli oggetti di scena e gestire gli eventi scatenati da essi,
+	l'utilizzo del codice avverrà mediante degli script scritti in c#
+
+- Git: Utilizzato per la condivisione e la modifica/aggiunta di risorse del progetto fra i componenti del gruppo
+
+- SonarQube: Utilizzato per l'analisi e la verifica del codice, ai fini di rilevare ed eventualmente correggere eventuali problemi presenti nel codice
+
+- Latex: Utilizzato per la realizzazione formale della relazione finale
+
+
+VERSIONE IN INGLESE :
+
+Short description: revision of the traditional game of Monopoly , with the addition of  a casual arrangement
+ of the game field.
+Team: Martinelli Marco, Paglione Julian and Tamborrino Daniele , students of Bicocca university, first degree in Computer Science.
+Professors: Arcelli Fontana Francesca, Claudia Raibulet, Ilaria Pigazzini.
+Technologies and tools used:
+-	C#: used within visual studio as main programming language.
+-	StarUml: applied for realization of different  UML diagrams(activities, use cases, states,ect) for the purpose of a good design and implemation of  code.
+-	- Unity 2017: used for the graphic component realization.
+-	Microsoft Visual Studio Community 2015: used to implement the code ,to make the props interact and manage the events triggered by them , the interaction will be  done using  C# scripts.	
+-	Git: used for sharing and editing and adding project resources among group members.
+-	SonarQube: used for the analysis and verification of the code, for the purpose of detecting and eventually  correcting any problems present in the code.
+-	Latex: applied for formal realization of the final documentation.
+
+
+

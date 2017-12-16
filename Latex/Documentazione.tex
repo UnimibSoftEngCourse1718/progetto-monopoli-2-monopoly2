@@ -1,0 +1,260 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath, amssymb} % per inserire formule matematiche in modo figo
+\usepackage[italian]{babel} % italiano, non so a cosa serva veramente
+\usepackage[dvipsnames]{xcolor} % vuoi il testo colorato? altro pacchetto
+\usepackage[left=3cm, right=3cm]{geometry} % margini
+\usepackage{sectsty,titling} % per modificare lo stile di sezioni e titoli
+\usepackage{fontspec} % per cambiare il font, funziona su XELATEX
+\usepackage{graphicx} % per inserire immagini
+\usepackage{wrapfig} % per avere testo intorno alle immagini
+\usepackage{listings} % per poter far riconoscere e colorare codice in altri linguaggi
+\usepackage{hyperref} % indice cliccabile
+\usepackage{booktabs} % per avere tabelle belle
+\usepackage[parfill]{parskip} % andando a capo crea un nuovo paragrafo con la sua spaziatura
+% comandi per gli insiemi numerici
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\I}{\mathbb{I}}
+\graphicspath{ {images/} } % dice : "ehi! le immagini sono in quella cartella!!!"
+
+% nasconde dei bruttissimi riquadri rossi per i link dell'indice
+\hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
+
+\newfontfamily{\ttconsolas}{Consolas} % per poter usare questo font nel codice di altri linguaggi
+
+% riconoscimento linguaggio di programmazione
+\newcommand{\langCsharp}{
+\lstset{frame=tb,
+	language=sharpc,
+	basicstyle=\small\ttconsolas,	% the size of the fonts that are used for the code
+	numbers=left,					% where to put the line-numbers
+	numberstyle=\color{Gray},		% the style that is used for the line-numbers
+	stepnumber=1,					% the step between two line-numbers. If it's 1, each line
+	% will be numbered
+	numbersep=5pt,                  % how far the line-numbers are from the code
+	backgroundcolor=\color{White},  % choose the background color. You must add \usepackage{color}
+	showspaces=false,               % show spaces adding particular underscores
+	showstringspaces=false,         % underline spaces within strings
+	showtabs=false,                 % show tabs within strings adding particular underscores
+	frame=single,                   % adds a frame around the code
+	rulecolor=\color{Black},        % if not set, the frame-color may be changed on line-breaks within not-black text
+	tabsize=2,                      % sets default tabsize to 2 spaces
+	captionpos=b,                   % sets the caption-position to bottom
+	breaklines=true,                % sets automatic line breaking
+	breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+	title=\lstname,                 % show the filename of files included with \lstinputlisting;
+	% also try caption instead of title
+	keywordstyle=\color{MidnightBlue},      % keyword style
+	commentstyle=\color{OliveGreen},   % comment style
+	stringstyle=\color{Purple},      % string literal style
+	escapeinside={\%*}{*)},         % if you want to add a comment within your code
+	morekeywords={*,...}            % if you want to add more keywords to the set
+}}
+
+\title{\textbf{newMonopoly}}
+%\date{Data}
+\author{M.Martinelli, J.Paglione, D.Tamborrino}
+
+\begin{document}
+\maketitle
+
+\newpage
+\tableofcontents
+
+\paragraph{Scaletta generale}
+\begin{itemize}
+\item OK - Requisiti funzionali e non funzionali;
+\item OK - Diagramma dei casi d'uso con descrizione;
+\item OK - Diagramma delle attività;
+\item OK - Diagramma degli stati;
+\item Diagramma di sequenza;
+\item Diagramma delle classi a livello di dominio;
+\item Diagramma delle classi a livello di progettazione;
+\item Test;
+\end{itemize}
+
+
+\newpage
+\section{Strumenti}
+Unity \href{https://unity3d.com/}{https://unity3d.com/}\\
+StarUML \href{http://staruml.io/}{http://staruml.io/}\\
+Ganttproject \href{http://www.ganttproject.biz/}{http://www.ganttproject.biz/}\\
+Texmaker \href{http://www.xm1math.net/texmaker/}{http://www.xm1math.net/texmaker/}
+\section{Requisiti}
+\subsection{Requisiti funzionali}
+\begin{itemize}
+\item Il sistema deve permettere  ad un minimo di 2 ad un massimo di 6 utenti di giocare una partita a monopoli sul dispositivo sul quale  il sistema è in funzione.
+\item Il sistema deve implementare un interfaccia utente  "Menù" nel quale l'utente potrà scegliere se avviare una nuova partita o continuare una partita salvata in memoria precedentemente.
+\item Il sistema deve permettere di salvare la partita ed uscire in qualsiasi momento della partita.
+\item Il sistema deve permettere ad ogni giocatore, all'inizio di ogni partita di scegliere una pedina che lo rappresenti durante la suddetta.
+\item Il sistema deve permettere a ogni giocatore di lanciare i dadi all'inizio del proprio turno , tale risultato permetterà l'avanzare del giocatore sul percorso del sistema.
+\item Il sistema deve ,a seconda del dove il giocatore si sia fermato implementare un sistema che preveda i seguenti casi:
+\begin{itemize}
+\item Il caso in cui il giocatore si  trovi su una casella  libera , il giocatore possa scegliere di acquistare la proprietà sulla casella.
+\item Il caso  in cui il giocatore si  trovi su  la proprietà di un altro giocatore si deve poter scegliere se iniziare una trattativa con il giocatore proprietario oppure pagare un pedaggio a quest'ultimo.
+\item Il caso in cui il giocatore si ferma su una  proprietà non posseduta da altri giocatori, e decida di non acquistarla, il sistema deve iniziare un’ asta tra gli altri giocatori per aggiudicarsi la proprietà sulla quale il giocatore si è precedentemente fermato.
+\item Il caso ci si trovi sulla casella di via o la si abbia passata, il giocatore deve ricevere un bonus di 500\$.
+\item Il caso in cui ci si trovi sulla casella via in prigione il  giocatore che ha tirato dovrà essere spostato sulla zona "Prigione".
+\item Il caso in cui  il giocatore si trovi su una casella probabilità ad esso verrà assegnata una "Probabilità" casuale.
+\item Il caso in cui il giocatore si trovi su una casella imprevisto ad esso verrà assegnata una "Imprevisto" casuale.
+\item Il caso in cui il giocatore si sia fermato su una casella tasse , ad esso verranno sottratti tanti soldi quanti indicato nella casella.  //non penso manchi qualcosa 
+\end{itemize}
+\item Il sistema deve implementare un sistema di  trattativa tra 2 giocatori.  //non penso bisogna scriverci altro poi come viene fatta la trattativa viene spiegato nei casi d’uso
+\item Il sistema deve implementare un numero minimo di 20 carte probabilità e 20 carte imprevisto.
+\item Il sistema deve implementare un sistema di "Prigione". //definito poi nei casi d’uso 
+\item Il sistema deve permettere ad ogni turno , prima del lancio dei dadi del giocatore di turno, agli altri giocatori di poter  entrare in fase "Costruzione".
+\item Il sistema deve implementare un sistema di ipoteca per la vendita di proprietà.
+\end{itemize}
+\subsection{Requisiti non funzionali}
+\begin{itemize}
+\item Il sistema sarà sviluppato in Unity e su linguaggio C\#.
+\item Il sistema deve implementare delle pedine da far scegliere al giocatore.
+\item Il sistema deve implementare un campo da gioco da monopoli, con 40 caselle divise tra proprietà(terreni,stazioni), 2 caselle tasse, 3 caselle probabilità,3 caselle di bonus comune,1 della prigione, 1 di vai in prigione,
+1 del via.
+\item Il sistema deve implementare 28 proprietà con relativi costi di terreno, costi di costruzione case e alberghi e costo pedaggio in base alle costruzioni su di esso.
+\item Il sistema deve permettere lo spostamento del giocatore che ha tirato i dadi sommando alla sua posizione attuale  il numero  risultante dal lancio dei dadi, quella è la sua nuova posizione.
+\item Il sistema deve far partire ogni giocatore con 3000\$.
+\end{itemize}
+
+\section{Casi d'uso}
+\textbf{Inizio nuova partita}\\
+\textit{Descrizione} : Caso d'uso base del sistema, coinvolge il sistema e il giocatore.\\
+\textit{Scenario} : Il giocatore selezione dal menù nuova partita e il sistema avvierà una nuova partita.
+
+\textbf{Carica partita}\\
+\textit{Descrizione} : Caso d'uso base del sistema, coinvolge il sistema e il giocatore.\\
+\textit{Scenario di successo ideale} : Il giocatore sceglie  dal menù "Carica partita" e il sistema riprenderà l'esecuzione dalla partita salvata in memoria.\\
+\textit{Scenario di fallimento} : Il giocatore sceglie da menù "Carica partita" ma nel sistema non è presente una partita  salvata in precedenza, quindi il sistema dovrà avvisare l'utente del mancato caricamento.
+
+\textbf{Salva partita}\\
+\textit{Descrizione} : Caso d'uso che estende \textit{Uscire}, permette di memorizzare lo stato della partita.\\
+\textit{Scenario} : L'utente, in qualsiasi momento della partita, decide di salvare lo stato della partita premendo l'apposito pulsante prima dell'uscita.
+
+\textbf{Uscire}\\
+\textit{Descrizione} : Il giocatore in ogni momento della partita potrà scegliere se uscire premendo l'apposito tasto.\\
+\textit{Scenari di successo} : Il giocatore esce dalla partita e decide di salvare, descritto nel caso d'uso \textit{Salva partita}.\\
+Il giocatore esce dalla partita e decide di non salvare.
+
+\textbf{Scegliere pedine}\\
+\textit{Descrizione} : Caso d'uso incluso nell'inizio della partita, ogni giocatore a turno sceglie la propria pedina.\\
+\textit{Scenario di successo} : I giocatori scelgono ognuno una pedina diversa.\\
+Il sistema impedirà ai giocatori successivi di scegliere la stessa pedina di un altro giocatore.
+
+\textbf{Distribuzione dei contratti}\\
+\textit{Descrizione} : Caso d’uso base del sistema, coinvolge il sistema e tutti i giocatori.\\
+\textit{Scenario di successo ideale} : Si decide di iniziare una nuova partita e il sistema distribuisce casualmente i contratti a seconda del numero di giocatori che partecipano alla partita :
+\begin{itemize}
+\item 2 giocatori 7 contratti;
+\item 3 giocatori 6 contratti;
+\item 4 giocatori 5 contratti;
+\item 5 giocatori 4 contratti;
+\item 6 giocatori 3 contratti;
+\end{itemize}
+----Non sono d'accordo <3----\textit{Scenario alternativo} : si decide di continuare una  partita, i contratti distribuiti ai giocatori saranno quelli a loro attribuiti durante il gioco in memoria.
+
+\textbf{Tiro dadi}\\
+\textit{Livello} : Obiettivo utente.\\
+\textit{Attore primario} : Sistema.\\
+\textit{Attore secondario} : Giocatore di turno.\\
+\textit{Parti interessato} : Sistema e giocatore di turno.\\
+\textit{Pre-condizioni} : Il turno del giocatore deve essere appena iniziato e nessuno degli altri giocatori deve essere in fase costruzione.\\
+\textit{Scenario di successo} :
+\begin{enumerate}
+\item [1] Il giocatore di turno tira i dadi e ottiene due numeri diversi, tale giocatore avanzerà sulla mappa di gioco e effettuerà il suo turno normalmente.
+\item [1.1] Il giocatore di turno tira i dadi e ottiene 2 numeri uguali, tale giocatore avanzerà sulla mappa di gioco e effettuerà il suo turno normalmente inoltre al termine avrà diritto ad un ulteriore turno.
+ \item [2] Il giocatore di turno tira i dadi e ottiene due numeri diversi, tale giocatore avanzerà sulla mappa di gioco e effettuerà il suo turno normalmente.
+\item [2.1] Il giocatore di turno tira i dadi e ottiene 2 numeri uguali, tale giocatore avanzerà sulla mappa di gioco e effettuerà il suo turno normalmente inoltre al termine avrà diritto ad un ulteriore turno.
+\item [3] Il giocatore di turno tira i dadi e ottiene due numeri diversi, tale giocatore avanzerà sulla mappa di gioco e effettuerà il suo turno normalmente.
+\item [3.1] Il giocatore di turno tira i dadi e ottiene 2 numeri uguali, tale giocatore  verrà spostato sulla casella della prigione, entrerà nello stato \textit{In prigione}.
+\end{enumerate}
+\textit{Frequenza di ripetizione} : Ogni volta all'inizio del turno del giocatore e massimo altre 2 volte all'interno del turno di un giocatore.
+
+\textbf{Acquisto proprietà libera}\\
+\textit{Descrizione} : Caso d'uso che estende il tiro dadi, coinvolge il giocatore di turno che si è fermato su una proprietà libera.\\
+\textit{Scenario ideale di successo} : Il giocatore di turno si ferma su una proprietà libera e decide di acquistarla.\\
+\textit{Scenari alternativi di successo} : Il giocatore si ferma su una stazione libera e decide di acquistarla.\\
+Il giocatore si ferma su una proprietà o stazione di un altro giocatore decide di acquistarla e si entra nel caso d'uso iniziare trattativa.\\
+Il giocatore di turno si ferma su una proprietà libera, decide di acquistarla ma non ha abbastanza soldi, entrerà nel caso d'uso ipoteca.\\
+Il giocatore che decide di acquistare una proprietà libera non ha abbastanza soldi pur ipotecando tutte le sue proprietà l'acquisto non andrà a buon fine.\\
+Il giocatore si ferma su una proprietà di un altro giocatore, decide di acquistarla ma il proprietario rifiuta l'offerta.
+In tal caso si entrerà nel caso d'uso pagamento pedaggio.
+
+\textbf{Pagamento pedaggio}\\
+\textit{Descrizione} : Caso d'uso che estende l'acquisto, coinvolge il sistema, il giocatore di turno e il giocatore proprietario.
+\textit{Scenario ideale di successo} : il giocatore di turno si ferma su una proprietà di un altro giocatore e decide di non acquistarla, il giocatore dovrà pagare un pedaggio a seconda della proprietà sulla quale si è fermato.
+\textit{Scenari alternati di successo} : il giocatore di turno si ferma sulla proprietà di un altro giocatore, decide di acquistarla ma il giocatore proprietario rifiuta, il giocatore di turno dovrà dovrà pagare un pedaggio a seconda della proprietà sulla quale si è fermato.\\
+Il giocatore di turno si ferma sulla proprietà di un altro giocatore ma pur avendo ipotecato ogni sua proprietà non ha abbastanza soldi per pagare il pedaggio, il giocatore di turno finirà nel caso d'uso fallimento.
+
+\textbf{Costruire}\\
+\textit{Descrizione} : Caso duso che il giocatore può ripetere più volte nel suo turno, solo quando ha acquistato tutti i terreni di un certo colore.\\
+\textit{Scenari di successo} : Il giocatore di turno sceglie di costruire una casa su una sua proprietà, ha abbastanza soldi, ha al massimo una casa in meno sugli altri territori dello stesso colore, la costruzione riesce.\\
+Il giocatore di turno sceglie di costruire una casa su una sua proprietà, non ha abbastanza soldi pur avendo ipotecato ogni sua altra proprietà, ha al massimo una casa in meno sugli altri territori dello stesso colore, la costruzione gli viene impedita dal sistema.\\
+Il giocatore di turno sceglie di costruire una casa su una sua proprietà, ha abbastanza soldi, non  ha al massimo una casa in meno sugli altri territori dello stesso colore, la costruzione gli viene impedita dal sistema.\\
+Il giocatore di turno sceglie di costruire un albergo  su una sua proprietà, ha abbastanza soldi, ha al massimo una casa in meno sugli altri territori dello stesso colore, la costruzione riesce.\\
+Il giocatore di turno sceglie di costruire un albergo su una sua proprietà, non ha abbastanza soldi pur avendo ipotecato ogni sua altra proprietà, ha al massimo una casa in meno sugli altri territori dello stesso colore, la costruzione gli viene impedita dal sistema.\\
+Il giocatore di turno sceglie di costruire un albergo  su una sua proprietà, ha abbastanza soldi, non  ha al massimo una casa in meno sugli altri territori dello stesso colore, la costruzione gli viene impedita dal sistema.
+
+\textbf{Ipotecare}\\
+\textit{Descrizione}: Caso d'uso che estende trattativa, imprevisto o possibilità e uscita di prigione coinvolge un giocatore che decide di vendere delle proprietà.\\
+\textit{Scenario ideale di successo} : Un giocatore decide di ipotecare una sua proprietà, il sistema gli fornirà valuta pari al 50\% del valore della proprietà e tale proprietà andrà a possesso del sistema.\\
+\textit{Scenario alternativo  di successo} : Un giocatore decide di ipotecare una proprietà sul quale ha costruito, il sistema gli fornirà valuto pari al 50\% del valore della proprietà e delle costruzioni edificate su di essa, tale proprietà andrà in possesso del sistema.
+
+\textbf{Riscattare ipoteca}\\
+\textit{Descrizione} : Caso d'uso che estende l'ipoteca, coinvolge un giocatore che ha ipotecato una proprietà oppure un giocatore che vuole riscattare l'ipoteca di un altro giocatore.\\
+\textit{Scenario ideale di successo} : Un giocatore che precedentemente aveva ipotecato una proprietà, la riscatta pagando il costo dell'intera proprietà maggiorato del 10\%.\\
+\textit{Scenario alternativo  di successo} : Un giocatore che si era precedentemente fermato sulla proprietà ipotecata di un altro giocatore, decide di riscattarla e pagando l'intero costo della proprietà maggiorato del 10\%.\\
+Il giocatore che aveva ipotecato delle proprietà è andato in bancarotta e queste ultime andranno all'asta tra gli altri giocatori.
+
+\textbf{Iniziare asta}\\
+\textit{Descrizione} : Caso d'uso che estende la fermata ed è incluso nel fallimento, coinvolge ogni giocatore tranne il giocatore di turno, si fanno a turno delle offerte e chi offre di più si aggiudica la proprietà in cui il giocatore iniziale si era fermato.\\
+\textit{Scenario ideale di successo} : Un giocatore offre più di tutti gli altri e si aggiudica la proprietà.\\
+Il giocatore successivo offre uguale o meno del precedente, la sua offerta non è valida e si passa all'offerta del giocatore successivo.
+
+\textbf{Iniziare trattativa}\\
+\textit{Descrizione} : Caso d'uso che coinvolge più giocatori, un giocatore è interessato alla proprietà di un altro giocatore e, durante il suo turno, offre una cifra in denaro o delle suo proprietà  per  ottenere tale proprietà.\\
+\textit{Scenario ideale di successo} : Il giocatore proprietario accetta l’offerta, e la proprietà ,o la stazione, compresa di case e alberghi passa al giocatore che aveva iniziato la trattativa.\\
+\textit{Scenario alternativo} : Il giocatore proprietario fa una controfferta chiedendo al giocatore che ha iniziato la trattativa  richiedendo più soldi o delle proprietà da aggiungere alla trattativa.\\
+Il giocatore proprietario rifiuta l’offerta e la trattiva viene annullata.
+
+\textbf{Passaggio dalla casella via}\\
+\textit{Descrizione} : Caso d'uso che coinvolge il giocatore di turno, il giocatore di turno passa o si ferma sulla casella del via e ottiene 500\$ bonus.
+
+\textbf{Pesca carta imprevisto}\\
+\textit{Descrizione} : Caso d'uso che estende il tiro dadi, coinvolge il giocatore di turno che si ferma su una casella  "Imprevisto".\\
+\textit{Scenario ideale di successo} : Al giocatore viene imposto di pagare una tassa o riscuotere dei soldi.\\
+\textit{Scenari alternativo di successo} : Al giocatore viene imposto di pagare una tassa, se esso non ha abbastanza soldi si entrerà nel caso d'uso ipoteca.\\
+Al giocatore viene imposto di pagare una tassa, se esso non ha abbastanza soldi pur avendo ipotecato ogni sua altra proprietà finirà nel caso d'uso fallimento.\\
+Il giocatore pesca la carta "Vai in prigione", entrerà nel caso d'uso prigione.
+
+\textbf{Pesca carta probabilità}\\
+\textit{Descrizione} : Caso d'uso che estende il tiro dadi, coinvolge il giocatore di turno che si ferma su una casella "Probabilità".\\
+\textit{Descrizione} : Al giocatore di turno verrà applicato un effetto casuale, tra cui ricevere denaro, ottenere "Uscita gratis di prigione", essere spostato sul campo da gioco su una determinata casella.
+
+\textbf{Vai in prigione}\\
+\textit{Descrizione} : Caso d'uso che estende il tiro dadi e pesca carta imprevisto, coinvolge il sistema e il giocatore di turno, il giocatore finirà sulla casella prigione e entrerà nello stato "In prigione".
+\textit{Scenario ideale di successo} : Il giocatore di turno si ferma sulla casella "Vai in prigione", viene spostato sulla casella "Prigione" e entrerà nello stato "In prigione".\\
+\textit{Scenari alternativi di successo} : Il giocatore di turno era nel caso d'uso terzo tiro, ottiene un numero doppio, viene spostato sulla prigione e entrerà nello stato "In prigione".\\
+Il giocatore di turno era nel caso d'uso imprevisto o probabilità e ottiene la carta "Vai in prigione", viene spostato sulla casella prigione e entrerà nello stato "In prigione".
+
+\textbf{Uscire di prigione}\\
+\textit{Descrizione} : Caso d'uso che è incluso nella prigione, coinvolge il sistema e il giocatore di turno.\\
+\textit{Scenario principale di successo} : Il giocatore "In prigione" all'inizio del proprio turno tira i dadi, se fa un numero doppio può uscire da "In prigione" e giocare normalmente.\\
+\textit{Scenari alternativi di successo} : Il giocatore di turno "In prigione" possiede la carta "Esci gratis di prigione" che gli verrà rimossa, uscirà da "In prigione" e continuerà normalmente il turno.\\
+Il giocatore decide di pagare 125\$ e uscirà da "In prigione" continuando normalmente il turno.\\
+Dopo 3 turni che il giocatore è "In prigione" sarà costretto a pagare 125\$ e uscire da "In prigione" continuando normalmente il turno.\\
+Dopo 3 turni che il giocatore è "In prigione" sarà costretto a pagare 125\$ e uscire da "In prigione" se non ha 125\$ entrerà nel caso d'uso ipoteca.
+
+\textbf{Pagamento tasse}\\
+\textit{Descrizione} : Caso d'uso che estende il tiro dadi, coinvolge il sistema e il giocatore di turno.\\
+\textit{Scenario ideale di successo} : Il giocatore di turno si ferma su una casella tasse e ha abbastanza soldi per pagare la tassa.\\
+\textit{Scenario alternativo di successo} : Il giocatore di turno si ferma su una casella tasse, non ha abbastanza soldi per pagare la tassa, allora dovrà ipotecare sue proprietà fino a che non avrà abbastanza soldi per pagare la tassa.\\
+Il giocatore di turno si ferma su una casella tasse, ma non ha abbastanza soldi per pagare la tassa pur avendo ipotecato tutte le sue proprietà, tale giocatore finirà in fallire.
+
+\textbf{Fallire}\\
+\textit{Descrizione} : Caso d'uso che coinvolge il sistema e il giocatore di turno, il giocatore non riesce a sostenere una spesa pur avendo venduto ogni sua proprietà alla banca a metà del prezzo del valore, il giocatore andrà in fallimento e perderà la partita.
+
+\textbf{Terminare partita}\\
+\textit{Descrizione} : Caso d'uso che estende il fallimento, la partita finirà quando tutti i giocatori tranne uno saranno falliti.
+
+
+\end{document}
