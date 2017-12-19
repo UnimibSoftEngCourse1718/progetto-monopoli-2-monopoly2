@@ -1617,7 +1617,7 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 0
-  m_InflateMesh: 0
+  m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &554852422
@@ -1637,7 +1637,7 @@ Transform:
   m_GameObject: {fileID: 554852419}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -467.63266, y: 0, z: -652.20685}
-  m_LocalScale: {x: 20, y: 1, z: 20}
+  m_LocalScale: {x: 25, y: 1, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1792,7 +1792,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 722184921}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -465, y: 18.4, z: -649}
+  m_LocalPosition: {x: -465, y: 0.01, z: -649}
   m_LocalScale: {x: 0.8333334, y: 1, z: 0.8333334}
   m_Children:
   - {fileID: 79566606}
@@ -3426,7 +3426,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 65
   m_Depth: -1
   m_CullingMask:
@@ -3450,7 +3450,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647030498}
   m_LocalRotation: {x: 0.6448091, y: 0.0026362855, z: 0.0021780236, w: 0.764336}
-  m_LocalPosition: {x: -473.3, y: 353.1, z: -711.29315}
+  m_LocalPosition: {x: -468.3, y: 102, z: -674.6}
   m_LocalScale: {x: 1, y: 1.0009189, z: 1.0009202}
   m_Children: []
   m_Father: {fileID: 0}
