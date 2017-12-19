@@ -1,0 +1,26 @@
+TODO
+
+
+1 - Prefab pedine/giocatore
+	-modello 3d
+	-soldi/lista proprietà/posizione/carta uscita prigione/stato(attivo o disattivo)
+	-contatore giorni prigione
+2 - DANIELE- Prefab caselle
+	-script e dati/tipo
+	-case/albergo
+	-di chi è?
+	-scatena evento fermata/asta
+3 - JULIAN - Pulsante dado (gestisce i turni)
+	-movimento pedina
+	-controllo tiro doppio
+	-controllo prigione
+4 - MARCO - Asta
+	-ha proprietà in vendita
+	-gestisce turni asta
+	-2 pulsanti offerta/lascia
+	-assegna proprietà
+5 - MARCO - Trattativa
+	-2 box per le cose offerte
+	-1 pulsante per offrire soldi
+	-2 lista di proprietà da offrire
+	-3 pulsanti (si/no/controproposta)

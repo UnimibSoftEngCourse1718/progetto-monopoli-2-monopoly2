@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/HOME.unity
+    path: Assets/Home.unity
     guid: 23aaacf0babfc5d44a64e647ce3d0422
   - enabled: 1
-    path: Assets/PEDINE.unity
+    path: Assets/Pedine.unity
     guid: 07243af136f8aa0469dab3de9123a5ca
   - enabled: 1
-    path: Assets/GIOCO.unity
-    guid: 6e149b9a4960c0e49ad514f9bf0b6ede
+    path: Assets/Gioco.unity
+    guid: f38d0c25d398ac942ab9d84f26693fab
   - enabled: 1
-    path: Assets/TIRODADI.unity
+    path: Assets/Tiro dadi.unity
     guid: 1f23615cb41d76947a02c70f7d9580eb
   - enabled: 1
     path: Assets/Vuoi Salvare.unity
