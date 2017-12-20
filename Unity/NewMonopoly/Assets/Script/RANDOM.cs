@@ -12,9 +12,7 @@ public class RANDOM : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-		text[0].text = UnityEngine.Random.Range(1, 6).ToString();
-        text[1].text = UnityEngine.Random.Range(1, 6).ToString();
-        risultato = int.Parse(text[0].text + text[1].text);
+		
         
     }
 	
@@ -27,5 +25,13 @@ public class RANDOM : MonoBehaviour {
     {
         SceneManager.UnloadScene(3);
         SceneManager.LoadScene(2);
+    }
+
+    public void Randomizza()
+    {
+        text[0].text = UnityEngine.Random.Range(1, 7).ToString(); //Il 7 è escluso
+        text[1].text = UnityEngine.Random.Range(1, 7).ToString();
+        risultato = int.Parse(text[0].text) + int.Parse(text[1].text);
+        text[2].text = risultato.ToString();
     }
 }
