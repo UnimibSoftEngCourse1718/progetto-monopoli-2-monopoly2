@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 822538a8182f1de42b3a82f92ed8ddfb
+timeCreated: 1513939142
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KabobExtrabold
+  fontNames:
+  - KabobExtrabold
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

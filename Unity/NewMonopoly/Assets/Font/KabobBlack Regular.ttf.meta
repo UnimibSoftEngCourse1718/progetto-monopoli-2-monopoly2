@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: dbc72565475d8a24dbea6aa54810edf3
+timeCreated: 1513939142
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KabobBlack
+  fontNames:
+  - KabobBlack
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
