@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 416224758}
   - component: {fileID: 416224757}
   m_Layer: 5
-  m_Name: SOLDI
+  m_Name: SOLDI5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1296,7 +1296,7 @@ GameObject:
   - component: {fileID: 502136200}
   - component: {fileID: 502136199}
   m_Layer: 5
-  m_Name: SOLDI
+  m_Name: SOLDI2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2387,7 +2387,7 @@ GameObject:
   - component: {fileID: 1076780999}
   - component: {fileID: 1076780998}
   m_Layer: 5
-  m_Name: SOLDI
+  m_Name: SOLDI3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3273,7 +3273,7 @@ GameObject:
   - component: {fileID: 1490972745}
   - component: {fileID: 1490972744}
   m_Layer: 5
-  m_Name: SOLDI
+  m_Name: SOLDI1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3555,7 +3555,7 @@ GameObject:
   - component: {fileID: 1625567308}
   - component: {fileID: 1625567307}
   m_Layer: 5
-  m_Name: SOLDI
+  m_Name: SOLDI4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4115,7 +4115,7 @@ GameObject:
   - component: {fileID: 1782366909}
   - component: {fileID: 1782366908}
   m_Layer: 5
-  m_Name: SOLDI
+  m_Name: SOLDI6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

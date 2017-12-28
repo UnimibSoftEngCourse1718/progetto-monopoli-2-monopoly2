@@ -2450,7 +2450,7 @@ GameObject:
   - component: {fileID: 1224035369}
   - component: {fileID: 1224035368}
   m_Layer: 5
-  m_Name: Inserisci Soldi
+  m_Name: Inserisci_Soldi2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3144,7 +3144,7 @@ GameObject:
   - component: {fileID: 1518525533}
   - component: {fileID: 1518525532}
   m_Layer: 5
-  m_Name: Inserisci Soldi
+  m_Name: Inserisci_Soldi1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
