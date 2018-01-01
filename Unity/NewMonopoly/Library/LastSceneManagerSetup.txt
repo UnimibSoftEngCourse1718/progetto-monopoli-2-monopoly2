@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TRATTATIVA.unity
+- path: Assets/ASTA.unity
   isLoaded: 1
   isActive: 1
