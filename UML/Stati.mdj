@@ -30,6 +30,164 @@
 							"defaultDiagram": false,
 							"ownedViews": [
 								{
+									"_type": "UMLRegionView",
+									"_id": "AAAAAAFgUIdQfHrNBYU=",
+									"_parent": {
+										"$ref": "AAAAAAFgUIdQUHqwEpY="
+									},
+									"model": {
+										"$ref": "AAAAAAFgUIdQTnqnxlw="
+									},
+									"containedViews": [
+										{
+											"$ref": "AAAAAAFgUJeIc34Y6Cg="
+										},
+										{
+											"$ref": "AAAAAAFgVHjQ6/7OL4c="
+										}
+									],
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 216,
+									"top": 497,
+									"width": 393,
+									"height": 160,
+									"autoResize": false
+								},
+								{
+									"_type": "UMLRegionView",
+									"_id": "AAAAAAFgUH4cW/Okmnk=",
+									"_parent": {
+										"$ref": "AAAAAAFgUH4cM/OHJ6U="
+									},
+									"model": {
+										"$ref": "AAAAAAFgUH4cMfN+z2Y="
+									},
+									"containedViews": [
+										{
+											"$ref": "AAAAAAFgUH6sDfOvlmw="
+										},
+										{
+											"$ref": "AAAAAAFgUH7YwfPDu3U="
+										},
+										{
+											"$ref": "AAAAAAFgUIu6wnvhcAc="
+										},
+										{
+											"$ref": "AAAAAAFgUIv5wnwJJ9U="
+										},
+										{
+											"$ref": "AAAAAAFgUJgV+n5TQzc="
+										},
+										{
+											"$ref": "AAAAAAFgVHh1Yf6+eK0="
+										}
+									],
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 232,
+									"top": 89,
+									"width": 257,
+									"height": 312,
+									"autoResize": false
+								},
+								{
+									"_type": "UMLRegionView",
+									"_id": "AAAAAAFgUHuLwvKaVKM=",
+									"_parent": {
+										"$ref": "AAAAAAFgUHuLnfJ9egc="
+									},
+									"model": {
+										"$ref": "AAAAAAFgUHuLnPJ0ctY="
+									},
+									"containedViews": [
+										{
+											"$ref": "AAAAAAFgUHwJRfKhqk8="
+										},
+										{
+											"$ref": "AAAAAAFgUHwWwvKy9us="
+										},
+										{
+											"$ref": "AAAAAAFgUHwecvLXPko="
+										}
+									],
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 856,
+									"top": 89,
+									"width": 209,
+									"height": 312,
+									"autoResize": false
+								},
+								{
+									"_type": "UMLRegionView",
+									"_id": "AAAAAAFgUHOH5+/E7X4=",
+									"_parent": {
+										"$ref": "AAAAAAFgUHOHwu+nGT4="
+									},
+									"model": {
+										"$ref": "AAAAAAFgUHOHwO+evkQ="
+									},
+									"containedViews": [
+										{
+											"$ref": "AAAAAAFgUHbka/B0unk="
+										},
+										{
+											"$ref": "AAAAAAFgUHfOyPCeTIc="
+										},
+										{
+											"$ref": "AAAAAAFgUHf1ofDF74M="
+										},
+										{
+											"$ref": "AAAAAAFgUHg3L/ETRGM="
+										},
+										{
+											"$ref": "AAAAAAFgUHgVg/DsNdw="
+										},
+										{
+											"$ref": "AAAAAAFgUJhpxX6MbYw="
+										},
+										{
+											"$ref": "AAAAAAFgVHietP7F+LM="
+										}
+									],
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 504,
+									"top": 89,
+									"width": 337,
+									"height": 312,
+									"autoResize": false
+								},
+								{
 									"_type": "UMLStateView",
 									"_id": "AAAAAAFgUIPbwXoqLZg=",
 									"_parent": {
@@ -1661,7 +1819,7 @@
 											"model": {
 												"$ref": "AAAAAAFgUHi1ZfFONTI="
 											},
-											"visible": false,
+											"visible": true,
 											"enabled": true,
 											"lineColor": "#000000",
 											"fillColor": "#ffffff",
@@ -1670,18 +1828,19 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 734,
-											"top": 169,
-											"width": 0,
+											"left": 632,
+											"top": 159,
+											"width": 89.59716796875,
 											"height": 13,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 15,
+											"alpha": -1.7942733937181203,
+											"distance": 45.12205669071391,
 											"hostEdge": {
 												"$ref": "AAAAAAFgUHi1ZfFPQVk="
 											},
 											"edgePosition": 1,
 											"underline": false,
+											"text": "Scelta trattativa",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -3843,53 +4002,6 @@
 									"decompositionCompartment": {
 										"$ref": "AAAAAAFgUH7Yw/PLD/Y="
 									}
-								},
-								{
-									"_type": "UMLRegionView",
-									"_id": "AAAAAAFgUHOH5+/E7X4=",
-									"_parent": {
-										"$ref": "AAAAAAFgUHOHwu+nGT4="
-									},
-									"model": {
-										"$ref": "AAAAAAFgUHOHwO+evkQ="
-									},
-									"containedViews": [
-										{
-											"$ref": "AAAAAAFgUHbka/B0unk="
-										},
-										{
-											"$ref": "AAAAAAFgUHfOyPCeTIc="
-										},
-										{
-											"$ref": "AAAAAAFgUHf1ofDF74M="
-										},
-										{
-											"$ref": "AAAAAAFgUHg3L/ETRGM="
-										},
-										{
-											"$ref": "AAAAAAFgUHgVg/DsNdw="
-										},
-										{
-											"$ref": "AAAAAAFgUJhpxX6MbYw="
-										},
-										{
-											"$ref": "AAAAAAFgVHietP7F+LM="
-										}
-									],
-									"visible": true,
-									"enabled": true,
-									"lineColor": "#000000",
-									"fillColor": "#ffffff",
-									"fontColor": "#000000",
-									"font": "Arial;13;0",
-									"showShadow": true,
-									"containerChangeable": false,
-									"containerExtending": false,
-									"left": 504,
-									"top": 89,
-									"width": 337,
-									"height": 312,
-									"autoResize": false
 								},
 								{
 									"_type": "UMLTransitionView",
@@ -12598,6 +12710,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFgUFYiiOo2koE="
 									},
+									"name": "Scelta trattativa",
 									"source": {
 										"$ref": "AAAAAAFgUHfOx/CdL/k="
 									},

@@ -8164,7 +8164,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Pagamento pedaggio",
+											"text": "Pagare pedaggio",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -8232,7 +8232,7 @@
 									"containerExtending": false,
 									"left": 781.5,
 									"top": 484.5,
-									"width": 141.4599609375,
+									"width": 141,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -9424,7 +9424,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Pagamento tasse",
+											"text": "Pagare tasse",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -9492,7 +9492,7 @@
 									"containerExtending": false,
 									"left": 792.5,
 									"top": 700.5,
-									"width": 116.9326171875,
+									"width": 116,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -15018,7 +15018,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFgEaEegfNP2CI="
 					},
-					"name": "Pagamento pedaggio",
+					"name": "Pagare pedaggio",
 					"visibility": "public",
 					"isAbstract": false,
 					"isFinalSpecialization": false,
@@ -15066,7 +15066,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFgEaEegfNP2CI="
 					},
-					"name": "Pagamento tasse",
+					"name": "Pagare tasse",
 					"visibility": "public",
 					"isAbstract": false,
 					"isFinalSpecialization": false,

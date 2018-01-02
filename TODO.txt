@@ -1,5 +1,6 @@
 TODO
 
+0 - Distribuzioni proprietà e soldi in base al numero di giocatori
 
 1 - Prefab pedine/giocatore
 	-modello 3d
@@ -24,3 +25,17 @@ TODO
 	-1 pulsante per offrire soldi
 	-2 lista di proprietà da offrire
 	-3 pulsanti (si/no/controproposta)
+
+
+Diagramma attività
+	- aggiungere dei merge tutte le volte che più flussi finiscono in un'attività
+	- aggiungere condizione dopo tutti i fork/branch
+	- mettere == al posto di =
+	- rinominare "asta" in "inizio asta"
+
+Diagramma casi d'uso
+	- invertire tutte le freccie "extends"
+
+Diagramma stati
+	- dare ad ogni freccia una descrizione
+	- specificare che si sta descrivendo un turno generico di un giocatore
