@@ -12,9 +12,11 @@ public class RANDOM : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-		
+        theStateController = GameObject.FindObjectOfType<StateController>();
         
     }
+    // aggiungo lo statecontroller per controllare lo stato del turno e gestire  il giocatore di turno 
+    StateController theStateController;
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,10 +30,16 @@ public class RANDOM : MonoBehaviour {
     }
 
     public void Randomizza()
-    {
+    {   
+        //controllo se ho già tirato
+        if(theStateController.IsDoneRolling == true)
+        {
+            return;
+        }
         text[0].text = UnityEngine.Random.Range(1, 7).ToString(); //Il 7 è escluso
         text[1].text = UnityEngine.Random.Range(1, 7).ToString();
         risultato = int.Parse(text[0].text) + int.Parse(text[1].text);
         text[2].text = risultato.ToString();
+        theStateController.DiceTotal = risultato;
     }
 }
