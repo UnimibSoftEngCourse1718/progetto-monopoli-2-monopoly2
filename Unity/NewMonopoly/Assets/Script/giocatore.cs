@@ -113,50 +113,18 @@ public class giocatore : MonoBehaviour
 
         int spacesToMove = tiro.risultato;
 
-        if (spacesToMove == 0)
-        {
-            return;
-        }
-
-        
-
         moveQueue = new Casella[spacesToMove];
         Casella casellaFinale = casellaDiPartenza;
 
         for (int i = 0; i < spacesToMove; i++)
         {
-            if (casellaFinale == null && scoreMe == false)
-            {
-                casellaFinale = casellaDiPartenza;
-            }
-            else
-            {
-                if (casellaFinale.prossimaCasella == null || casellaFinale.prossimaCasella.Length == 0)
-                {
-
-                    scoreMe = true;
-                    casellaFinale = null;
-                }
-                else if (casellaFinale.prossimaCasella.Length > 1)
-                {
-                    
-                    casellaFinale = casellaFinale.prossimaCasella[0];
-                }
-                else
-                {
-                    casellaFinale = casellaFinale.prossimaCasella[0];
-                }
-            }
-
+            casellaFinale = casellaFinale.prossimaCasella;
+            //if casellaFinale == casellaVia +200
             moveQueue[i] = casellaFinale;
         }
-
-        
 
         moveQueueIndex = 0;
         casellaDiPartenza = casellaFinale;
         this.isAnimating = true;
-
-
     }
 }
