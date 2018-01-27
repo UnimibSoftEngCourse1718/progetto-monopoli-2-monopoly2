@@ -9,7 +9,7 @@ public class Casella : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Fermata();
+        //Fermata();
     }
 
     void Fermata()

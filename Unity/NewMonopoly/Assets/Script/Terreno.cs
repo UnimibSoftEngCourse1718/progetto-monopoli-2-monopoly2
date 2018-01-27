@@ -8,12 +8,14 @@ public class Terreno : MonoBehaviour
     // Se si possiedono tutti i terreni di quel colore è possibile costruire
     public int costo, ipoteca, costoEdificio, pedaggio, pedaggio1Casa, pedaggio2Case, pedaggio3Case, pedaggio4Case, pedaggioAlbergo;
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 }

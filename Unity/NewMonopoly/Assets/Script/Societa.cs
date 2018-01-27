@@ -9,12 +9,14 @@ public class Societa : MonoBehaviour
     public int costo = 150;
     public int ipoteca = 75;
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 }

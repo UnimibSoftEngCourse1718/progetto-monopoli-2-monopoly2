@@ -11,12 +11,14 @@ public class Stazione : MonoBehaviour
     public int pedaggio3Stazioni = 100;
     public int pedaggio4Stazioni = 200;
 	// Use this for initialization
-	void Start () {
-		
-	}
+	void Start ()
+    {
+
+    }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 }
