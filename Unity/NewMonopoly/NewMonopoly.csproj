@@ -285,6 +285,7 @@
     <Compile Include="Assets\Script\CambioScena.cs" />
     <Compile Include="Assets\Script\Casella.cs" />
     <Compile Include="Assets\Script\giocatore.cs" />
+    <Compile Include="Assets\Script\Offri.cs" />
     <Compile Include="Assets\Script\passa.cs" />
     <Compile Include="Assets\Script\PlayerAttivo.cs" />
     <Compile Include="Assets\Script\RANDOM.cs" />
