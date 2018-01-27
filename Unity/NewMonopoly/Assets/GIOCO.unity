@@ -464,45 +464,57 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1866251475}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &22083338 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &22083338 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 22083337}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &22083339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22083338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8868a742f227c42ae953a98d79d991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1866251476}
+  costo: 200
+  ipoteca: 100
+  pedaggio: 25
+  pedaggio2Stazioni: 50
+  pedaggio3Stazioni: 100
+  pedaggio4Stazioni: 200
+  proprietario: {fileID: 0}
 --- !u!4 &79566606 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -572,90 +584,102 @@ Prefab:
       propertyPath: valore
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 2029841943}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 550
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 750
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 950
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &143202493 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &143202493 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 143202492}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &143202494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143202493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 2029841944}
+  costo: 180
+  ipoteca: 90
+  costoEdificio: 100
+  pedaggio: 14
+  pedaggio1Casa: 70
+  pedaggio2Case: 200
+  pedaggio3Case: 550
+  pedaggio4Case: 750
+  pedaggioAlbergo: 950
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1001 &175088024
 Prefab:
   m_ObjectHideFlags: 0
@@ -720,90 +744,102 @@ Prefab:
       propertyPath: valore
       value: 160
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1256397953}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 160
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 500
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 700
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 900
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &175088025 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &175088025 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 175088024}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &175088026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 175088025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1256397954}
+  costo: 160
+  ipoteca: 80
+  costoEdificio: 100
+  pedaggio: 12
+  pedaggio1Casa: 60
+  pedaggio2Case: 180
+  pedaggio3Case: 500
+  pedaggio4Case: 700
+  pedaggioAlbergo: 900
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &180735785 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -943,45 +979,50 @@ Prefab:
       propertyPath: tipoCasella
       value: probabilita
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 320882704}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &193358749 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &193358749 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 193358748}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &193358750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193358749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c26388f59ed5d36439876d5317dc7f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 320882705}
 --- !u!4 &196504971 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -1056,90 +1097,102 @@ Prefab:
       propertyPath: valore
       value: 220
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1393797620}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 220
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 110
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 250
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 700
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 875
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1050
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &221017906 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &221017906 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 221017905}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &221017907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 221017906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1393797621}
+  costo: 220
+  ipoteca: 110
+  costoEdificio: 150
+  pedaggio: 18
+  pedaggio1Casa: 90
+  pedaggio2Case: 250
+  pedaggio3Case: 700
+  pedaggio4Case: 875
+  pedaggioAlbergo: 1050
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &227061263 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -1407,90 +1460,102 @@ Prefab:
       propertyPath: valore
       value: 260
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1937972704}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 360
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 130
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 22
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 110
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 330
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 800
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 975
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1150
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &302615814 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &302615814 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 302615813}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &302615815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302615814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1937972705}
+  costo: 360
+  ipoteca: 130
+  costoEdificio: 150
+  pedaggio: 22
+  pedaggio1Casa: 110
+  pedaggio2Case: 330
+  pedaggio3Case: 800
+  pedaggio4Case: 975
+  pedaggioAlbergo: 1150
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1001 &314662888
 Prefab:
   m_ObjectHideFlags: 0
@@ -1555,90 +1620,102 @@ Prefab:
       propertyPath: valore
       value: 350
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1034592044}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 350
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 175
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 175
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 500
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 1100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 1300
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1500
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &314662889 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &314662889 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 314662888}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &314662890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314662889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1034592045}
+  costo: 350
+  ipoteca: 175
+  costoEdificio: 200
+  pedaggio: 35
+  pedaggio1Casa: 175
+  pedaggio2Case: 500
+  pedaggio3Case: 1100
+  pedaggio4Case: 1300
+  pedaggioAlbergo: 1500
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1001 &320882703
 Prefab:
   m_ObjectHideFlags: 0
@@ -1703,90 +1780,102 @@ Prefab:
       propertyPath: valore
       value: 320
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 2048578465}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 320
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 160
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 28
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 390
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 900
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 1200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1400
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &320882704 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &320882704 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 320882703}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &320882705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 320882704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 2048578466}
+  costo: 320
+  ipoteca: 160
+  costoEdificio: 200
+  pedaggio: 28
+  pedaggio1Casa: 150
+  pedaggio2Case: 390
+  pedaggio3Case: 900
+  pedaggio4Case: 1200
+  pedaggioAlbergo: 1400
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &346016403 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -1861,50 +1950,54 @@ Prefab:
       propertyPath: tipoCasella
       value: parcheggio
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1486217433}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &377980425 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &377980425 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 377980424}
+--- !u!114 &377980426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 377980425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1486217434}
 --- !u!1001 &404324340
 Prefab:
   m_ObjectHideFlags: 0
@@ -1965,45 +2058,50 @@ Prefab:
       propertyPath: tipoCasella
       value: imprevisto
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 955345758}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &404324341 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &404324341 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 404324340}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &404324342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 404324341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd13c238f35c0794fbff3325996d75dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 955345759}
 --- !u!1001 &407018898
 Prefab:
   m_ObjectHideFlags: 0
@@ -2068,90 +2166,102 @@ Prefab:
       propertyPath: valore
       value: 140
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 175088025}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 140
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 450
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 625
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 750
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &407018899 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &407018899 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 407018898}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &407018900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407018899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 175088026}
+  costo: 140
+  ipoteca: 70
+  costoEdificio: 100
+  pedaggio: 10
+  pedaggio1Casa: 50
+  pedaggio2Case: 150
+  pedaggio3Case: 450
+  pedaggio4Case: 625
+  pedaggioAlbergo: 750
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1 &416224755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,50 +2400,54 @@ Prefab:
       propertyPath: tipoCasella
       value: via
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1841512606}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &427875824 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &427875824 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 427875823}
+--- !u!114 &427875825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427875824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1841512607}
 --- !u!1001 &429341676
 Prefab:
   m_ObjectHideFlags: 0
@@ -2398,90 +2512,102 @@ Prefab:
       propertyPath: valore
       value: 140
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1271015689}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 140
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 450
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 625
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 750
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &429341677 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &429341677 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 429341676}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &429341678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 429341677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1271015690}
+  costo: 140
+  ipoteca: 70
+  costoEdificio: 100
+  pedaggio: 10
+  pedaggio1Casa: 50
+  pedaggio2Case: 150
+  pedaggio3Case: 450
+  pedaggio4Case: 625
+  pedaggioAlbergo: 750
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &448761225 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -2631,45 +2757,50 @@ Prefab:
       propertyPath: tipoCasella
       value: imprevisto
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 314662889}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &531545481 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &531545481 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 531545480}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &531545482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 531545481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd13c238f35c0794fbff3325996d75dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 314662890}
 --- !u!1 &554852419
 GameObject:
   m_ObjectHideFlags: 0
@@ -3261,45 +3392,51 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 22083338}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &843636734 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &843636734 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 843636733}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &843636735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843636734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b059676650f52d849843a516933ec924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 22083339}
+  valoreTassa: 200
 --- !u!4 &856156722 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -3517,45 +3654,57 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1755680065}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &940914380 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &940914380 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 940914379}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &940914381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940914380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8868a742f227c42ae953a98d79d991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1755680066}
+  costo: 200
+  ipoteca: 100
+  pedaggio: 25
+  pedaggio2Stazioni: 50
+  pedaggio3Stazioni: 100
+  pedaggio4Stazioni: 200
+  proprietario: {fileID: 0}
 --- !u!1001 &955345757
 Prefab:
   m_ObjectHideFlags: 0
@@ -3620,90 +3769,102 @@ Prefab:
       propertyPath: valore
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1646363769}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 270
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 400
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 550
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &955345758 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &955345758 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 955345757}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &955345759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955345758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1646363770}
+  costo: 100
+  ipoteca: 50
+  costoEdificio: 50
+  pedaggio: 6
+  pedaggio1Casa: 30
+  pedaggio2Case: 90
+  pedaggio3Case: 270
+  pedaggio4Case: 400
+  pedaggioAlbergo: 550
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &1003772743 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -3773,45 +3934,51 @@ Prefab:
       propertyPath: valore
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1886565474}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1034592044 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1034592044 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1034592043}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1034592045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034592044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b059676650f52d849843a516933ec924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1886565475}
+  valoreTassa: 100
 --- !u!1 &1039527193
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,45 +4544,50 @@ Prefab:
       propertyPath: tipoCasella
       value: imprevisto
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 221017906}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1227301978 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1227301978 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1227301977}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1227301979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227301978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd13c238f35c0794fbff3325996d75dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 221017907}
 --- !u!1001 &1256397952
 Prefab:
   m_ObjectHideFlags: 0
@@ -4480,45 +4652,57 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1433453671}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1256397953 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1256397953 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1256397952}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1256397954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256397953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8868a742f227c42ae953a98d79d991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1433453672}
+  costo: 200
+  ipoteca: 100
+  pedaggio: 25
+  pedaggio2Stazioni: 50
+  pedaggio3Stazioni: 100
+  pedaggio4Stazioni: 200
+  proprietario: {fileID: 0}
 --- !u!1001 &1271015688
 Prefab:
   m_ObjectHideFlags: 0
@@ -4583,45 +4767,53 @@ Prefab:
       propertyPath: valore
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 407018899}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1271015689 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1271015689 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1271015688}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1271015690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1271015689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d701a6fe20a91ce448c6e999097352d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 407018900}
+  costo: 150
+  ipoteca: 75
+  proprietario: {fileID: 0}
 --- !u!1001 &1300598239
 Prefab:
   m_ObjectHideFlags: 0
@@ -4686,90 +4878,102 @@ Prefab:
       propertyPath: valore
       value: 300
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1638843802}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 300
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 26
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 130
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 390
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 900
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 1100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1275
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1300598240 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1300598240 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1300598239}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1300598241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300598240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1638843803}
+  costo: 300
+  ipoteca: 150
+  costoEdificio: 200
+  pedaggio: 26
+  pedaggio1Casa: 130
+  pedaggio2Case: 390
+  pedaggio3Case: 900
+  pedaggio4Case: 1100
+  pedaggioAlbergo: 1275
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1 &1307866927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5034,90 +5238,102 @@ Prefab:
       propertyPath: valore
       value: 240
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 940914380}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 240
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 120
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 300
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 750
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 925
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1100
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1393797620 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1393797620 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1393797619}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1393797621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1393797620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 940914381}
+  costo: 240
+  ipoteca: 120
+  costoEdificio: 150
+  pedaggio: 20
+  pedaggio1Casa: 100
+  pedaggio2Case: 300
+  pedaggio3Case: 750
+  pedaggio4Case: 925
+  pedaggioAlbergo: 1100
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &1422137506 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -5263,90 +5479,102 @@ Prefab:
       propertyPath: valore
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 2146286166}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 550
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 750
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 950
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1433453671 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1433453671 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1433453670}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1433453672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433453671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 2146286167}
+  costo: 180
+  ipoteca: 90
+  costoEdificio: 100
+  pedaggio: 14
+  pedaggio1Casa: 70
+  pedaggio2Case: 200
+  pedaggio3Case: 550
+  pedaggio4Case: 750
+  pedaggioAlbergo: 950
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &1452504830 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -5426,90 +5654,102 @@ Prefab:
       propertyPath: valore
       value: 220
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1227301978}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 220
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 110
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 250
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 700
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 875
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1050
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1486217433 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1486217433 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1486217432}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1486217434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486217433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1227301979}
+  costo: 220
+  ipoteca: 110
+  costoEdificio: 150
+  pedaggio: 18
+  pedaggio1Casa: 90
+  pedaggio2Case: 250
+  pedaggio3Case: 700
+  pedaggio4Case: 875
+  pedaggioAlbergo: 1050
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1 &1489355730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5870,50 +6110,54 @@ Prefab:
       propertyPath: tipoCasella
       value: vaiInPrigione
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1300598240}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1559549009 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1559549009 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1559549008}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1559549010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1559549009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fff0e05ae3f80a4f9f78e271d629e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1300598241}
 --- !u!4 &1577327488 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -6057,90 +6301,102 @@ Prefab:
       propertyPath: valore
       value: 300
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 193358749}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 300
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 26
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 130
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 390
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 900
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 1100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1275
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1638843802 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1638843802 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1638843801}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1638843803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638843802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 193358750}
+  costo: 300
+  ipoteca: 150
+  costoEdificio: 200
+  pedaggio: 26
+  pedaggio1Casa: 130
+  pedaggio2Case: 390
+  pedaggio3Case: 900
+  pedaggio4Case: 1100
+  pedaggioAlbergo: 1275
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1001 &1644032159
 Prefab:
   m_ObjectHideFlags: 0
@@ -6205,90 +6461,102 @@ Prefab:
       propertyPath: valore
       value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 843636734}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 320
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 450
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1644032160 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1644032160 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1644032159}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1644032161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644032160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 843636735}
+  costo: 60
+  ipoteca: 30
+  costoEdificio: 50
+  pedaggio: 4
+  pedaggio1Casa: 20
+  pedaggio2Case: 60
+  pedaggio3Case: 180
+  pedaggio4Case: 320
+  pedaggioAlbergo: 450
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &1644893450 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -6358,90 +6626,102 @@ Prefab:
       propertyPath: valore
       value: 120
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1845705256}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 120
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 300
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 450
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 600
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1646363769 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1646363769 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1646363768}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1646363770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1646363769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1845705257}
+  costo: 120
+  ipoteca: 60
+  costoEdificio: 50
+  pedaggio: 8
+  pedaggio1Casa: 40
+  pedaggio2Case: 100
+  pedaggio3Case: 300
+  pedaggio4Case: 450
+  pedaggioAlbergo: 600
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1 &1647030498
 GameObject:
   m_ObjectHideFlags: 0
@@ -6748,90 +7028,102 @@ Prefab:
       propertyPath: valore
       value: 280
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1559549009}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 280
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 140
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 24
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 120
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 360
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 850
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 1025
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1200
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1687588570 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1687588570 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1687588569}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1687588571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687588570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1559549010}
+  costo: 280
+  ipoteca: 140
+  costoEdificio: 150
+  pedaggio: 24
+  pedaggio1Casa: 120
+  pedaggio2Case: 360
+  pedaggio3Case: 850
+  pedaggio4Case: 1025
+  pedaggioAlbergo: 1200
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &1696167824 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -6906,90 +7198,102 @@ Prefab:
       propertyPath: valore
       value: 260
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 302615814}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 260
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 130
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 22
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 110
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 330
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 800
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 975
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1150
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1755680065 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1755680065 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1755680064}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1755680066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755680065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 302615815}
+  costo: 260
+  ipoteca: 130
+  costoEdificio: 150
+  pedaggio: 22
+  pedaggio1Casa: 110
+  pedaggio2Case: 330
+  pedaggio3Case: 800
+  pedaggio4Case: 975
+  pedaggioAlbergo: 1150
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1 &1782366906
 GameObject:
   m_ObjectHideFlags: 0
@@ -7198,45 +7502,50 @@ Prefab:
       propertyPath: tipoCasella
       value: probabilita
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1644032160}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1806506591 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1806506591 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1806506590}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1806506592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806506591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c26388f59ed5d36439876d5317dc7f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1644032161}
 --- !u!4 &1822506753 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -7397,90 +7706,102 @@ Prefab:
       propertyPath: valore
       value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1806506591}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 60
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 160
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 250
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1841512606 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1841512606 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1841512605}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1841512607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1841512606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1806506592}
+  costo: 60
+  ipoteca: 30
+  costoEdificio: 50
+  pedaggio: 2
+  pedaggio1Casa: 10
+  pedaggio2Case: 30
+  pedaggio3Case: 90
+  pedaggio4Case: 160
+  pedaggioAlbergo: 250
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1001 &1845705255
 Prefab:
   m_ObjectHideFlags: 0
@@ -7545,50 +7866,54 @@ Prefab:
       propertyPath: tipoCasella
       value: prigione
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 429341677}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1845705256 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1845705256 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1845705255}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1845705257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845705256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf80efeddecf5346b2070d0e0cc7939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 429341678}
 --- !u!4 &1859202177 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -7658,90 +7983,102 @@ Prefab:
       propertyPath: valore
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 404324341}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 270
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 400
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 550
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1866251475 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1866251475 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1866251474}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1866251476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1866251475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 404324342}
+  costo: 100
+  ipoteca: 50
+  costoEdificio: 50
+  pedaggio: 6
+  pedaggio1Casa: 30
+  pedaggio2Case: 90
+  pedaggio3Case: 270
+  pedaggio4Case: 400
+  pedaggioAlbergo: 550
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &1873457437 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -7879,90 +8216,102 @@ Prefab:
       propertyPath: valore
       value: 400
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 427875824}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 400
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 175
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 500
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 1100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 1700
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 2000
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1886565474 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1886565474 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1886565473}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1886565475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1886565474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 427875825}
+  costo: 400
+  ipoteca: 200
+  costoEdificio: 200
+  pedaggio: 50
+  pedaggio1Casa: 175
+  pedaggio2Case: 500
+  pedaggio3Case: 1100
+  pedaggio4Case: 1700
+  pedaggioAlbergo: 2000
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!4 &1907138208 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -8032,45 +8381,53 @@ Prefab:
       propertyPath: valore
       value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 1687588570}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1937972704 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &1937972704 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 1937972703}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &1937972705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937972704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d701a6fe20a91ce448c6e999097352d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 1687588571}
+  costo: 150
+  ipoteca: 75
+  proprietario: {fileID: 0}
 --- !u!1 &1950360227
 GameObject:
   m_ObjectHideFlags: 0
@@ -8352,90 +8709,102 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 377980425}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: costo
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ipoteca
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: costoEdificio
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio1Casa
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio2Case
       value: 220
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio3Case
       value: 600
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggio4Case
       value: 800
       objectReference: {fileID: 0}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: pedaggioAlbergo
       value: 1000
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &2029841943 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &2029841943 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 2029841942}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &2029841944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2029841943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 377980426}
+  costo: 200
+  ipoteca: 100
+  costoEdificio: 100
+  pedaggio: 16
+  pedaggio1Casa: 80
+  pedaggio2Case: 220
+  pedaggio3Case: 600
+  pedaggio4Case: 800
+  pedaggioAlbergo: 1000
+  nEdifici: 0
+  proprietario: {fileID: 0}
 --- !u!1001 &2048578464
 Prefab:
   m_ObjectHideFlags: 0
@@ -8500,45 +8869,57 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 531545481}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548833736967934, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &2048578465 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &2048578465 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 2048578464}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &2048578466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2048578465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8868a742f227c42ae953a98d79d991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 531545482}
+  costo: 200
+  ipoteca: 100
+  pedaggio: 25
+  pedaggio2Stazioni: 50
+  pedaggio3Stazioni: 100
+  pedaggio4Stazioni: 200
+  proprietario: {fileID: 0}
 --- !u!4 &2125520834 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -8685,42 +9066,47 @@ Prefab:
       propertyPath: tipoCasella
       value: probabilita
       objectReference: {fileID: 0}
-    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
-      objectReference: {fileID: 143202493}
-    - target: {fileID: 114922727640304552, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114770639153497282, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114127404537137174, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114981183991085838, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114946612001752372, guid: bfff8eabe7188f64a9dd5d356891d20d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &2146286166 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+--- !u!1 &2146286166 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 2146286165}
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
+--- !u!114 &2146286167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2146286166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c26388f59ed5d36439876d5317dc7f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prossimaCasella: {fileID: 143202494}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tassa : MonoBehaviour
+public class Tassa : Casella
 {
     public int valoreTassa;
 	// Use this for initialization

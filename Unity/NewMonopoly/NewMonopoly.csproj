@@ -283,11 +283,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\CambioScena.cs" />
+    <Compile Include="Assets\Script\Carta.cs" />
     <Compile Include="Assets\Script\Casella.cs" />
-    <Compile Include="Assets\Script\giocatore.cs" />
+    <Compile Include="Assets\Script\CasellaCarta.cs" />
+    <Compile Include="Assets\Script\CasellaInPrigione.cs" />
+    <Compile Include="Assets\Script\Giocatore.cs" />
     <Compile Include="Assets\Script\Imprevisto.cs" />
     <Compile Include="Assets\Script\passa.cs" />
     <Compile Include="Assets\Script\PlayerAttivo.cs" />
+    <Compile Include="Assets\Script\Prigione.cs" />
     <Compile Include="Assets\Script\Probabilita.cs" />
     <Compile Include="Assets\Script\RANDOM.cs" />
     <Compile Include="Assets\Script\Societa.cs" />

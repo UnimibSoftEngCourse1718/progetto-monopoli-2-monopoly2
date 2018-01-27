@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stazione : MonoBehaviour
+public class Stazione : Casella
 {
     public int costo = 200;
     public int ipoteca = 100;
@@ -10,8 +10,9 @@ public class Stazione : MonoBehaviour
     public int pedaggio2Stazioni = 50;
     public int pedaggio3Stazioni = 100;
     public int pedaggio4Stazioni = 200;
-	// Use this for initialization
-	void Start ()
+    public Giocatore proprietario;
+    // Use this for initialization
+    void Start ()
     {
 
     }

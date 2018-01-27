@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Casella : MonoBehaviour
 {
+    // Forse ho applicato lo strategy
     public Casella prossimaCasella;
 
     // Use this for initialization
@@ -13,7 +14,7 @@ public class Casella : MonoBehaviour
     }
 
     void Fermata()
-    {
+    {/*
         if (this.GetComponent<Stazione>().isActiveAndEnabled)
         {
             //Allora è una stazione
@@ -34,6 +35,6 @@ public class Casella : MonoBehaviour
             Societa societa = this.GetComponent<Societa>();
             UnityEngine.Debug.Log(societa.ToString());
             return;
-        }
+        }*/
     }
 }
