@@ -8,8 +8,12 @@ public class RANDOM : MonoBehaviour {
 
     public Text[] text;
     public int risultato = 0; // Ogni volta che si tira si azzera il punteggio dei dadi
+<<<<<<< HEAD
     public int doppio = 0;
 
+=======
+ 
+>>>>>>> 958de2ff3677e87e79b7683afe5ce3fed93198f0
     // Use this for initialization
     void Start () {
 
@@ -39,7 +43,11 @@ public class RANDOM : MonoBehaviour {
         }
         text[0].text = UnityEngine.Random.Range(1, 7).ToString(); //Il 7 è escluso
         text[1].text = UnityEngine.Random.Range(1, 7).ToString();
+<<<<<<< HEAD
         if (text[0].text.Equals(text[1].text)) doppio++;
+=======
+     
+>>>>>>> 958de2ff3677e87e79b7683afe5ce3fed93198f0
         risultato = int.Parse(text[0].text) + int.Parse(text[1].text);
         text[2].text = risultato.ToString();
         theStateController.DiceTotal = risultato;
