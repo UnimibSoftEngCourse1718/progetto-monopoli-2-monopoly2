@@ -9,7 +9,7 @@ public class CasellaCarta : Casella
     //Pesca una carta dal mazzo a caso e ne applica l'effetto
     void PescaCarta()
     {
-        int i = Random.Range(1, 17);
+        int i = UnityEngine.Random.Range(1, 17);
         carte[i].Effetto();
         carte[i].Disegna();
     }

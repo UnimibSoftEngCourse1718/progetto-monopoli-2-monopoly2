@@ -1,130 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Giocatore : MonoBehaviour
-{
+public class Giocatore : MonoBehaviour {
 
+    public Casella[] territori;
+    public int contatorePrigione;
+    public bool uscitaDiPrigione;
+    public int soldi;
 
-    // Use this for initialization
-    void Start()
-    {
-        controllore = GameObject.FindObjectOfType<StateController>();
-
+	// Use this for initialization
+	void Start () {
+        //int numero = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
         targetPosition = this.transform.position;
-    }
+      }
 
-    public RANDOM tiro;
+    public Casella partenza;
 
-    public Casella casellaDiPartenza;
-    Casella casellaCorrente;
-
-    bool scoreMe = false;
-
-    public StateController controllore;
-
-    Casella[] moveQueue;
-    int moveQueueIndex;
-
-    bool isAnimating = false;
-
+    //istruzioni per animazione 
     Vector3 targetPosition;
     Vector3 velocity;
-    float smoothTime = 0.25f;
-    float smoothTimeVertical = 0.1f;
-    float smoothDistance = 0.01f;
-    float smoothHeight = 0.5f;
+    float smoothTime = 1f;
 
-    // Update is called once per frame
-    void Update()
-    {
+	
+	// Update is called once per frame, aggiungo l'animazione
+	void Update () {
+        if (this.transform.position != targetPosition)
+            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);		
+	}
 
-        if (isAnimating == false)
-        {
-            
-            return;
-        }
-
-        if (Vector3.Distance(
-               new Vector3(this.transform.position.x, targetPosition.y, this.transform.position.z),
-               targetPosition) < smoothDistance)
-        {
-            
-            if (moveQueue != null && moveQueueIndex == (moveQueue.Length) && this.transform.position.y > smoothDistance)
-            {
-                this.transform.position = Vector3.SmoothDamp(
-                    this.transform.position,
-                    new Vector3(this.transform.position.x, 0, this.transform.position.z),
-                    ref velocity,
-                    smoothTimeVertical);
-            }
-            else
-            {
-                
-                AdvanceMoveQueue();
-            }
-        }
-        else if (this.transform.position.y < (smoothHeight - smoothDistance))
-        {
-            
-            this.transform.position = Vector3.SmoothDamp(
-                this.transform.position,
-                new Vector3(this.transform.position.x, smoothHeight, this.transform.position.z),
-                ref velocity,
-                smoothTimeVertical);
-        }
-        else
-        {
-            this.transform.position = Vector3.SmoothDamp(
-                this.transform.position,
-                new Vector3(targetPosition.x, smoothHeight, targetPosition.z),
-                ref velocity,
-                smoothTime);
-        }
-
-    }
-
-    void AdvanceMoveQueue()
-    {
-        if (moveQueue != null && moveQueueIndex < moveQueue.Length)
-        {
-            Casella prossimaCasella = moveQueue[moveQueueIndex];
-
-
-        }
-        else
-        {
-            
-            Debug.Log("Done animating!");
-            this.isAnimating = false;
-            controllore.IsDoneAnimating = true;
-        }
-
-    }
 
     void SetNewTargetPosition(Vector3 pos)
     {
+
         targetPosition = pos;
         velocity = Vector3.zero;
     }
 
-    void RollDice()
+     private void OnMouseUp()
     {
-
-        int spacesToMove = tiro.risultato;
-
-        moveQueue = new Casella[spacesToMove];
-        Casella casellaFinale = casellaDiPartenza;
-
-        for (int i = 0; i < spacesToMove; i++)
+        int spazio = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
+       
+        Casella arrivo = partenza;
+        for(int i = 0; i < spazio; i++)
         {
-            casellaFinale = casellaFinale.prossimaCasella;
-            //if casellaFinale == casellaVia +200
-            moveQueue[i] = casellaFinale;
-        }
 
-        moveQueueIndex = 0;
-        casellaDiPartenza = casellaFinale;
-        this.isAnimating = true;
+            if (partenza == null) arrivo = partenza;
+
+            else
+            {
+                arrivo = arrivo.prossimaCasella;
+                Debug.Log(arrivo.prossimaCasella);
+            }
+            }
+        if (arrivo == null) return;
+
+        SetNewTargetPosition(arrivo.transform.position);
+        partenza = arrivo;
     }
+
 }

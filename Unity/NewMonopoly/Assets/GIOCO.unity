@@ -304,29 +304,15 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.6
       objectReference: {fileID: 0}
+    - target: {fileID: 114454294331396154, guid: 996331e311863294d95a60de9e24ff29,
+        type: 2}
+      propertyPath: partenza
+      value: 
+      objectReference: {fileID: 427875825}
     m_RemovedComponents:
-    - {fileID: 114239314451758996, guid: 996331e311863294d95a60de9e24ff29, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 996331e311863294d95a60de9e24ff29, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &17100931 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1792887871770382, guid: 996331e311863294d95a60de9e24ff29,
-    type: 2}
-  m_PrefabInternal: {fileID: 17100930}
---- !u!114 &17100932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 17100931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ad852971a19cb489ff9463b0de3562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiro: {fileID: 0}
-  casellaDiPartenza: {fileID: 0}
-  controllore: {fileID: 0}
 --- !u!4 &17100933 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29,
@@ -7563,6 +7549,7 @@ GameObject:
   - component: {fileID: 1840371096}
   - component: {fileID: 1840371095}
   - component: {fileID: 1840371094}
+  - component: {fileID: 1840371097}
   m_Layer: 0
   m_Name: stateController
   m_TagString: Untagged
@@ -7642,6 +7629,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1840371092}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1840371097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840371092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab5793d08170b549b60e046f75331fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NumberOfPlayers: 2
+  CurrentPlayerId: 0
+  DiceTotal: 0
+  doppio: 0
+  IsDoneRolling: 0
+  IsDoneClicking: 0
+  IsDoneAnimating: 0
+  AnimationsPlaying: 0
+  NoLegalMovesPopup: {fileID: 0}
 --- !u!1001 &1841512605
 Prefab:
   m_ObjectHideFlags: 0
@@ -8579,7 +8586,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8627,7 +8634,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954646604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 136e31dcb5c821341928e263b48fe99b, type: 3}
+  m_Script: {fileID: 11500000, guid: 971af3da2c94e054790bde3e309933ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text:
@@ -8635,6 +8642,8 @@ MonoBehaviour:
   - {fileID: 1796235372}
   - {fileID: 1489355731}
   risultato: 0
+  doppio: 0
+  theStateController: {fileID: 1840371097}
 --- !u!4 &1962837532 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,

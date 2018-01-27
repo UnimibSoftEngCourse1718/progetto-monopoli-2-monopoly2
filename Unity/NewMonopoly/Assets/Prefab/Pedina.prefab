@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33938171410510144}
   - component: {fileID: 65863228833484138}
   - component: {fileID: 23190112088186940}
-  - component: {fileID: 114239314451758996}
+  - component: {fileID: 114454294331396154}
   m_Layer: 0
   m_Name: Pedina
   m_TagString: Untagged
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114239314451758996
+--- !u!114 &114454294331396154
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -104,9 +104,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1792887871770382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ad852971a19cb489ff9463b0de3562, type: 3}
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiro: {fileID: 0}
-  casellaDiPartenza: {fileID: 0}
-  controllore: {fileID: 0}
+  territori: []
+  contatorePrigione: 0
+  uscitaDiPrigione: 0
+  soldi: 0
+  partenza: {fileID: 0}

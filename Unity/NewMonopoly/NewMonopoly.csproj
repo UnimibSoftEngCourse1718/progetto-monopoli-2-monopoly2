@@ -293,7 +293,7 @@
     <Compile Include="Assets\Script\PlayerAttivo.cs" />
     <Compile Include="Assets\Script\Prigione.cs" />
     <Compile Include="Assets\Script\Probabilita.cs" />
-    <Compile Include="Assets\Script\RANDOM.cs" />
+    <Compile Include="Assets\Script\Random.cs" />
     <Compile Include="Assets\Script\Societa.cs" />
     <Compile Include="Assets\Script\StateController.cs" />
     <Compile Include="Assets\Script\Stazione.cs" />
