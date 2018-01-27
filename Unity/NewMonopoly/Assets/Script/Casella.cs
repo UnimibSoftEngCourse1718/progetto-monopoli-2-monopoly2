@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Casella : MonoBehaviour
 {
-    public Casella prossimaCasella;
-
+    public Casella[] prossimaCasella;
+    public Giocatore giocatore;
     // Use this for initialization
     void Start()
     {
-        Fermata();
+        //Fermata();
     }
 
     void Fermata()

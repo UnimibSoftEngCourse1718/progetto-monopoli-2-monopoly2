@@ -8,38 +8,58 @@ public class StateController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+      
     }
 
     public int NumberOfPlayers = 2;
     public int CurrentPlayerId = 0;
 
-    public int DiceTotal;
+    public int DiceTotal ;
+    public int doppio;
 
+    // NOTE: enum / statemachine is probably a stronger choice, but I'm aiming for simpler to explain.
     public bool IsDoneRolling = false;
+    public bool IsDoneClicking = false;
     public bool IsDoneAnimating = false;
-    public bool IsDoneEnding = false;
+    public int AnimationsPlaying = 0;
+
+    public GameObject NoLegalMovesPopup;
+
     public void NewTurn()
     {
-        //inizio turno azioni da fare prima di concludere il turno
+        Debug.Log("NewTurn");
+        
         IsDoneRolling = false;
+        IsDoneClicking = false;
         IsDoneAnimating = false;
-        //attributo per indicare che  il giocatore passa il turno quindi collegato al pulsante passa
-        IsDoneEnding = false;
 
         CurrentPlayerId = (CurrentPlayerId + 1) % NumberOfPlayers;
+    }
+
+    public void RollAgain()
+    {
+        Debug.Log("RollAgain");
+        IsDoneRolling = false;
+        IsDoneClicking = false;
+        IsDoneAnimating = false;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        ///se  ho tutto true il turno cambia
-        if (IsDoneRolling && IsDoneEnding && IsDoneAnimating)
+        // Is the turn done?
+        if (IsDoneRolling && IsDoneClicking && AnimationsPlaying == 0)
         {
-            Debug.Log("Turno finito");
+            Debug.Log("Turn is done!");
             NewTurn();
+            return;
         }
 
+        
+
     }
-}
+
+    
+    
+  }

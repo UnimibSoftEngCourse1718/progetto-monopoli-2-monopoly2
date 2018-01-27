@@ -107,6 +107,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ad852971a19cb489ff9463b0de3562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiro: {fileID: 0}
-  casellaDiPartenza: {fileID: 0}
-  controllore: {fileID: 0}
+  StartingCasella: {fileID: 0}
+  <prossimaCasella>k__BackingField: {fileID: 0}
+  PlayerId: 0
+  casellaFinale: {fileID: 0}
+  scoreMe: 0
+  theStateManager: {fileID: 0}
+  moveQueue: []
+  moveQueueIndex: 0
+  isAnimating: 0
+  targetPosition: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  smoothTime: 0.25
+  smoothTimeVertical: 0.1
+  smoothDistance: 0.01
+  smoothHeight: 0.5
