@@ -21,7 +21,7 @@ public class Giocatore : MonoBehaviour {
     //istruzioni per animazione 
     Vector3 targetPosition;
     Vector3 velocity;
-    float smoothTime = 1f;
+    float smoothTime = 0.5f;
 
 	
 	// Update is called once per frame, aggiungo l'animazione
@@ -31,9 +31,8 @@ public class Giocatore : MonoBehaviour {
 	}
 
 
-    void SetNewTargetPosition(Vector3 pos)
+    public void SetNewTargetPosition(Vector3 pos)
     {
-
         targetPosition = pos;
         velocity = Vector3.zero;
     }
@@ -53,11 +52,12 @@ public class Giocatore : MonoBehaviour {
                 arrivo = arrivo.prossimaCasella;
                 Debug.Log(arrivo.prossimaCasella);
             }
-            }
+        }
         if (arrivo == null) return;
 
         SetNewTargetPosition(arrivo.transform.position);
         partenza = arrivo;
+        arrivo.Fermata(this);
     }
 
 }

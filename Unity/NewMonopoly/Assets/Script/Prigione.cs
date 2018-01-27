@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class Prigione : Casella
 {
-
-    // Use this for initialization
-    void Start()
+    public override void Fermata(Giocatore giocatoreDiTurno)
     {
+        if (giocatoreDiTurno.contatorePrigione == -1)
+            return;
 
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        //sei in prigione
     }
 }

@@ -5,15 +5,11 @@ using UnityEngine;
 public class Tassa : Casella
 {
     public int valoreTassa;
-	// Use this for initialization
-	void Start ()
+
+    public override void Fermata(Giocatore giocatoreDiTurno)
     {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
+        // TODO // Non ho abbastanza soldi
+        giocatoreDiTurno.soldi -= valoreTassa;
+        return;
+    }
 }
