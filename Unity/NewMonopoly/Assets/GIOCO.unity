@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -139,7 +138,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 8959638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 787, y: -409, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1428147740}
@@ -304,6 +303,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.6
       objectReference: {fileID: 0}
+    - target: {fileID: 65863228833484138, guid: 996331e311863294d95a60de9e24ff29,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114454294331396154, guid: 996331e311863294d95a60de9e24ff29,
         type: 2}
       propertyPath: partenza
@@ -342,7 +346,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20343453}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -784.30994, y: 99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -394,6 +398,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -450,6 +459,11 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -474,6 +488,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1866251475}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -514,6 +533,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -569,6 +593,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -630,12 +659,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 2029841943}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &143202493 stripped
@@ -674,6 +703,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -729,6 +763,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -790,12 +829,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1256397953}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &175088025 stripped
@@ -916,6 +955,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -965,6 +1009,11 @@ Prefab:
       propertyPath: tipoCasella
       value: probabilita
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -989,6 +1038,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 320882704}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -1027,6 +1081,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1082,6 +1141,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -1143,12 +1207,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1393797620}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &221017906 stripped
@@ -1209,7 +1273,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241832606}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 804, y: 438, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1162301750}
@@ -1393,6 +1457,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -15
@@ -1445,6 +1514,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -1506,12 +1580,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1937972704}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &302615814 stripped
@@ -1550,6 +1624,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1605,6 +1684,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -1666,12 +1750,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1034592044}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &314662889 stripped
@@ -1710,6 +1794,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1765,6 +1854,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -1826,12 +1920,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 2048578465}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &320882704 stripped
@@ -1880,6 +1974,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1936,6 +2035,11 @@ Prefab:
       propertyPath: tipoCasella
       value: parcheggio
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -1964,6 +2068,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1486217433}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -1972,6 +2081,80 @@ GameObject:
   m_PrefabParentObject: {fileID: 1947978157206306, guid: bfff8eabe7188f64a9dd5d356891d20d,
     type: 2}
   m_PrefabInternal: {fileID: 377980424}
+--- !u!1 &385371984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 385371985}
+  - component: {fileID: 385371987}
+  - component: {fileID: 385371986}
+  m_Layer: 5
+  m_Name: PROVA1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &385371985
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385371984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 139.3, y: 64.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1665585299}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 139.3, y: 64.75}
+  m_SizeDelta: {x: 438.5, y: 159.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &385371986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385371984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &385371987
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385371984}
 --- !u!114 &377980426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1992,6 +2175,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2044,6 +2232,11 @@ Prefab:
       propertyPath: tipoCasella
       value: imprevisto
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -2068,6 +2261,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 955345758}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -2096,6 +2294,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2151,6 +2354,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -2212,12 +2420,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 175088025}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &407018899 stripped
@@ -2272,7 +2480,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 416224755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -560.3, y: 177, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -2333,6 +2541,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -2386,6 +2599,11 @@ Prefab:
       propertyPath: tipoCasella
       value: via
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -2414,6 +2632,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1841512606}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -2442,6 +2665,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2497,6 +2725,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -2558,12 +2791,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1271015689}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &429341677 stripped
@@ -2628,7 +2861,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 502136197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -560.3, y: 421, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -2694,6 +2927,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -2743,6 +2981,11 @@ Prefab:
       propertyPath: tipoCasella
       value: imprevisto
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -2767,6 +3010,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 314662889}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -2851,9 +3099,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &554852422
@@ -2903,7 +3151,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 563708608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 787, y: -217.99998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2142867788}
@@ -3111,7 +3359,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789661066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -786.9999, y: 339, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -3185,7 +3433,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 814367631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -777.9001, y: -45.200012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -3264,7 +3512,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833116659}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -787, y: 177, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -3325,6 +3573,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -3378,6 +3631,11 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -3402,6 +3660,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 22083338}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -3452,7 +3715,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 863564999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -787, y: 99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -3526,7 +3789,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 905630647}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -787.0001, y: 257, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -3587,6 +3850,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -3640,6 +3908,11 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -3664,6 +3937,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1755680065}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -3699,6 +3977,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3754,6 +4037,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -3815,12 +4103,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1646363769}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &955345758 stripped
@@ -3864,6 +4152,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3920,6 +4213,11 @@ Prefab:
       propertyPath: valore
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -3944,6 +4242,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1886565474}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -3989,7 +4292,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1039527193}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -859.19995, y: -220.59998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -4063,7 +4366,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1042993051}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -786.9999, y: 257, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -4131,7 +4434,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076780996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -560.3, y: 339, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -4286,7 +4589,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175505534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -784.30994, y: 338.99997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -4421,7 +4724,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1195361874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -784.30994, y: 177, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -4481,6 +4784,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 35
@@ -4530,6 +4838,11 @@ Prefab:
       propertyPath: tipoCasella
       value: imprevisto
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -4554,6 +4867,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 221017906}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -4582,6 +4900,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4638,6 +4961,11 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -4662,6 +4990,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1433453671}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -4697,6 +5030,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4753,6 +5091,11 @@ Prefab:
       propertyPath: valore
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -4777,6 +5120,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 407018899}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -4808,6 +5156,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4863,6 +5216,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -4924,12 +5282,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1638843802}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1300598240 stripped
@@ -4984,7 +5342,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1307866927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -783.4099, y: 507.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -5053,7 +5411,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1327809589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 787, y: -28.049988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 182317055}
@@ -5171,6 +5529,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -5223,6 +5586,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -5284,12 +5652,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 940914380}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1393797620 stripped
@@ -5412,6 +5780,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 60
@@ -5464,6 +5837,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -5525,12 +5903,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 2146286166}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1433453671 stripped
@@ -5587,6 +5965,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 45
@@ -5639,6 +6022,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -5700,12 +6088,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1227301978}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1486217433 stripped
@@ -5799,7 +6187,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1489355730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -540.8999, y: -220.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -5834,7 +6222,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1490972742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -560.3, y: 507.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -5908,7 +6296,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539005686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -787, y: 421, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -5982,7 +6370,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1552279130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -787.9, y: 507.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -6043,6 +6431,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -6096,6 +6489,11 @@ Prefab:
       propertyPath: tipoCasella
       value: vaiInPrigione
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -6124,6 +6522,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1300598240}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -6173,7 +6576,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625567305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -560.3, y: 257, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -6234,6 +6637,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -6286,6 +6694,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -6347,12 +6760,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 193358749}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1638843802 stripped
@@ -6391,6 +6804,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6446,6 +6864,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -6507,12 +6930,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 843636734}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1644032160 stripped
@@ -6556,6 +6979,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6611,6 +7039,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -6672,12 +7105,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1845705256}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1646363769 stripped
@@ -6775,7 +7208,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -6889,8 +7321,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1665585294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1307866928}
   - {fileID: 1950360228}
@@ -6919,6 +7351,7 @@ RectTransform:
   - {fileID: 8959639}
   - {fileID: 241832607}
   - {fileID: 814367632}
+  - {fileID: 385371985}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6958,6 +7391,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7013,6 +7451,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -7074,12 +7517,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1559549009}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1687588570 stripped
@@ -7128,6 +7571,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7183,6 +7631,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -7244,12 +7697,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 302615814}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1755680065 stripped
@@ -7304,7 +7757,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782366906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -560.3, y: 99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -7378,7 +7831,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796235370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -701.5, y: -220.59998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -7439,6 +7892,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -25
@@ -7488,6 +7946,11 @@ Prefab:
       propertyPath: tipoCasella
       value: probabilita
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -7512,6 +7975,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1644032160}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -7616,9 +8084,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1840371096
@@ -7657,6 +8125,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7712,6 +8185,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -7773,12 +8251,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1806506591}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1841512606 stripped
@@ -7817,6 +8295,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7873,6 +8356,11 @@ Prefab:
       propertyPath: tipoCasella
       value: prigione
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -7901,6 +8389,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 429341677}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -7934,6 +8427,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7989,6 +8487,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -8050,12 +8553,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 404324341}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1866251475 stripped
@@ -8170,6 +8673,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -8222,6 +8730,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -8283,12 +8796,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 427875824}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1886565474 stripped
@@ -8332,6 +8845,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8388,6 +8906,11 @@ Prefab:
       propertyPath: valore
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -8412,6 +8935,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 1687588570}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -8459,7 +8987,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950360227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -786.9999, y: 421, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -8529,7 +9057,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1954646604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -777.9, y: -375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 289809798}
@@ -8634,7 +9162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954646604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 971af3da2c94e054790bde3e309933ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 136e31dcb5c821341928e263b48fe99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text:
@@ -8662,6 +9190,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8717,6 +9250,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: valore
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
@@ -8778,12 +9316,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 377980425}
+    m_RemovedComponents: [{fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}, {fileID: 0}]
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2029841943 stripped
@@ -8822,6 +9360,11 @@ Prefab:
     m_TransformParent: {fileID: 722184922}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8878,6 +9421,11 @@ Prefab:
       propertyPath: valore
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -8902,6 +9450,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 531545481}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0
@@ -9026,6 +9579,11 @@ Prefab:
       propertyPath: prossimaCasella.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 60
@@ -9075,6 +9633,11 @@ Prefab:
       propertyPath: tipoCasella
       value: probabilita
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: prossimaCasella
       value: 
@@ -9099,6 +9662,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114609099939550076, guid: bfff8eabe7188f64a9dd5d356891d20d,
+        type: 2}
+      propertyPath: prossimaCasella.Array.data[0]
+      value: 
+      objectReference: {fileID: 143202493}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfff8eabe7188f64a9dd5d356891d20d, type: 2}
   m_IsPrefabParent: 0

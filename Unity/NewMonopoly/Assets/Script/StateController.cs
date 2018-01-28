@@ -8,13 +8,13 @@ public class StateController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+      
     }
 
     public int NumberOfPlayers = 2;
     public int CurrentPlayerId = 0;
 
-    public int DiceTotal;
+    public int DiceTotal ;
     public int doppio;
 
     // NOTE: enum / statemachine is probably a stronger choice, but I'm aiming for simpler to explain.
@@ -28,7 +28,7 @@ public class StateController : MonoBehaviour
     public void NewTurn()
     {
         Debug.Log("NewTurn");
-
+        
         IsDoneRolling = false;
         IsDoneClicking = false;
         IsDoneAnimating = false;
@@ -56,10 +56,10 @@ public class StateController : MonoBehaviour
             return;
         }
 
-
+        
 
     }
 
-
-
-}
+    
+    
+  }
