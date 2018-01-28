@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Giocatore : MonoBehaviour {
+public class giocatore : MonoBehaviour {
 
     public Casella[] territori;
     public int contatorePrigione;
@@ -23,7 +23,7 @@ public class Giocatore : MonoBehaviour {
     //istruzioni per animazione 
     Vector3 targetPosition;
     Vector3 velocity;
-    float smoothTime = 1f;
+    float smoothTime = 0.5f;
 
 	
 	// Update is called once per frame, aggiungo l'animazione
@@ -55,8 +55,8 @@ public class Giocatore : MonoBehaviour {
 
             else
             {
-                arrivo = arrivo.prossimaCasella[0];
-                Debug.Log(arrivo.prossimaCasella[0]);
+                arrivo = arrivo.prossimaCasella;
+                Debug.Log(arrivo.prossimaCasella);
             }
             }
         if (arrivo == null) return;
@@ -65,6 +65,7 @@ public class Giocatore : MonoBehaviour {
         this.isAnimating = true;
         SetNewTargetPosition(arrivo.transform.position);
         partenza = arrivo;
+        arrivo.Fermata(this);
     }
 
 }

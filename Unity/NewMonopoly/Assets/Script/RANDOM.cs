@@ -9,7 +9,6 @@ public class RANDOM : MonoBehaviour {
     public Text[] text;
     public int risultato = 0; // Ogni volta che si tira si azzera il punteggio dei dadi
 
-    
     public int doppio = 0;
     public StateController theStateController;
 
@@ -45,7 +44,6 @@ public class RANDOM : MonoBehaviour {
         if (text[0].text.Equals(text[1].text)) doppio++;
 
         theStateController.IsDoneRolling = true;//tiro effettivo
-     
 
         risultato = int.Parse(text[0].text) + int.Parse(text[1].text);
         text[2].text = risultato.ToString();

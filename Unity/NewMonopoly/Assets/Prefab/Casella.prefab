@@ -22,10 +22,6 @@ GameObject:
   - component: {fileID: 33201413674827246}
   - component: {fileID: 65146804688176146}
   - component: {fileID: 23043235331920574}
-  - component: {fileID: 114609099939550076}
-  - component: {fileID: 114922727640304552}
-  - component: {fileID: 114770639153497282}
-  - component: {fileID: 114127404537137174}
   m_Layer: 0
   m_Name: Casella
   m_TagString: Untagged
@@ -99,65 +95,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114127404537137174
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1947978157206306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d701a6fe20a91ce448c6e999097352d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  costo: 150
-  ipoteca: 75
---- !u!114 &114609099939550076
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1947978157206306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be08d34cd2963084fb89e8ee92d81a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prossimaCasella: {fileID: 0}
---- !u!114 &114770639153497282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1947978157206306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da8868a742f227c42ae953a98d79d991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  costo: 200
-  ipoteca: 100
-  pedaggio: 25
-  pedaggio2Stazioni: 50
-  pedaggio3Stazioni: 100
-  pedaggio4Stazioni: 200
---- !u!114 &114922727640304552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1947978157206306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8c4d6252b3e38245969c8e80b87c028, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  costo: 0
-  ipoteca: 0
-  costoEdificio: 0
-  pedaggio: 0
-  pedaggio1Casa: 0
-  pedaggio2Case: 0
-  pedaggio3Case: 0
-  pedaggio4Case: 0
-  pedaggioAlbergo: 0
