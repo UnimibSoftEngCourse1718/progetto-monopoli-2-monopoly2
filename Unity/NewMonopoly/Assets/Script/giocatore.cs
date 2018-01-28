@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Giocatore : MonoBehaviour {
+public class giocatore : MonoBehaviour {
 
     public Casella[] territori;
     public int contatorePrigione;

@@ -8,7 +8,7 @@ public class Societa : Casella
     //se si possiedono due società il pedaggio è pari a 10 volte il tiro del dado
     public int costo = 150;
     public int ipoteca = 75;
-    public Giocatore proprietario;
+    public giocatore proprietario;
     // Use this for initialization
     void Start ()
     {

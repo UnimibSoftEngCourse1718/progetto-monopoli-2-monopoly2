@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Carta : MonoBehaviour
+public class Carta
 {
     string testo { get; set; }
     int valore { get; set; }

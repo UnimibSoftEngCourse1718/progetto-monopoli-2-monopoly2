@@ -10,7 +10,7 @@ public class Stazione : Casella
     public int pedaggio2Stazioni = 50;
     public int pedaggio3Stazioni = 100;
     public int pedaggio4Stazioni = 200;
-    public Giocatore proprietario;
+    public giocatore proprietario;
     // Use this for initialization
     void Start ()
     {

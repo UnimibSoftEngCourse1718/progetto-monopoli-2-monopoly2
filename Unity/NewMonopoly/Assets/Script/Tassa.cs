@@ -6,7 +6,7 @@ public class Tassa : Casella
 {
     public int valoreTassa;
 
-    public override void Fermata(Giocatore giocatoreDiTurno)
+    public override void Fermata(giocatore giocatoreDiTurno)
     {
         // TODO // Non ho abbastanza soldi
         giocatoreDiTurno.soldi -= valoreTassa;

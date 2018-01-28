@@ -13,5 +13,5 @@ public class Casella : MonoBehaviour
 
     }
 
-    public virtual void Fermata(Giocatore giocatoreDiTurno) { }
+    public virtual void Fermata(giocatore giocatoreDiTurno) { }
 }

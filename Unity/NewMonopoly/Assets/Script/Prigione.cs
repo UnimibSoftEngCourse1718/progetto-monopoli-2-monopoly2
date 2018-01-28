@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Prigione : Casella
 {
-    public override void Fermata(Giocatore giocatoreDiTurno)
+    public override void Fermata(giocatore giocatoreDiTurno)
     {
         if (giocatoreDiTurno.contatorePrigione == -1)
             return;

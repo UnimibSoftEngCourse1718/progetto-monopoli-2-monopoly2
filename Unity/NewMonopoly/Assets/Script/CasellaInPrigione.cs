@@ -9,7 +9,7 @@ public class CasellaInPrigione : Casella
     {
         prigione = GameObject.FindObjectOfType<Prigione>();
     }
-    public override void Fermata(Giocatore giocatoreDiTurno)
+    public override void Fermata(giocatore giocatoreDiTurno)
     {
         // TODO // Da correggere l'animazione e da evitare i soldi del passaggio del via
         giocatoreDiTurno.contatorePrigione = 0;
