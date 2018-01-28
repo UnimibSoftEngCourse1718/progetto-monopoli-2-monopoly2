@@ -7,7 +7,9 @@ public class passa : MonoBehaviour {
     private int contatoregiocatoreattivo = 1;
     public GameObject[] panelList = new GameObject[5];
 
-	// Use this for initialization
+    // Use this for initialization
+    bool premuto;
+    public StateController controller;
 	void Start () {
 		
 	}
@@ -17,22 +19,37 @@ public class passa : MonoBehaviour {
 		
 	}
 
-
-    public void passaturno()
+    public void OnMouseUp()
     {
-        if (contatoregiocatoreattivo == 6)
+        if ( controller.IsDoneRolling)
         {
-            contatoregiocatoreattivo = 0;
-            panelList[contatoregiocatoreattivo].active = true;
-            panelList[5].active = false;
-            contatoregiocatoreattivo++;
+            Debug.Log("entrato nel if");
+
+            premuto = true;
+            Passaturno();
         }
-        else
+    }
+
+    public void Passaturno()
+    {
+        if (premuto == true)
         {
-            panelList[contatoregiocatoreattivo].active = true;
-            panelList[contatoregiocatoreattivo - 1].active = false;
-            contatoregiocatoreattivo++;
-        }  
+            {
+                if (contatoregiocatoreattivo == 6)
+                {
+                    contatoregiocatoreattivo = 0;
+                    panelList[contatoregiocatoreattivo].active = true;
+                    panelList[5].active = false;
+                    contatoregiocatoreattivo++;
+                }
+                else
+                {
+                    panelList[contatoregiocatoreattivo].active = true;
+                    panelList[contatoregiocatoreattivo - 1].active = false;
+                    contatoregiocatoreattivo++;
+                }
+            }
+        }
 
         
     }

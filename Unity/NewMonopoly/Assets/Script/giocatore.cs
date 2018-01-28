@@ -9,6 +9,8 @@ public class giocatore : MonoBehaviour {
     public int contatorePrigione;
     public bool uscitaDiPrigione;
     public int soldi;
+    public StateController controller;
+    bool isAnimating;
 
 	// Use this for initialization
 	void Start () {
@@ -41,7 +43,10 @@ public class giocatore : MonoBehaviour {
      private void OnMouseUp()
     {
         int spazio = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
-       
+
+        
+        if (controller.IsDoneClicking == true) return; // ho già tirato , mo basta
+
         Casella arrivo = partenza;
         for(int i = 0; i < spazio; i++)
         {
@@ -56,6 +61,8 @@ public class giocatore : MonoBehaviour {
             }
         if (arrivo == null) return;
 
+        controller.IsDoneClicking = true;
+        this.isAnimating = true;
         SetNewTargetPosition(arrivo.transform.position);
         partenza = arrivo;
         arrivo.Fermata(this);

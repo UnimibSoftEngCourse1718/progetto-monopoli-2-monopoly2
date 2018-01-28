@@ -320,6 +320,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  controller: {fileID: 0}
 --- !u!1001 &17100930
 Prefab:
   m_ObjectHideFlags: 0
@@ -4459,8 +4460,34 @@ MonoBehaviour:
   prossimaCasella: {fileID: 314662890}
 --- !u!1 &554852419
 GameObject:
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1346483015819908, guid: 72030759af93dd34796aa2e82a3a5cc2,
+=======
+  m_PrefabParentObject: {fileID: 1792887871770382, guid: 996331e311863294d95a60de9e24ff29,
+    type: 2}
+  m_PrefabInternal: {fileID: 17100930}
+--- !u!114 &847079410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847079409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  territori: []
+  contatorePrigione: 0
+  uscitaDiPrigione: 0
+  soldi: 0
+  controller: {fileID: 1840371097}
+  partenza: {fileID: 427875825}
+--- !u!4 &856156722 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
+>>>>>>> 70ec745e8634323a21e6d5a1d7b30d8b1e558b32
     type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
@@ -7819,6 +7846,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1225018019}
@@ -7883,6 +7911,28 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225018018}
 --- !u!1001 &1227301977
+=======
+  m_GameObject: {fileID: 1665585294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81175f04bdade8344a4e0dc62b448372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelList:
+  - {fileID: 1307866927}
+  - {fileID: 1950360227}
+  - {fileID: 1175505534}
+  - {fileID: 1042993051}
+  - {fileID: 1195361874}
+  - {fileID: 20343453}
+  controller: {fileID: 0}
+--- !u!4 &1674525988 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1886565473}
+--- !u!1001 &1687588569
+>>>>>>> 70ec745e8634323a21e6d5a1d7b30d8b1e558b32
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
