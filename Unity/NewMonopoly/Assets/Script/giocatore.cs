@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Giocatore : MonoBehaviour {
 
@@ -20,7 +21,7 @@ public class Giocatore : MonoBehaviour {
     //istruzioni per animazione 
     Vector3 targetPosition;
     Vector3 velocity;
-    float smoothTime = 1f;
+    float smoothTime = 0.5f;
 
 	
 	// Update is called once per frame, aggiungo l'animazione
@@ -30,7 +31,7 @@ public class Giocatore : MonoBehaviour {
 	}
 
 
-    void SetNewTargetPosition(Vector3 pos)
+    public void SetNewTargetPosition(Vector3 pos)
     {
 
         targetPosition = pos;
@@ -49,8 +50,8 @@ public class Giocatore : MonoBehaviour {
 
             else
             {
-                arrivo = arrivo.prossimaCasella[0];
-                Debug.Log(arrivo.prossimaCasella[0]);
+                arrivo = arrivo.prossimaCasella;
+                Debug.Log(arrivo.prossimaCasella);
             }
             }
         if (arrivo == null) return;
