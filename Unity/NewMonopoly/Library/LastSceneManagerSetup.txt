@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GIOCO.unity
-  isLoaded: 1
-  isActive: 1
+- path: Assets/GIOCO 1.unity
+  isLoaded: 0
+  isActive: 0
