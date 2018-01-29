@@ -11,6 +11,7 @@ public class giocatore : MonoBehaviour {
     public int soldi;
     public StateController controller;
     bool isAnimating;
+    public int PlayerId;
 
 	// Use this for initialization
 	void Start () {
@@ -45,7 +46,9 @@ public class giocatore : MonoBehaviour {
     {
         int spazio = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
 
-        
+        //controllo di chi è il turno 
+        if (controller.CurrentPlayerId != PlayerId) return;
+
         if (controller.IsDoneClicking == true) return; // ho già tirato , mo basta
 
         Casella arrivo = partenza;

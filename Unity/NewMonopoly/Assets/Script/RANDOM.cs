@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class RANDOM : MonoBehaviour {
 
+    public bool Passa;
     public Text[] text;
     public int risultato = 0; // Ogni volta che si tira si azzera il punteggio dei dadi
 
@@ -36,6 +37,8 @@ public class RANDOM : MonoBehaviour {
         //controllo se ho già tirato
         if(theStateController.IsDoneRolling == true)
         {
+            
+             //controllo che io abbia passato prima di poter ritirare 
             return;
         }
         text[0].text = UnityEngine.Random.Range(1, 7).ToString(); //Il 7 è escluso
@@ -48,6 +51,10 @@ public class RANDOM : MonoBehaviour {
         risultato = int.Parse(text[0].text) + int.Parse(text[1].text);
         text[2].text = risultato.ToString();
         theStateController.DiceTotal = risultato;
-
+        if (theStateController.IsDoneRolling == true)
+        {
+            if (int.Parse(text[0].text) == int.Parse(text[1].text)) theStateController.IsDoneRolling = false;
+        }
+        
     }
 }

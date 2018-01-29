@@ -21,7 +21,7 @@ public class passa : MonoBehaviour {
 
     public void OnMouseUp()
     {
-        if ( controller.IsDoneRolling)
+        if ( controller.IsDoneRolling == true)
         {
             Debug.Log("entrato nel if");
 
