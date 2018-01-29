@@ -33,12 +33,12 @@ public class RANDOM : MonoBehaviour {
     }
 
     public void Randomizza()
-    {   
+    {
         //controllo se ho già tirato
-        if(theStateController.IsDoneRolling == true)
+        if (theStateController.IsDoneRolling == true)
         {
-            
-             //controllo che io abbia passato prima di poter ritirare 
+
+            //controllo che io abbia passato prima di poter ritirare 
             return;
         }
         text[0].text = UnityEngine.Random.Range(1, 7).ToString(); //Il 7 è escluso
@@ -51,9 +51,18 @@ public class RANDOM : MonoBehaviour {
         risultato = int.Parse(text[0].text) + int.Parse(text[1].text);
         text[2].text = risultato.ToString();
         theStateController.DiceTotal = risultato;
-        if (theStateController.IsDoneRolling == true)
+
+        if (text[0].text.Equals(text[1].text)) TiroDoppio();
+
+    }
+    public void TiroDoppio() { 
+        if (theStateController.IsDoneRolling&&theStateController.IsDoneClicking == true)
         {
-            if (int.Parse(text[0].text) == int.Parse(text[1].text)) theStateController.IsDoneRolling = false;
+            if (int.Parse(text[0].text) == int.Parse(text[1].text))
+            {
+                Debug.Log("ho fatto un tiro doppio e sono nell'if");
+                theStateController.RollAgain();
+            }
         }
         
     }

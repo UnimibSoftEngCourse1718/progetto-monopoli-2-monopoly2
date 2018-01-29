@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class giocatore : MonoBehaviour {
 
+    Prigione prigione;
     public List<Casella> proprieta;
     public int contatorePrigione;
     public bool uscitaDiPrigione;
@@ -13,12 +14,14 @@ public class giocatore : MonoBehaviour {
     bool isAnimating;
     public int PlayerId;
 
+
 	// Use this for initialization
 	void Start () {
         proprieta = new List<Casella>();
         //int numero = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
         targetPosition = this.transform.position;
-      }
+        prigione = GameObject.FindObjectOfType<Prigione>();
+    }
 
     public Casella partenza;
 
@@ -30,11 +33,12 @@ public class giocatore : MonoBehaviour {
 	
 	// Update is called once per frame, aggiungo l'animazione
 	void Update () {
+        
         if (this.transform.position != targetPosition)
             this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);		
 	}
 
-
+    
     public void SetNewTargetPosition(Vector3 pos)
     {
 
@@ -42,8 +46,18 @@ public class giocatore : MonoBehaviour {
         velocity = Vector3.zero;
     }
 
+
      private void OnMouseUp()
     {
+        if(controller.doppio == 3)
+        {
+
+            this.contatorePrigione = 0;
+            this.SetNewTargetPosition(prigione.transform.position);
+            this.partenza = prigione;
+
+        }
+
         int spazio = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
 
         //controllo di chi è il turno 
@@ -60,7 +74,7 @@ public class giocatore : MonoBehaviour {
             else
             {
                 arrivo = arrivo.prossimaCasella;
-                Debug.Log(arrivo.prossimaCasella);
+               
             }
             }
         if (arrivo == null) return;
@@ -70,6 +84,20 @@ public class giocatore : MonoBehaviour {
         SetNewTargetPosition(arrivo.transform.position);
         partenza = arrivo;
         arrivo.Fermata(this);
+        
+
+    }
+
+    public void Paga(int importo)
+    {
+        if (soldi < importo) Bancarotta();
+        soldi = soldi - importo;
+    }
+
+    public void Bancarotta()
+    {
+        DestroyImmediate(this);
+
     }
 
     public void Acquisto(CasellaAcquistabile casella)
