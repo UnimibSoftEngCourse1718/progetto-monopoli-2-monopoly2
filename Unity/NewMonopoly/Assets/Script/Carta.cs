@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Carta
 {
@@ -56,6 +57,6 @@ public class Carta
     {
         // TODO //
         // disegna a schermo una scheda con dentro la stringa "testo"
-        return;
+        GameObject.Find("TestoCarta").GetComponent<Text>().text = this.testo;
     }
 }
