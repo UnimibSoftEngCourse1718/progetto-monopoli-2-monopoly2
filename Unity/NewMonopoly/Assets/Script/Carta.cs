@@ -25,6 +25,7 @@ public class Carta
             return;
         }
 
+        // TODO // da cambiare questa riga
         giocatoreDiTurno.soldi += this.valore;
 
         if (movimento == -3)
@@ -55,7 +56,6 @@ public class Carta
 
     public void Disegna()
     {
-        // TODO //
         // disegna a schermo una scheda con dentro la stringa "testo"
         GameObject.Find("TestoCarta").GetComponent<Text>().text = this.testo;
     }

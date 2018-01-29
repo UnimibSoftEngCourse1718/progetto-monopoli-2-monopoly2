@@ -8,8 +8,14 @@ public class Tassa : Casella
 
     public override void Fermata(giocatore giocatoreDiTurno)
     {
-        // TODO // Non ho abbastanza soldi
-        giocatoreDiTurno.soldi -= valoreTassa;
+        if (giocatoreDiTurno.soldi - valoreTassa >= 0)
+        {
+            giocatoreDiTurno.soldi -= valoreTassa;
+        }
+        else
+        {
+            // TODO // Non ho abbastanza soldi
+        }
         return;
     }
 }

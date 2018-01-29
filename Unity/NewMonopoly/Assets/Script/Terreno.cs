@@ -17,37 +17,44 @@ public class Terreno : CasellaAcquistabile
         else
         {
             // Terreno occupato // Pedaggio
-            // TODO // Non ho abbastanza soldi
             if (nEdifici == 0)
             {
-                giocatoreDiTurno.soldi -= pedaggio;
-                //proprietario.soldi += pedaggio;
+                PagaPedaggio(giocatoreDiTurno, pedaggio);
             }
             else if (nEdifici == 1)
             {
-                giocatoreDiTurno.soldi -= pedaggio1Casa;
-                proprietario.soldi += pedaggio1Casa;
+                PagaPedaggio(giocatoreDiTurno, pedaggio1Casa);
             }
             else if (nEdifici == 2)
             {
-                giocatoreDiTurno.soldi -= pedaggio2Case;
-                proprietario.soldi += pedaggio2Case;
+                PagaPedaggio(giocatoreDiTurno, pedaggio2Case);
             }
             else if (nEdifici == 3)
             {
-                giocatoreDiTurno.soldi -= pedaggio3Case;
-                proprietario.soldi += pedaggio3Case;
+                PagaPedaggio(giocatoreDiTurno, pedaggio3Case);
             }
             else if (nEdifici == 4)
             {
-                giocatoreDiTurno.soldi -= pedaggio4Case;
-                proprietario.soldi += pedaggio4Case;
+                PagaPedaggio(giocatoreDiTurno, pedaggio4Case);
             }
             else if (nEdifici == 5)
             {
-                giocatoreDiTurno.soldi -= pedaggioAlbergo;
-                proprietario.soldi += pedaggioAlbergo;
+                PagaPedaggio(giocatoreDiTurno, pedaggioAlbergo);
             }
+        }
+        return;
+    }
+
+    public void PagaPedaggio(giocatore giocatoreDiTurno, int importo)
+    {
+        if (giocatoreDiTurno.soldi - importo >= 0)
+        {
+            giocatoreDiTurno.soldi -= importo;
+            proprietario.soldi += importo;
+        }
+        else
+        {
+            // TODO // Non ho abbastanza soldi
         }
         return;
     }

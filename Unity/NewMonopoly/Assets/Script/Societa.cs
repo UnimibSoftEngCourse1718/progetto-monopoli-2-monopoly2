@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Societa : CasellaAcquistabile
 {
@@ -9,15 +10,45 @@ public class Societa : CasellaAcquistabile
     public int costo = 150;
     public int ipoteca = 75;
 
-    // Use this for initialization
-    void Start ()
+    public override void Fermata(giocatore giocatoreDiTurno)
     {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        if (proprietario == null)
+        {
+            // Terreno libero // Compra o Asta
+        }
+        else
+        {
+            // Terreno occupato // Pedaggio
+            int i = 0;
+            foreach (Casella item in proprietario.proprieta)
+            {
+                if (item.name == "13" || item.name == "29")
+                    i++;
+            }
+
+            if (i == 2)
+            {
+                PagaPedaggio(giocatoreDiTurno, 10 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
+            }
+            else
+            {
+                PagaPedaggio(giocatoreDiTurno, 4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
+            }
+        }
+        return;
+    }
+
+    public void PagaPedaggio(giocatore giocatoreDiTurno, int importo)
     {
-		
-	}
+        if (giocatoreDiTurno.soldi - importo >= 0)
+        {
+            giocatoreDiTurno.soldi -= importo;
+            proprietario.soldi += importo;
+        }
+        else
+        {
+            // TODO // Non ho abbastanza soldi
+        }
+        return;
+    }
 }
