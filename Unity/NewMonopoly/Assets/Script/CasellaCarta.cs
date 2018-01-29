@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CasellaCarta : Casella
 {
-    protected Carta[] carte = new Carta[16];
+    protected Carta[] carte;
 
     //Pesca una carta dal mazzo a caso e ne applica l'effetto
-    void PescaCarta()
+    public override void Fermata(giocatore giocatoreDiTurno)
     {
-        int i = UnityEngine.Random.Range(1, 17);
-        carte[i].Effetto();
+        int i = UnityEngine.Random.Range(0, carte.Length);
+        Debug.Log(carte[i].testo);
+        carte[i].Effetto(giocatoreDiTurno);
         carte[i].Disegna();
     }
 }
