@@ -15,5 +15,6 @@ public class CasellaInPrigione : Casella
         giocatoreDiTurno.contatorePrigione = 0;
         giocatoreDiTurno.SetNewTargetPosition(prigione.transform.position);
         giocatoreDiTurno.partenza = prigione;
+        return;
     }
 }

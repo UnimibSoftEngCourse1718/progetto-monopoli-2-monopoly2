@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -212,7 +213,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 8959638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 787, y: -409, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1428147740}
@@ -352,7 +353,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15569400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548, y: -134, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1018056998}
@@ -488,7 +489,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17380692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.649994, y: -294.95, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2106640450}
@@ -621,7 +622,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20343453}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -784.30994, y: 99, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -788,13 +789,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1866251476}
+  proprietario: {fileID: 0}
   costo: 200
   ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
   pedaggio4Stazioni: 200
-  proprietario: {fileID: 0}
 --- !u!1 &79361351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 2029841944}
+  proprietario: {fileID: 0}
   costo: 180
   ipoteca: 90
   costoEdificio: 100
@@ -1122,7 +1124,6 @@ MonoBehaviour:
   pedaggio4Case: 750
   pedaggioAlbergo: 950
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &151579007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1149,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 151579007}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548, y: 71.79993, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1541665550}
@@ -1346,7 +1347,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 171877166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -765.00006, y: -466.59998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1060006450}
@@ -1607,6 +1608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1256397954}
+  proprietario: {fileID: 0}
   costo: 160
   ipoteca: 80
   costoEdificio: 100
@@ -1617,7 +1619,6 @@ MonoBehaviour:
   pedaggio4Case: 700
   pedaggioAlbergo: 900
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &180735785 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -2212,6 +2213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1393797621}
+  proprietario: {fileID: 0}
   costo: 220
   ipoteca: 110
   costoEdificio: 150
@@ -2222,7 +2224,6 @@ MonoBehaviour:
   pedaggio4Case: 875
   pedaggioAlbergo: 1050
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &227061263 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -2253,7 +2254,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241832606}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 804, y: 438, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1162301750}
@@ -2590,6 +2591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1937972705}
+  proprietario: {fileID: 0}
   costo: 360
   ipoteca: 130
   costoEdificio: 150
@@ -2600,7 +2602,6 @@ MonoBehaviour:
   pedaggio4Case: 975
   pedaggioAlbergo: 1150
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1001 &314662888
 Prefab:
   m_ObjectHideFlags: 0
@@ -2765,6 +2766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1034592045}
+  proprietario: {fileID: 0}
   costo: 350
   ipoteca: 175
   costoEdificio: 200
@@ -2775,7 +2777,6 @@ MonoBehaviour:
   pedaggio4Case: 1300
   pedaggioAlbergo: 1500
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &318248998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,7 +2802,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 318248998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548, y: -65.50006, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1885564575}
@@ -3062,6 +3063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 2048578466}
+  proprietario: {fileID: 0}
   costo: 320
   ipoteca: 160
   costoEdificio: 200
@@ -3072,7 +3074,6 @@ MonoBehaviour:
   pedaggio4Case: 1200
   pedaggioAlbergo: 1400
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &346016403 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -3103,7 +3104,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 349887592}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548, y: 140.40002, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1601053720}
@@ -3229,7 +3230,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 370448949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -765.0002, y: -462.59998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1512512675}
@@ -3758,6 +3759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 175088026}
+  proprietario: {fileID: 0}
   costo: 140
   ipoteca: 70
   costoEdificio: 100
@@ -3768,7 +3770,6 @@ MonoBehaviour:
   pedaggio4Case: 625
   pedaggioAlbergo: 750
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &410105106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,7 +3795,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 410105106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -457.42993, y: 339, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 212804260}
@@ -3915,7 +3916,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 416224755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -560.3, y: 177, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -4256,6 +4257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1271015690}
+  proprietario: {fileID: 0}
   costo: 140
   ipoteca: 70
   costoEdificio: 100
@@ -4266,7 +4268,6 @@ MonoBehaviour:
   pedaggio4Case: 625
   pedaggioAlbergo: 750
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &434813991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,7 +4293,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 434813991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 103.400024, y: -260.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 389525850}
@@ -4412,7 +4413,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459136925}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -252, y: -486.20007, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811691652}
@@ -4480,7 +4481,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 502136197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -560.3, y: 421, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -4560,7 +4561,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 509889630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 103.400024, y: -260.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 201366867}
@@ -4671,7 +4672,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510158359}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 547.69995, y: 207.49988, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1357196902}
@@ -4952,9 +4953,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &554852422
@@ -5003,7 +5004,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 563708608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 787, y: -217.99998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2142867788}
@@ -5192,7 +5193,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 632650948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.599976, y: 434.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1219167060}
@@ -5346,7 +5347,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 678511159}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -252, y: -719, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1671668837}
@@ -5467,7 +5468,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 680942340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -789, y: -423.09998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811691652}
@@ -5541,7 +5542,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697084467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.850006, y: -294.95, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1542897834}
@@ -5821,7 +5822,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765608404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1095.4, y: -484, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811691652}
@@ -5893,7 +5894,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768079402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1377.4, y: -462.59998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1508200675}
@@ -5961,7 +5962,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789661066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -786.9999, y: 339, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -6035,7 +6036,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 801655433}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 434.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1053257435}
@@ -6183,7 +6184,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 814367631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -777.9001, y: -45.200012, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -6258,7 +6259,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 815758366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548, y: 4.7000732, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1553024038}
@@ -6384,7 +6385,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833116659}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -787, y: 177, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -6587,7 +6588,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 863564999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -787, y: 99, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -6662,7 +6663,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 900538706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7000694, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1878423966}
@@ -6783,7 +6784,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 905630647}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -787.0001, y: 257, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -7030,13 +7031,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1755680066}
+  proprietario: {fileID: 0}
   costo: 200
   ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
   pedaggio4Stazioni: 200
-  proprietario: {fileID: 0}
 --- !u!1 &942345964
 GameObject:
   m_ObjectHideFlags: 0
@@ -7062,7 +7063,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 942345964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -69.50006, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 650510099}
@@ -7323,6 +7324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1646363770}
+  proprietario: {fileID: 0}
   costo: 100
   ipoteca: 50
   costoEdificio: 50
@@ -7333,7 +7335,6 @@ MonoBehaviour:
   pedaggio4Case: 400
   pedaggioAlbergo: 550
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &1003772743 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -7363,7 +7364,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011932034}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -823, y: -479.7001, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811691652}
@@ -7580,7 +7581,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1020790688}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4000244, y: -263.89996, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1881114113}
@@ -7695,7 +7696,7 @@ Transform:
   m_GameObject: {fileID: 1026320566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -50, y: 0, z: 55}
-  m_LocalScale: {x: 1.1999999, y: 1, z: 1.1999999}
+  m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 722184922}
   m_RootOrder: 42
@@ -7711,7 +7712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  territori: []
+  proprieta: []
   contatorePrigione: 0
   uscitaDiPrigione: 0
   soldi: 0
@@ -7797,7 +7798,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1028620029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.000045776367, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1935879494}
@@ -7995,7 +7996,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1039527193}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -859.19995, y: -220.59998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -8069,7 +8070,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1042993051}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -786.9999, y: 257, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -8138,7 +8139,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1050861063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -457.42993, y: 99, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 916563483}
@@ -8257,7 +8258,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053257434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1379.4, y: -486.20007, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1164862711}
@@ -8373,7 +8374,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076780996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -560.3, y: 339, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -8447,7 +8448,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1078101499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 697084468}
@@ -8522,7 +8523,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1113120172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -102.59997, y: -260.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1620724595}
@@ -8711,7 +8712,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1156810100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 434.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1219167060}
@@ -8923,7 +8924,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175505534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -784.30994, y: 338.99997, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -9058,7 +9059,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1195361874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -784.30994, y: 177, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -9129,7 +9130,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1219167059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -824, y: -486.20007, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 632650949}
@@ -9171,7 +9172,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225018018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1099.8, y: -486.20007, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811691652}
@@ -9359,7 +9360,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239579749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -138, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 601787023}
@@ -9655,13 +9656,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1433453672}
+  proprietario: {fileID: 0}
   costo: 200
   ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
   pedaggio4Stazioni: 200
-  proprietario: {fileID: 0}
 --- !u!1001 &1271015688
 Prefab:
   m_ObjectHideFlags: 0
@@ -9785,9 +9786,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 407018900}
+  proprietario: {fileID: 0}
   costo: 150
   ipoteca: 75
-  proprietario: {fileID: 0}
 --- !u!1 &1274665104
 GameObject:
   m_ObjectHideFlags: 0
@@ -9813,7 +9814,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1274665104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -457.42993, y: 257, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1661169682}
@@ -10074,6 +10075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1638843803}
+  proprietario: {fileID: 0}
   costo: 300
   ipoteca: 150
   costoEdificio: 200
@@ -10084,7 +10086,6 @@ MonoBehaviour:
   pedaggio4Case: 1100
   pedaggioAlbergo: 1275
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &1307866927
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,7 +10110,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1307866927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -783.4099, y: 507.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -10178,7 +10179,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1327809589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -457.43, y: 507.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 182317055}
@@ -10523,6 +10524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 940914381}
+  proprietario: {fileID: 0}
   costo: 240
   ipoteca: 120
   costoEdificio: 150
@@ -10533,7 +10535,6 @@ MonoBehaviour:
   pedaggio4Case: 925
   pedaggioAlbergo: 1100
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &1422137506 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -10779,6 +10780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 2146286167}
+  proprietario: {fileID: 0}
   costo: 180
   ipoteca: 90
   costoEdificio: 100
@@ -10789,7 +10791,6 @@ MonoBehaviour:
   pedaggio4Case: 750
   pedaggioAlbergo: 950
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &1444486435
 GameObject:
   m_ObjectHideFlags: 0
@@ -10815,7 +10816,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1444486435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.30004883, y: -204.40009, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 186419850}
@@ -10947,7 +10948,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1458929627}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -252, y: -327.29993, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1824728331}
@@ -11074,7 +11075,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1479122040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -457.42993, y: 177, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1669632687}
@@ -11335,6 +11336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1227301979}
+  proprietario: {fileID: 0}
   costo: 220
   ipoteca: 110
   costoEdificio: 150
@@ -11345,7 +11347,6 @@ MonoBehaviour:
   pedaggio4Case: 875
   pedaggioAlbergo: 1050
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &1489355730
 GameObject:
   m_ObjectHideFlags: 0
@@ -11409,7 +11410,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1489355730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -540.8999, y: -220.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -11444,7 +11445,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1490972742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -560.3, y: 507.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -11519,7 +11520,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1508200674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 271.69992, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1114759539}
@@ -11641,7 +11642,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510496609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -102.59997, y: -260.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 164333011}
@@ -11751,7 +11752,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1512512674}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000015258789, y: 0.0000076293945, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 370448950}
@@ -11827,7 +11828,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539005686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -787, y: 421, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -11975,7 +11976,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1542897833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 697084468}
@@ -12049,7 +12050,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1552279130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -787.9, y: 507.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -12198,7 +12199,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1554333835}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.000030517578, y: 67.79993, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1016690075}
@@ -12320,7 +12321,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555621624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 136.39996, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4448276}
@@ -12569,7 +12570,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1571672492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.30004883, y: 203.49994, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 729443665}
@@ -12993,7 +12994,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625567305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -560.3, y: 257, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -13207,6 +13208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 193358750}
+  proprietario: {fileID: 0}
   costo: 300
   ipoteca: 150
   costoEdificio: 200
@@ -13217,7 +13219,6 @@ MonoBehaviour:
   pedaggio4Case: 1100
   pedaggioAlbergo: 1275
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1001 &1644032159
 Prefab:
   m_ObjectHideFlags: 0
@@ -13382,6 +13383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 843636735}
+  proprietario: {fileID: 0}
   costo: 60
   ipoteca: 30
   costoEdificio: 50
@@ -13392,7 +13394,6 @@ MonoBehaviour:
   pedaggio4Case: 320
   pedaggioAlbergo: 450
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &1644893450 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -13562,6 +13563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1845705257}
+  proprietario: {fileID: 0}
   costo: 120
   ipoteca: 60
   costoEdificio: 50
@@ -13572,7 +13574,6 @@ MonoBehaviour:
   pedaggio4Case: 450
   pedaggioAlbergo: 600
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &1647030498
 GameObject:
   m_ObjectHideFlags: 0
@@ -13640,6 +13641,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -13828,8 +13830,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1665585294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1307866928}
   - {fileID: 1950360228}
@@ -14076,7 +14078,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672489269}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 547.69995, y: -200.40009, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1584779643}
@@ -14342,6 +14344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1559549010}
+  proprietario: {fileID: 0}
   costo: 280
   ipoteca: 140
   costoEdificio: 150
@@ -14352,7 +14355,6 @@ MonoBehaviour:
   pedaggio4Case: 1025
   pedaggioAlbergo: 1200
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &1696167824 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -14388,7 +14390,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706210364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -457.42993, y: 421, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1611320822}
@@ -14649,6 +14651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 302615815}
+  proprietario: {fileID: 0}
   costo: 260
   ipoteca: 130
   costoEdificio: 150
@@ -14659,7 +14662,6 @@ MonoBehaviour:
   pedaggio4Case: 975
   pedaggioAlbergo: 1150
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &1768481020
 GameObject:
   m_ObjectHideFlags: 0
@@ -14684,7 +14686,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1768481020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 434.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1053257435}
@@ -14752,7 +14754,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782366906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -560.3, y: 99, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -14826,7 +14828,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796235370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -701.5, y: -220.59998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -15012,7 +15014,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1811691652
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15020,7 +15022,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1811691651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 804, y: 438, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1981226680}
@@ -15255,9 +15257,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1840371096
@@ -15452,6 +15454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1806506592}
+  proprietario: {fileID: 0}
   costo: 60
   ipoteca: 30
   costoEdificio: 50
@@ -15462,7 +15465,6 @@ MonoBehaviour:
   pedaggio4Case: 160
   pedaggioAlbergo: 250
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1001 &1845705255
 Prefab:
   m_ObjectHideFlags: 0
@@ -15759,6 +15761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 404324342}
+  proprietario: {fileID: 0}
   costo: 100
   ipoteca: 50
   costoEdificio: 50
@@ -15769,7 +15772,6 @@ MonoBehaviour:
   pedaggio4Case: 400
   pedaggioAlbergo: 550
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!4 &1873457437 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -16231,6 +16233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 427875825}
+  proprietario: {fileID: 0}
   costo: 400
   ipoteca: 200
   costoEdificio: 200
@@ -16241,7 +16244,6 @@ MonoBehaviour:
   pedaggio4Case: 1700
   pedaggioAlbergo: 2000
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1 &1899196385
 GameObject:
   m_ObjectHideFlags: 0
@@ -16266,7 +16268,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1899196385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17380693}
@@ -16414,7 +16416,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920144548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548, y: 275.69995, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 805877586}
@@ -16621,7 +16623,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1926855822}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -252, y: -522.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 79361352}
@@ -16658,7 +16660,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1935879493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -98.19995, y: -38.500004, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1028620030}
@@ -16878,9 +16880,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1687588571}
+  proprietario: {fileID: 0}
   costo: 150
   ipoteca: 75
-  proprietario: {fileID: 0}
 --- !u!1 &1950360227
 GameObject:
   m_ObjectHideFlags: 0
@@ -16905,7 +16907,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950360227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -786.9999, y: 421, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -16975,7 +16977,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1954646604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -777.9, y: -375, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 289809798}
@@ -17124,7 +17126,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1981226679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -803.9999, y: -438, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811691652}
@@ -17193,7 +17195,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1988133133}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.199997, y: -263.89996, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1253712569}
@@ -17303,7 +17305,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1991004099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1380.7, y: -479.7001, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811691652}
@@ -17511,6 +17513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 377980426}
+  proprietario: {fileID: 0}
   costo: 200
   ipoteca: 100
   costoEdificio: 100
@@ -17521,7 +17524,6 @@ MonoBehaviour:
   pedaggio4Case: 800
   pedaggioAlbergo: 1000
   nEdifici: 0
-  proprietario: {fileID: 0}
 --- !u!1001 &2048578464
 Prefab:
   m_ObjectHideFlags: 0
@@ -17645,13 +17647,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 531545482}
+  proprietario: {fileID: 0}
   costo: 200
   ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
   pedaggio4Stazioni: 200
-  proprietario: {fileID: 0}
 --- !u!1 &2072707557
 GameObject:
   m_ObjectHideFlags: 0
@@ -17677,7 +17679,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2072707557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -252, y: -522.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 108903767}
@@ -17798,7 +17800,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106640449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17380693}

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class giocatore : MonoBehaviour {
 
-    public Casella[] territori;
+    public List<Casella> proprieta;
     public int contatorePrigione;
     public bool uscitaDiPrigione;
     public int soldi;
@@ -14,6 +14,7 @@ public class giocatore : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        proprieta = new List<Casella>();
         //int numero = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
         targetPosition = this.transform.position;
       }
@@ -68,4 +69,15 @@ public class giocatore : MonoBehaviour {
         arrivo.Fermata(this);
     }
 
+    public void Acquisto(CasellaAcquistabile casella)
+    {
+        proprieta.Add(casella);
+        casella.proprietario = this;
+    }
+
+    public void Vendita(CasellaAcquistabile casella)
+    {
+        proprieta.Remove(casella);
+    }
 }
+ 

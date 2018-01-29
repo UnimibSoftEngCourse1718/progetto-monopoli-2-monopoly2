@@ -37,8 +37,17 @@ public class Carta
         if (movimento != 0)
         {
             // sposta giocatore alla casella numero "movimento"
-            GameObject casella = GameObject.Find(movimento.ToString());
+            Casella[] caselle = GameObject.FindObjectsOfType<Casella>();
+            Casella casella = null;
+            foreach (Casella item in caselle)
+            {
+                if (item.name == movimento.ToString())
+                {
+                    casella = item;
+                }
+            }
             giocatoreDiTurno.SetNewTargetPosition(casella.transform.position);
+            giocatoreDiTurno.partenza = casella;
             return;
         }
     }
