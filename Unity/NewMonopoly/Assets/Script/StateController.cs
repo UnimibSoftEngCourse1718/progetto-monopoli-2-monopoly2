@@ -50,7 +50,7 @@ public class StateController : MonoBehaviour
     {
 
         // Is the turn done?
-        if (IsDoneRolling && IsDoneClicking && AnimationsPlaying == 0)
+        if (IsDoneRolling && IsDoneClicking == true )
         {
             Debug.Log("Turn is done!");
             NewTurn();
