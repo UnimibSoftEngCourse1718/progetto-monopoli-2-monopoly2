@@ -40,62 +40,73 @@ public class Offri : MonoBehaviour {
 
     public void controllo()
     {
-         
+        /*Offerta1.text = "0";
+        Offerta2.text = "0";*/ //Inizializzare per evitare errore
+
+        ////NOTA BISOGNA INSERIRE SEMPRE UN VALORE IN DENARO, SE NON SI VUOLE OFFRIRE NULLA SI METTE 0
+        bool attiva = true;
         if(int.Parse(Offerta1.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
         {
             Nonhaisoldi.active = true;
             b.gameObject.active = true;
+            attiva = false;
         }
         //--------------------------------//
-        else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
+        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
             {
             if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player selezionato al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
+                attiva = false;
             }
-        }
+           }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
             {
             if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
+                attiva = false;
             }
-        }
+           }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
             {
             if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
+                attiva = false;
             }
-        }
+            }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
             {
             if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
+                attiva = false;
             }
-        }
+            }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
             {
             if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
+                attiva = false;
             }
-        }
+            }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
             {
             if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
+                attiva = false;
             }
-        }
-           else 
+            }
+           if( attiva == true)
             offri();
 
         // if (int.Parse(GameObject.Find("Inserisci_Soldi2").GetComponent<Text>().text) > )
