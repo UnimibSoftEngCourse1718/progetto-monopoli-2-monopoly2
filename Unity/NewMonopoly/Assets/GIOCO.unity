@@ -7699,7 +7699,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026320566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -54.72, y: 1.01, z: 55}
+  m_LocalPosition: {x: -54.72, y: 1.01, z: 60.1}
   m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 722184922}
@@ -10409,7 +10409,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1384624930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.000004, y: 1.01, z: 55.000008}
+  m_LocalPosition: {x: -47.9, y: 1.01, z: 55.000008}
   m_LocalScale: {x: 2.9999998, y: 1, z: 2.9999998}
   m_Children: []
   m_Father: {fileID: 722184922}
@@ -15427,6 +15427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bab5793d08170b549b60e046f75331fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verifica: 0
   NumberOfPlayers: 2
   CurrentPlayerId: 0
   DiceTotal: 0

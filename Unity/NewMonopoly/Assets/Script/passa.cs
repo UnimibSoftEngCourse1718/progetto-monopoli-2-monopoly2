@@ -8,7 +8,7 @@ public class passa : MonoBehaviour {
     public GameObject[] panelList = new GameObject[5];
 
     // Use this for initialization
-    bool premuto;
+    
     public StateController controller;
 	void Start () {
 		
@@ -21,18 +21,18 @@ public class passa : MonoBehaviour {
 
     public void OnMouseUp()
     {
-        if ( controller.IsDoneRolling == true)
+        if ( controller.IsDoneRolling&&controller.IsDoneClicking == true)
         {
             Debug.Log("entrato nel if");
 
-            premuto = true;
+            controller.verifica = true;
             Passaturno();
         }
     }
 
     public void Passaturno()
     {
-        if (premuto == true)
+        if (controller.verifica == true)
         {
             {
                 if (contatoregiocatoreattivo == 6)
