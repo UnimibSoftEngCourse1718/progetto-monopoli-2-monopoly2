@@ -29,6 +29,8 @@ public class Offri : MonoBehaviour {
     public Text text1;
     public Text text2;
 
+    public Text player2;
+
     public giocatore p1;
     public giocatore p2;
     public giocatore p3;
@@ -36,7 +38,7 @@ public class Offri : MonoBehaviour {
     public giocatore p5;
     public giocatore p6;
 
-    public StateController sc;
+  
 
     // Use this for initialization
     void Start() {
@@ -58,7 +60,7 @@ public class Offri : MonoBehaviour {
         ////NOTA BISOGNA INSERIRE SEMPRE UN VALORE IN DENARO, SE NON SI VUOLE OFFRIRE NULLA SI METTE 0
         bool attiva = true;
 
-        if(sc.CurrentPlayerId.Equals("P1"))
+        if (p1.attivo == true)
         {
             if (int.Parse(Offerta1.text) > p1.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
@@ -68,7 +70,7 @@ public class Offri : MonoBehaviour {
                 attiva = false;
             }
         }
-        else if (sc.CurrentPlayerId.Equals("P2"))
+        else if (p2.attivo == true)
         {
             if (int.Parse(Offerta1.text) > p2.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
@@ -78,7 +80,7 @@ public class Offri : MonoBehaviour {
                 attiva = false;
             }
         }
-        else if (sc.CurrentPlayerId.Equals("P3"))
+        else if (p3.attivo == true)
         {
             if (int.Parse(Offerta1.text) > p3.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
@@ -88,7 +90,7 @@ public class Offri : MonoBehaviour {
                 attiva = false;
             }
         }
-        else if (sc.CurrentPlayerId.Equals("P4"))
+        else if (p4.attivo == true)
         {
             if (int.Parse(Offerta1.text) > p4.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
@@ -98,7 +100,7 @@ public class Offri : MonoBehaviour {
                 attiva = false;
             }
         }
-        else if (sc.CurrentPlayerId.Equals("P5"))
+        else if (p5.attivo == true)
         {
             if (int.Parse(Offerta1.text) > p5.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
@@ -108,8 +110,8 @@ public class Offri : MonoBehaviour {
                 attiva = false;
             }
         }
-        else if (sc.CurrentPlayerId.Equals("P6"))
-        {
+        else if  (p6.attivo == true)
+            {
             if (int.Parse(Offerta1.text) > p6.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
 
@@ -120,54 +122,62 @@ public class Offri : MonoBehaviour {
         }
 
         //--------------------------------//
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
-            {
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
+        if (player2.text.Equals("Player 1"))
+        {
             if (int.Parse(Offerta2.text) > p1.soldi)//prendo il saldo del player selezionato al posto di 999// CurrentPlayerID.Soldi; 
+
+            {
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
+        
+        }
+            else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
+            if (player2.text.Equals("Player 2"))
+        {
+            if (int.Parse(Offerta2.text) > p2.soldi)
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
                 attiva = false;
             }
            }
-            else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
-            {
-            if (int.Parse(Offerta2.text) > p2.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
-            {
-                Nonhaisoldi.active = true;
-                b.gameObject.active = true;
-                attiva = false;
-            }
-           }
-            else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
-            {
-            if (int.Parse(Offerta2.text) > p3.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
+            if (player2.text.Equals("Player 3"))
+        {
+            if (int.Parse(Offerta2.text) > p3.soldi)
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
                 attiva = false;
             }
             }
-            else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
-            {
-            if (int.Parse(Offerta2.text) > p4.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
-            {
-                Nonhaisoldi.active = true;
-                b.gameObject.active = true;
-                attiva = false;
-            }
-            }
-            else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
-            {
-            if (int.Parse(Offerta2.text) > p5.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
+            if (player2.text.Equals("Player 4"))
+        {
+            if (int.Parse(Offerta2.text) > p4.soldi)
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
                 attiva = false;
             }
             }
-            else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
+            else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
+            if (player2.text.Equals("Player 5"))
+        {
+            if (int.Parse(Offerta2.text) > p5.soldi)
             {
-            if (int.Parse(Offerta2.text) > p6.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
+            }
+            else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
+            if (player2.text.Equals("Player 6"))
+        {
+            if (int.Parse(Offerta2.text) > p6.soldi)
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
@@ -188,10 +198,10 @@ public class Offri : MonoBehaviour {
 
     public void accetta()
     {
-        
-        int soldidaaggiungere = 0;
-        int soldidarimuovere = 0;
 
+        int oppertap1 = 0;
+        int offertap2 = 0;
+        
         //COSE DA FARE QUANDO SI ACCETTA
         /*InputField inf1 = GameObject.Find("Inserisci_Soldi1").GetComponent<InputField>();
         InputField inf2 = GameObject.Find("Inserisci_Soldi2").GetComponent<InputField>();
@@ -201,56 +211,93 @@ public class Offri : MonoBehaviour {
             soldidaaggiungere = int.Parse(inf2.text);*/
 
         if (Offerta1 != null)
-            soldidarimuovere = int.Parse(Offerta1.text);
-        if (Offerta2.text != null)
-            soldidaaggiungere = int.Parse(Offerta2.text);
+            oppertap1 = int.Parse(Offerta1.text); //soldi offerti da p1
+        if (Offerta2 != null)
+            offertap2 = int.Parse(Offerta2.text);//soldi offerti da p2
 
-        
+
+
         //PROBLEMA Capire come prendere i parametri del giocatore, probabile mi serva la struttura dati del giocatore, che non è ancora stata creata
-        int saldoPlayer1 = int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore corrente //state
+        int saldoPlayer1 = 0; // int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore corrente //state
         int saldoPlayer2 = 0;
 
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals ("Player 1"))
+        if (p1.attivo == true)
         {
-             saldoPlayer2 = int.Parse(GameObject.Find("SOLDI2").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato //state
+            //saldoPlayer1 = p1.soldi;
+            p1.soldi = p1.soldi + offertap2 - oppertap1;
         }
-        else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
+        else if (p2.attivo == true)
         {
-            saldoPlayer2 = int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato
+            p2.soldi = p2.soldi + offertap2 - oppertap1;
         }
-        else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
+        else if (p3.attivo == true)
         {
-            saldoPlayer2 = int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato
+            p3.soldi = p3.soldi + offertap2 - oppertap1;
         }
-        else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
+        else if (p4.attivo == true)
         {
-            saldoPlayer2 = int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato
+            p4.soldi = p4.soldi + offertap2 - oppertap1;
         }
-        else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
+        else if (p5.attivo == true)
         {
-            saldoPlayer2 = int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato
+            p5.soldi = p5.soldi + offertap2 - oppertap1;
         }
-        else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
+        else if (p6.attivo == true)
         {
-            saldoPlayer2 = int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato
+            p6.soldi = p6.soldi + offertap2 - oppertap1;
         }
+        //-------------------------------------------
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals ("Player 1"))
+        if (player2.text.Equals("Player 1"))
+        {
+            //saldoPlayer2 = int.Parse(GameObject.Find("SOLDI2").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato //state
+            //saldoPlayer2 = p1.soldi;
+            p1.soldi = p1.soldi + oppertap1 - offertap2;
+        }
+        else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
+        if (player2.text.Equals("Player 2"))
+        {
+            p2.soldi = p2.soldi + oppertap1 - offertap2;
+        }
+        else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
+        if (player2.text.Equals("Player 3"))
+        {
+            p3.soldi = p3.soldi + oppertap1 - offertap2;
+        }
+        else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
+        if (player2.text.Equals("Player 4"))
+        {
+            p4.soldi = p4.soldi + oppertap1 - offertap2;
+        }
+        else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
+        if (player2.text.Equals("Player 5"))
+        {
+            p5.soldi = p5.soldi + oppertap1 - offertap2;
+        }
+        else //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
+        if (player2.text.Equals("Player 6"))
+        {
+            p6.soldi = p6.soldi + oppertap1 - offertap2;
+        }
+
+
+        
+        /*saldoPlayer1 = saldoPlayer1 + soldidaaggiungere - soldidarimuovere; //Se non ci sono offrte sui soldi somma e sottrae 0, quindi rimane invarito, modifico lo il paramentro nel palyer
+        saldoPlayer2 = saldoPlayer2 + soldidaaggiungere - soldidarimuovere;*/
+        /*GameObject.Find("SOLDI1").GetComponent<Text>().text = saldoPlayer1.ToString();
+        GameObject.Find("SOLDI2").GetComponent<Text>().text = saldoPlayer2.ToString();*/
 
 
         GameObject.Find("TRATTATIVA").active = false;
-        saldoPlayer1 = saldoPlayer1 + soldidaaggiungere - soldidarimuovere; //Se non ci sono offrte sui soldi somma e sottrae 0, quindi rimane invarito, modifico lo il paramentro nel palyer
-        saldoPlayer2 = saldoPlayer2 + soldidaaggiungere - soldidarimuovere;
-        GameObject.Find("SOLDI1").GetComponent<Text>().text = saldoPlayer1.ToString();
-        GameObject.Find("SOLDI2").GetComponent<Text>().text = saldoPlayer2.ToString();
 
-        
-       // SceneManager.LoadScene(2);
+        // SceneManager.LoadScene(2);
     }
 
     public void offri()
     {
         offri1.active = false;
         accetta1.active = true;
-        controproposta1.active = true;
+        controproposta1.active = false;
         rifiuta1.active = true;
         bga.active = false;
         bga1.active = true;
