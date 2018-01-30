@@ -23,7 +23,7 @@ public class giocatore : MonoBehaviour {
     // Use this for initialization
     void Start () {
         proprieta = new List<Casella>();
-        //int numero = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
+        soldi = 2000;
         targetPosition = this.transform.position;
         prigione = GameObject.FindObjectOfType<Prigione>();
         controller = GameObject.FindObjectOfType<StateController>();
