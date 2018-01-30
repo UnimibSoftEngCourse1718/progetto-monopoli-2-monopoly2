@@ -25,8 +25,10 @@ public class StateController : MonoBehaviour
         NumberOfPlayers = giocatoriSelezionati;
         for (int i = 6; i > NumberOfPlayers; i--) 
         {
-            GameObject.Find("Player" + i).SetActive(false);
-            GameObject.Find("P" + i).SetActive(false);
+            //GameObject.Find("Player" + i).SetActive(false);
+            //GameObject.Find("P" + i).SetActive(false);
+            Destroy(GameObject.Find("Player" + i));
+            Destroy(GameObject.Find("P" + i));
         }
     }
 
