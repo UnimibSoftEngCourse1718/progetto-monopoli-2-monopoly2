@@ -55,8 +55,8 @@ public class RANDOM : MonoBehaviour {
         if (text[0].text.Equals(text[1].text)) TiroDoppio();
 
     }
-    public void TiroDoppio() { 
-        if (theStateController.IsDoneRolling&&theStateController.IsDoneClicking == true)
+    public void TiroDoppio() {
+        if (theStateController.IsDoneRolling && theStateController.IsDoneClicking == true)
         {
             if (int.Parse(text[0].text) == int.Parse(text[1].text))
             {

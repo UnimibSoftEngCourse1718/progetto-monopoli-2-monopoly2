@@ -13,16 +13,6 @@ public class giocatore : MonoBehaviour {
     public StateController controller;
     bool isAnimating;
     public int PlayerId;
-
-
-	// Use this for initialization
-	void Start () {
-        proprieta = new List<Casella>();
-        //int numero = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
-        targetPosition = this.transform.position;
-        prigione = GameObject.FindObjectOfType<Prigione>();
-    }
-
     public Casella partenza;
 
     //istruzioni per animazione 
@@ -30,32 +20,43 @@ public class giocatore : MonoBehaviour {
     Vector3 velocity;
     float smoothTime = 0.5f;
 
-	
+    // Use this for initialization
+    void Start () {
+        proprieta = new List<Casella>();
+        //int numero = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
+        targetPosition = this.transform.position;
+        prigione = GameObject.FindObjectOfType<Prigione>();
+        controller = GameObject.FindObjectOfType<StateController>();
+
+        Casella[] caselle = GameObject.FindObjectsOfType<Casella>();
+        foreach (Casella item in caselle)
+        {
+            if (item.name == "1")
+            {
+                partenza = item;
+            }
+        }
+    }
+
 	// Update is called once per frame, aggiungo l'animazione
 	void Update () {
-        
         if (this.transform.position != targetPosition)
             this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);		
 	}
 
-    
     public void SetNewTargetPosition(Vector3 pos)
     {
-
-        targetPosition = pos;
+        targetPosition = pos + new Vector3(0, 1, 0);
         velocity = Vector3.zero;
     }
 
-
-     private void OnMouseUp()
+    private void OnMouseUp()
     {
-        if(controller.doppio == 3)
+        if (controller.doppio == 3)
         {
-
             this.contatorePrigione = 0;
             this.SetNewTargetPosition(prigione.transform.position);
             this.partenza = prigione;
-
         }
 
         int spazio = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
@@ -66,17 +67,14 @@ public class giocatore : MonoBehaviour {
         if (controller.IsDoneClicking == true) return; // ho già tirato , mo basta
 
         Casella arrivo = partenza;
-        for(int i = 0; i < spazio; i++)
+        for (int i = 0; i < spazio; i++)
         {
-
             if (partenza == null) arrivo = partenza;
-
             else
             {
                 arrivo = arrivo.prossimaCasella;
-               
             }
-            }
+        }
         if (arrivo == null) return;
 
         controller.IsDoneClicking = true;
@@ -84,8 +82,6 @@ public class giocatore : MonoBehaviour {
         SetNewTargetPosition(arrivo.transform.position);
         partenza = arrivo;
         arrivo.Fermata(this);
-        
-
     }
 
     public void Paga(int importo)
@@ -97,7 +93,6 @@ public class giocatore : MonoBehaviour {
     public void Bancarotta()
     {
         DestroyImmediate(this);
-
     }
 
     public void Acquisto(CasellaAcquistabile casella)

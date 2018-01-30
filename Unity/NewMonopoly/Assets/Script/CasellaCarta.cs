@@ -10,7 +10,6 @@ public class CasellaCarta : Casella
     public override void Fermata(giocatore giocatoreDiTurno)
     {
         int i = UnityEngine.Random.Range(0, carte.Length);
-        Debug.Log(carte[i].testo);
         carte[i].Effetto(giocatoreDiTurno);
         carte[i].Disegna();
     }

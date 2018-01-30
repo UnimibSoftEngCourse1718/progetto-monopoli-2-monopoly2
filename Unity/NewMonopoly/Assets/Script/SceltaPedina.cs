@@ -21,10 +21,9 @@ public class SceltaPedina : MonoBehaviour {
     public void numgiocatori()
     {
         contatoregiocatori++;
-		GameObject.Find ("Numero").GetComponent<Text>().text = contatoregiocatori.ToString();
+        GameObject.Find("Numero").GetComponent<Text>().text = contatoregiocatori.ToString();
         //this.gameObject.interactable = false;
         EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false;
-
-
+        StateController.giocatoriSelezionati = contatoregiocatori;
     }
 }

@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class passa : MonoBehaviour {
 
     private int contatoregiocatoreattivo = 1;
-    public GameObject[] panelList = new GameObject[5];
+    public GameObject[] panelList;
+    public StateController controller;
 
     // Use this for initialization
-    
-    public StateController controller;
-	void Start () {
+    void Start () {
 		
 	}
 	
@@ -21,10 +20,8 @@ public class passa : MonoBehaviour {
 
     public void OnMouseUp()
     {
-        if ( controller.IsDoneRolling&&controller.IsDoneClicking == true)
+        if (controller.IsDoneRolling && controller.IsDoneClicking == true)
         {
-            Debug.Log("entrato nel if");
-
             controller.verifica = true;
             Passaturno();
         }
@@ -34,23 +31,24 @@ public class passa : MonoBehaviour {
     {
         if (controller.verifica == true)
         {
+            GameObject.Find("Messaggi").GetComponent<Text>().text = "";
+            GameObject.Find("Dado 1").GetComponent<Text>().text = "";
+            GameObject.Find("Dado 2").GetComponent<Text>().text = "";
+            GameObject.Find("Risultato Dadi").GetComponent<Text>().text = "";
+
+            if (contatoregiocatoreattivo == controller.NumberOfPlayers) 
             {
-                if (contatoregiocatoreattivo == 6)
-                {
-                    contatoregiocatoreattivo = 0;
-                    panelList[contatoregiocatoreattivo].active = true;
-                    panelList[5].active = false;
-                    contatoregiocatoreattivo++;
-                }
-                else
-                {
-                    panelList[contatoregiocatoreattivo].active = true;
-                    panelList[contatoregiocatoreattivo - 1].active = false;
-                    contatoregiocatoreattivo++;
-                }
+                contatoregiocatoreattivo = 0;
+                panelList[contatoregiocatoreattivo].SetActive(true);
+                panelList[controller.NumberOfPlayers - 1].SetActive(false);
+                contatoregiocatoreattivo++;
+            }
+            else
+            {
+                panelList[contatoregiocatoreattivo].SetActive(true);
+                panelList[contatoregiocatoreattivo - 1].SetActive(false);
+                contatoregiocatoreattivo++;
             }
         }
-
-        
     }
 }

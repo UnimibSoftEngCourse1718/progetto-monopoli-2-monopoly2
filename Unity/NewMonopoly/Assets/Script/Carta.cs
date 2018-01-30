@@ -56,7 +56,6 @@ public class Carta
 
     public void Disegna()
     {
-        // disegna a schermo una scheda con dentro la stringa "testo"
-        GameObject.Find("TestoCarta").GetComponent<Text>().text = this.testo;
+        GameObject.Find("Messaggi").GetComponent<Text>().text = this.testo;
     }
 }

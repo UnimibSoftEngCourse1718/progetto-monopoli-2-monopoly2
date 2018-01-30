@@ -5,31 +5,33 @@ using UnityEngine.UI;
 
 public class StateController : MonoBehaviour
 {
+    // Modificate questo numero per avere n giocatori senza dover 
+    // far partire il play di unity dal menu principale
+    static public int giocatoriSelezionati = 6;
 
-    // Use this for initialization
-    void Start()
-    {
-        
-    }
     public bool verifica = false;
-    public int NumberOfPlayers = 2;
+    public int NumberOfPlayers;
     public int CurrentPlayerId = 0;
     Button pulsante;
     public int DiceTotal;
     public int doppio;
-
-    // NOTE: enum / statemachine is probably a stronger choice, but I'm aiming for simpler to explain.
     public bool IsDoneRolling = false;
     public bool IsDoneClicking = false;
-
-
     public GameObject NoLegalMovesPopup;
 
+    // Use this for initialization
+    void Start()
+    {
+        NumberOfPlayers = giocatoriSelezionati;
+        for (int i = 6; i > NumberOfPlayers; i--) 
+        {
+            GameObject.Find("Player" + i).SetActive(false);
+            GameObject.Find("P" + i).SetActive(false);
+        }
+    }
 
     public void NewTurn()
     {
-        Debug.Log("NewTurn");
-        
         IsDoneRolling = false;
         IsDoneClicking = false;
         verifica = false;
@@ -38,7 +40,6 @@ public class StateController : MonoBehaviour
 
     public void RollAgain()
     {
-        Debug.Log("RollAgain");
         IsDoneRolling = false;
         IsDoneClicking = false;
         verifica = false;
@@ -46,23 +47,13 @@ public class StateController : MonoBehaviour
     }
 
     // Update is called once per frame
-    
     void Update()
     {
-       
-        // Is the turn done?
-      
+        // È finito il turno?
         if (IsDoneRolling && IsDoneClicking && verifica == true )
         {
-            Debug.Log("Turn is done!");
             NewTurn();
             return;
         }
-
-        
-
     }
-
-    
-    
-  }
+}
