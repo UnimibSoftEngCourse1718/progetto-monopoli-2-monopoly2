@@ -15,6 +15,7 @@ public class Stazione : CasellaAcquistabile
     {
         if (proprietario == null)
         {
+            // TODO //
             // Terreno libero // Compra o Asta
         }
         else

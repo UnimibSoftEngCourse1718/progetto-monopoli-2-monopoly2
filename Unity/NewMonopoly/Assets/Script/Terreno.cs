@@ -12,6 +12,7 @@ public class Terreno : CasellaAcquistabile
     {
         if (proprietario == null)
         {
+            // TODO //
             // Terreno libero // Compra o Asta
         }
         else

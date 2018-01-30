@@ -40,6 +40,9 @@ public class passa : MonoBehaviour {
             {
                 contatoregiocatoreattivo = 0;
                 panelList[contatoregiocatoreattivo].SetActive(true);
+
+                //Image overlay = panelList[contatoregiocatoreattivo].child
+
                 panelList[controller.NumberOfPlayers - 1].SetActive(false);
                 contatoregiocatoreattivo++;
             }
