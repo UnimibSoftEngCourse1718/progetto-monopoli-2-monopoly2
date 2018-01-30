@@ -13,6 +13,7 @@ public class giocatore : MonoBehaviour {
     public StateController controller;
     bool isAnimating;
     public int PlayerId;
+    public bool attivo;
     public Casella partenza;
 
     //istruzioni per animazione 

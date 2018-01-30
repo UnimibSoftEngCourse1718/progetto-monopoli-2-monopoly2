@@ -7,8 +7,8 @@ public class StateController : MonoBehaviour
 {
     // Modificate questo numero per avere n giocatori senza dover 
     // far partire il play di unity dal menu principale
-    static public int giocatoriSelezionati = 6;
-
+    static public int giocatoriSelezionati = 3;
+    public GameObject[] listaGiocatori;
     public bool verifica = false;
     public int NumberOfPlayers;
     public int CurrentPlayerId = 0;
@@ -30,6 +30,13 @@ public class StateController : MonoBehaviour
             Destroy(GameObject.Find("Player" + i));
             Destroy(GameObject.Find("P" + i));
         }
+
+        listaGiocatori = new GameObject[NumberOfPlayers];
+        for (int i = 1; i <= NumberOfPlayers; i++)
+        {
+            listaGiocatori[i - 1] = GameObject.Find("P" + i);
+            Debug.Log(GameObject.Find("P" + i));
+        }
     }
 
     public void NewTurn()
@@ -37,7 +44,21 @@ public class StateController : MonoBehaviour
         IsDoneRolling = false;
         IsDoneClicking = false;
         verifica = false;
-        CurrentPlayerId = (CurrentPlayerId + 1) % NumberOfPlayers;
+
+        for (int i = CurrentPlayerId; i < listaGiocatori.Length; i++)
+        {
+            if (i == listaGiocatori.Length - 1)
+            {
+                i = -1;
+                CurrentPlayerId = 0;
+            }
+
+            if (listaGiocatori[i + 1] != null)
+            {
+                CurrentPlayerId = i + 1;
+                i = listaGiocatori.Length;
+            }
+        }
     }
 
     public void RollAgain()
