@@ -120,7 +120,7 @@ public class Offri : MonoBehaviour {
 
     public void accetta()
     {
-
+        
         int soldidaaggiungere = 0;
         int soldidarimuovere = 0;
 
@@ -166,15 +166,16 @@ public class Offri : MonoBehaviour {
         {
             saldoPlayer2 = int.Parse(GameObject.Find("SOLDI1").GetComponent<Text>().text); //Prendo il saldo del giocatore selezionato
         }
-        
 
 
+        GameObject.Find("TRATTATIVA").active = false;
         saldoPlayer1 = saldoPlayer1 + soldidaaggiungere - soldidarimuovere; //Se non ci sono offrte sui soldi somma e sottrae 0, quindi rimane invarito, modifico lo il paramentro nel palyer
         saldoPlayer2 = saldoPlayer2 + soldidaaggiungere - soldidarimuovere;
         GameObject.Find("SOLDI1").GetComponent<Text>().text = saldoPlayer1.ToString();
         GameObject.Find("SOLDI2").GetComponent<Text>().text = saldoPlayer2.ToString();
 
-        SceneManager.LoadScene(2);
+        
+       // SceneManager.LoadScene(2);
     }
 
     public void offri()

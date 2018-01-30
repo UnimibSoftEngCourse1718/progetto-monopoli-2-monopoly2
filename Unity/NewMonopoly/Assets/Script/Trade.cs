@@ -60,6 +60,7 @@ public class Trade : MonoBehaviour {
             //GameObject.Find("Player2").GetComponent<Text>().text = "Player 6";
         }
 
+
     }
     
 }
