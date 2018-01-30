@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class AggiungiProprieta : MonoBehaviour {
     public int player;
+    public GameObject sv1;
+    public GameObject sv2;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -15,8 +17,19 @@ public class AggiungiProprieta : MonoBehaviour {
 		
 	}
 
-    public void AddPropieta()
+    public void AddPropieta1()
     {
+        sv1.active = true;
+        //Mostra proprietà player attivo
         //do something
     }
+
+    public void AddPropieta2()
+    {
+        sv2.active = true;
+
+        //do something
+    }
+
+
 }
