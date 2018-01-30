@@ -2162,6 +2162,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1811691655}
+        m_MethodName: controproposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &171987585
@@ -3875,6 +3886,12 @@ MonoBehaviour:
   pedaggio4Case: 975
   pedaggioAlbergo: 1150
   nEdifici: 0
+--- !u!114 &309108476 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114620223159387606, guid: 996331e311863294d95a60de9e24ff29,
+    type: 2}
+  m_PrefabInternal: {fileID: 361124221}
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
 --- !u!1001 &314662888
 Prefab:
   m_ObjectHideFlags: 0
@@ -6717,6 +6734,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1811691655}
+        m_MethodName: controproposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &529204822
@@ -9156,6 +9184,13 @@ MonoBehaviour:
   Prop21_Player2: {fileID: 1852246792}
   b1: {fileID: 892458621}
   b2: {fileID: 293057612}
+  p1: {fileID: 1847801202}
+  p2: {fileID: 309108476}
+  p3: {fileID: 1197778065}
+  p4: {fileID: 2068463019}
+  p5: {fileID: 1394995935}
+  p6: {fileID: 1134747640}
+  sc: {fileID: 0}
 --- !u!4 &772258637 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -11572,6 +11607,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1811691655}
+        m_MethodName: controproposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1008341692
@@ -13873,6 +13919,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1134430375}
+--- !u!114 &1134747640 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114620223159387606, guid: 996331e311863294d95a60de9e24ff29,
+    type: 2}
+  m_PrefabInternal: {fileID: 351225791}
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
 --- !u!4 &1144520959 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -14609,6 +14661,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1195361874}
+--- !u!114 &1197778065 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114620223159387606, guid: 996331e311863294d95a60de9e24ff29,
+    type: 2}
+  m_PrefabInternal: {fileID: 2075796234}
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
 --- !u!4 &1200228040 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -16508,6 +16566,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1811691655}
+        m_MethodName: controproposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1338702181
@@ -16998,6 +17067,12 @@ MonoBehaviour:
   pedaggio4Case: 925
   pedaggioAlbergo: 1100
   nEdifici: 0
+--- !u!114 &1394995935 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114620223159387606, guid: 996331e311863294d95a60de9e24ff29,
+    type: 2}
+  m_PrefabInternal: {fileID: 1922535213}
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
 --- !u!1 &1418923781
 GameObject:
   m_ObjectHideFlags: 0
@@ -21041,6 +21116,7 @@ MonoBehaviour:
   TRATTATIVA: {fileID: 1811691651}
   player1: {fileID: 801655435}
   Player2: {fileID: 632650950}
+  sc: {fileID: 0}
 --- !u!1 &1671668836
 GameObject:
   m_ObjectHideFlags: 0
@@ -22485,6 +22561,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1811691655}
+        m_MethodName: controproposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1797063874
@@ -22893,6 +22980,15 @@ MonoBehaviour:
   accetta1: {fileID: 1458929627}
   controproposta1: {fileID: 2072707557}
   rifiuta1: {fileID: 678511159}
+  text1: {fileID: 1899196387}
+  text2: {fileID: 1078101501}
+  p1: {fileID: 1847801202}
+  p2: {fileID: 309108476}
+  p3: {fileID: 1197778065}
+  p4: {fileID: 2068463019}
+  p5: {fileID: 1394995935}
+  p6: {fileID: 1134747640}
+  sc: {fileID: 0}
 --- !u!1 &1818988226
 GameObject:
   m_ObjectHideFlags: 0
@@ -23519,7 +23615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verifica: 0
   NumberOfPlayers: 0
-  CurrentPlayerId: 0
+  CurrentPlayerId: 1
   DiceTotal: 0
   doppio: 0
   IsDoneRolling: 0
@@ -23901,6 +23997,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 429341678}
+--- !u!114 &1847801202 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114620223159387606, guid: 996331e311863294d95a60de9e24ff29,
+    type: 2}
+  m_PrefabInternal: {fileID: 1529240071}
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
 --- !u!1 &1852246790
 GameObject:
   m_ObjectHideFlags: 0
@@ -24921,7 +25023,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1897622973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 790, y: 302.4, z: 0}
+  m_LocalPosition: {x: 805, y: 265, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1665585299}
@@ -27456,6 +27558,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2066804962}
+--- !u!114 &2068463019 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114620223159387606, guid: 996331e311863294d95a60de9e24ff29,
+    type: 2}
+  m_PrefabInternal: {fileID: 1828347352}
+  m_Script: {fileID: 11500000, guid: 80b9567e4d3078349a68ca0fe9265644, type: 3}
 --- !u!1 &2072707557
 GameObject:
   m_ObjectHideFlags: 0

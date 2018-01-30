@@ -60,6 +60,15 @@ public class AggiungiProprieta : MonoBehaviour {
     public GameObject b1;
     public GameObject b2;
 
+    public giocatore p1;
+    public giocatore p2;
+    public giocatore p3;
+    public giocatore p4;
+    public giocatore p5;
+    public giocatore p6;
+
+    public StateController sc;
+
     // Use this for initialization
     void Start () {
 		
@@ -102,28 +111,31 @@ public class AggiungiProprieta : MonoBehaviour {
     public void AddPropieta2()
     {
         b2.active = false;
-        //sv2.active = true;
-        Prop1_Player2.text = "Proprietà 1";
-        Prop2_Player2.text = "Proprietà 2";
-        Prop3_Player2.text = "Proprietà 3";
-        Prop4_Player2.text = "Proprietà 4";
-        Prop5_Player2.text = "Proprietà 5";
-        Prop6_Player2.text = "Proprietà 6";
-        Prop7_Player2.text = "Proprietà 7";
-        Prop8_Player2.text = "Proprietà 8";
-        Prop9_Player2.text = "Proprietà 9";
-        Prop10_Player2.text = "Proprietà 10";
-        Prop11_Player2.text = "Proprietà 11";
-        Prop12_Player2.text = "Proprietà 12";
-        Prop13_Player2.text = "Proprietà 13";
-        Prop14_Player2.text = "Proprietà 14";
-        Prop15_Player2.text = "Proprietà 15";
-        Prop16_Player2.text = "Proprietà 16";
-        Prop17_Player2.text = "Proprietà 17";
-        Prop18_Player2.text = "Proprietà 18";
-        Prop19_Player2.text = "Proprietà 19";
-        Prop20_Player2.text = "Proprietà 20";
-        Prop21_Player2.text = "Proprietà 21";
+        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
+        {
+            
+            //Prop1_Player2.text = p1.proprieta[0];
+            Prop2_Player2.text = "Proprietà 2";
+            Prop3_Player2.text = "Proprietà 3";
+            Prop4_Player2.text = "Proprietà 4";
+            Prop5_Player2.text = "Proprietà 5";
+            Prop6_Player2.text = "Proprietà 6";
+            Prop7_Player2.text = "Proprietà 7";
+            Prop8_Player2.text = "Proprietà 8";
+            Prop9_Player2.text = "Proprietà 9";
+            Prop10_Player2.text = "Proprietà 10";
+            Prop11_Player2.text = "Proprietà 11";
+            Prop12_Player2.text = "Proprietà 12";
+            Prop13_Player2.text = "Proprietà 13";
+            Prop14_Player2.text = "Proprietà 14";
+            Prop15_Player2.text = "Proprietà 15";
+            Prop16_Player2.text = "Proprietà 16";
+            Prop17_Player2.text = "Proprietà 17";
+            Prop18_Player2.text = "Proprietà 18";
+            Prop19_Player2.text = "Proprietà 19";
+            Prop20_Player2.text = "Proprietà 20";
+            Prop21_Player2.text = "Proprietà 21";
+        }
 
         //do something
     }
@@ -160,6 +172,8 @@ public class AggiungiProprieta : MonoBehaviour {
 
     public void rifiuta()
     {
+        b1.active = true;
+        b2.active = true;
         GameObject.Find("TRATTATIVA").active = false;
         
     }

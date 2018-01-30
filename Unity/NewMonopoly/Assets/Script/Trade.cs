@@ -13,6 +13,8 @@ public class Trade : MonoBehaviour {
     public Text player1;
     public Text Player2;
 
+    public StateController sc;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -25,7 +27,32 @@ public class Trade : MonoBehaviour {
 
     public void trade()
     {
-        TRATTATIVA.active = true;
+        TRATTATIVA.active = true;/*
+        if (sc.CurrentPlayerId.Equals("P1"))
+        {
+            player1.text = "Player 1";
+        }
+        else if (sc.CurrentPlayerId.Equals("P2"))
+        {
+            player1.text = "Player 2";
+        }
+        else if (sc.CurrentPlayerId.Equals("P3"))
+        {
+            player1.text = "Player 3";
+        }
+        else if (sc.CurrentPlayerId.Equals("P4"))
+        {
+            player1.text = "Player 4";
+        }
+        else if (sc.CurrentPlayerId.Equals("P5"))
+        {
+            player1.text = "Player 5";
+        }
+        else if (sc.CurrentPlayerId.Equals("P6"))
+        {
+            player1.text = "Player 6";
+        }*/
+        
         player1.text = "PLAYER ATTIVO"; //state controller prendo il nome del giocatore corrente
         //GameObject.Find("Player1").GetComponent<Text>().text = "PLAYER ATTIVO"; //state controller prendo il nome del giocatore corrente
         

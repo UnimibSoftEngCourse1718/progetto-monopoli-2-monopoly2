@@ -26,6 +26,18 @@ public class Offri : MonoBehaviour {
     public GameObject controproposta1;
     public GameObject rifiuta1;
 
+    public Text text1;
+    public Text text2;
+
+    public giocatore p1;
+    public giocatore p2;
+    public giocatore p3;
+    public giocatore p4;
+    public giocatore p5;
+    public giocatore p6;
+
+    public StateController sc;
+
     // Use this for initialization
     void Start() {
        
@@ -45,16 +57,72 @@ public class Offri : MonoBehaviour {
 
         ////NOTA BISOGNA INSERIRE SEMPRE UN VALORE IN DENARO, SE NON SI VUOLE OFFRIRE NULLA SI METTE 0
         bool attiva = true;
-        if(int.Parse(Offerta1.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+
+        if(sc.CurrentPlayerId.Equals("P1"))
         {
-            Nonhaisoldi.active = true;
-            b.gameObject.active = true;
-            attiva = false;
+            if (int.Parse(Offerta1.text) > p1.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            {
+
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
         }
+        else if (sc.CurrentPlayerId.Equals("P2"))
+        {
+            if (int.Parse(Offerta1.text) > p2.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            {
+
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
+        }
+        else if (sc.CurrentPlayerId.Equals("P3"))
+        {
+            if (int.Parse(Offerta1.text) > p3.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            {
+
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
+        }
+        else if (sc.CurrentPlayerId.Equals("P4"))
+        {
+            if (int.Parse(Offerta1.text) > p4.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            {
+
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
+        }
+        else if (sc.CurrentPlayerId.Equals("P5"))
+        {
+            if (int.Parse(Offerta1.text) > p5.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            {
+
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
+        }
+        else if (sc.CurrentPlayerId.Equals("P6"))
+        {
+            if (int.Parse(Offerta1.text) > p6.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            {
+
+                Nonhaisoldi.active = true;
+                b.gameObject.active = true;
+                attiva = false;
+            }
+        }
+
         //--------------------------------//
         if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
             {
-            if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player selezionato al posto di 999// CurrentPlayerID.Soldi; 
+            if (int.Parse(Offerta2.text) > p1.soldi)//prendo il saldo del player selezionato al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
@@ -63,7 +131,7 @@ public class Offri : MonoBehaviour {
            }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
             {
-            if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            if (int.Parse(Offerta2.text) > p2.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
@@ -72,7 +140,7 @@ public class Offri : MonoBehaviour {
            }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
             {
-            if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            if (int.Parse(Offerta2.text) > p3.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
@@ -81,7 +149,7 @@ public class Offri : MonoBehaviour {
             }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
             {
-            if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            if (int.Parse(Offerta2.text) > p4.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
@@ -90,7 +158,7 @@ public class Offri : MonoBehaviour {
             }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
             {
-            if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            if (int.Parse(Offerta2.text) > p5.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
@@ -99,7 +167,7 @@ public class Offri : MonoBehaviour {
             }
             else if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
             {
-            if (int.Parse(Offerta2.text) > 999)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
+            if (int.Parse(Offerta2.text) > p6.soldi)//prendo il saldo del player attivo al posto di 999// CurrentPlayerID.Soldi; 
             {
                 Nonhaisoldi.active = true;
                 b.gameObject.active = true;
@@ -190,6 +258,7 @@ public class Offri : MonoBehaviour {
 
     public void controproposta()
     {
+        
         offri1.active = true;
         accetta1.active = false;
         controproposta1.active = false;
