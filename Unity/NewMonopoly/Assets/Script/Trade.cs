@@ -10,6 +10,8 @@ using UnityEngine.EventSystems;
 public class Trade : MonoBehaviour {
 
     public GameObject TRATTATIVA;
+    public Text player1;
+    public Text Player2;
 
 	// Use this for initialization
 	void Start () {
@@ -24,31 +26,38 @@ public class Trade : MonoBehaviour {
     public void trade()
     {
         TRATTATIVA.active = true;
-        GameObject.Find("Player1").GetComponent<Text>().text = "PLAYER ATTIVO"; //state controller prendo il nome del giocatore corrente
+        player1.text = "PLAYER ATTIVO"; //state controller prendo il nome del giocatore corrente
+        //GameObject.Find("Player1").GetComponent<Text>().text = "PLAYER ATTIVO"; //state controller prendo il nome del giocatore corrente
         
-        if(EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trade1"))
+        if(EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa1"))
         {
-            GameObject.Find("Player2").GetComponent<Text>().text = "Player 1";
+            Player2.text = "Player 1";
+            //GameObject.Find("Player2").GetComponent<Text>().text = "Player 1";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trade2"))
+        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa2"))
         {
-            GameObject.Find("Player2").GetComponent<Text>().text = "Player 2";
+            Player2.text = "Player 2";
+            //GameObject.Find("Player2").GetComponent<Text>().text = "Player 2";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trade3"))
+        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa3"))
         {
-            GameObject.Find("Player2").GetComponent<Text>().text = "Player 3";
+            Player2.text = "Player 3";
+            //GameObject.Find("Player2").GetComponent<Text>().text = "Player 3";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trade4"))
+        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa4"))
         {
-            GameObject.Find("Player2").GetComponent<Text>().text = "Player 4";
+            Player2.text = "Player 4";
+            //GameObject.Find("Player2").GetComponent<Text>().text = "Player 4";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trade5"))
+        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa5"))
         {
-            GameObject.Find("Player2").GetComponent<Text>().text = "Player 5";
+            Player2.text = "Player 5";
+            //GameObject.Find("Player2").GetComponent<Text>().text = "Player 5";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trade6"))
+        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa6"))
         {
-            GameObject.Find("Player2").GetComponent<Text>().text = "Player 6";
+            Player2.text = "Player 6";
+            //GameObject.Find("Player2").GetComponent<Text>().text = "Player 6";
         }
 
     }
