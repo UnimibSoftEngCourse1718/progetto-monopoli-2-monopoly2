@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class giocatore : MonoBehaviour {
 
     Prigione prigione;
-    public List<Casella> proprieta;
+    public List<CasellaAcquistabile> proprieta;
     public int contatorePrigione;
     public bool uscitaDiPrigione;
     public int soldi;
+    public Text testoSoldi;
     public StateController controller;
     bool isAnimating;
     public int PlayerId;
@@ -23,8 +24,9 @@ public class giocatore : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        proprieta = new List<Casella>();
-        soldi = 2000;
+        proprieta = new List<CasellaAcquistabile>();
+        soldi = 2500;
+        testoSoldi.text = this.soldi.ToString() + " $";
         targetPosition = this.transform.position;
         prigione = GameObject.FindObjectOfType<Prigione>();
         controller = GameObject.FindObjectOfType<StateController>();
@@ -39,15 +41,15 @@ public class giocatore : MonoBehaviour {
         }
     }
 
-	// Update is called once per frame, aggiungo l'animazione
-	void Update () {
+	void Update ()
+    {
         if (this.transform.position != targetPosition)
-            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);		
+            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);
 	}
 
     public void SetNewTargetPosition(Vector3 pos)
     {
-        targetPosition = pos + new Vector3(0, 1, 0);
+        targetPosition = pos + new Vector3(-3, 3, 0);
         velocity = Vector3.zero;
     }
 
@@ -87,24 +89,27 @@ public class giocatore : MonoBehaviour {
 
     public void Paga(int importo)
     {
-        if (soldi < importo) Bancarotta();
-        soldi = soldi - importo;
+        this.soldi -= importo;
+        this.testoSoldi.text = this.soldi.ToString() + " $";
+        if (this.soldi < 0)
+            this.Bancarotta();
     }
 
     public void Bancarotta()
     {
-        DestroyImmediate(this);
+        StateController.rimuoviGiocatore(this);
     }
 
-    public void Acquisto(CasellaAcquistabile casella)
+    public void AggiungiProprieta(CasellaAcquistabile casella)
     {
-        proprieta.Add(casella);
+        this.proprieta.Add(casella);
         casella.proprietario = this;
+        casella.cambioProprietario();
     }
 
-    public void Vendita(CasellaAcquistabile casella)
+    public void RimuoviProprieta(CasellaAcquistabile casella)
     {
-        proprieta.Remove(casella);
+        this.proprieta.Remove(casella);
     }
 }
  

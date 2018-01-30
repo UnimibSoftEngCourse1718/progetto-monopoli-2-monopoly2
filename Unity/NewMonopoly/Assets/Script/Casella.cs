@@ -12,6 +12,6 @@ public class Casella : MonoBehaviour
         // Se il giocatore passa dalla casella 1, il via, e non è stato
         // diretto alla prigione allora prende i soldi
         if (this.name == "1" && giocatoreDiTurno.contatorePrigione < 0)
-            giocatoreDiTurno.soldi += 200;
+            giocatoreDiTurno.Paga(-200);
     }
 }

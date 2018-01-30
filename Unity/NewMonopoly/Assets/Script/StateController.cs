@@ -7,7 +7,7 @@ public class StateController : MonoBehaviour
 {
     // Modificate questo numero per avere n giocatori senza dover 
     // far partire il play di unity dal menu principale
-    static public int giocatoriSelezionati = 3;
+    static public int giocatoriSelezionati = 6;
     public GameObject[] listaGiocatori;
     public bool verifica = false;
     public int NumberOfPlayers;
@@ -25,8 +25,6 @@ public class StateController : MonoBehaviour
         NumberOfPlayers = giocatoriSelezionati;
         for (int i = 6; i > NumberOfPlayers; i--) 
         {
-            //GameObject.Find("Player" + i).SetActive(false);
-            //GameObject.Find("P" + i).SetActive(false);
             Destroy(GameObject.Find("Player" + i));
             Destroy(GameObject.Find("P" + i));
         }
@@ -35,7 +33,6 @@ public class StateController : MonoBehaviour
         for (int i = 1; i <= NumberOfPlayers; i++)
         {
             listaGiocatori[i - 1] = GameObject.Find("P" + i);
-            Debug.Log(GameObject.Find("P" + i));
         }
     }
 
@@ -77,6 +74,29 @@ public class StateController : MonoBehaviour
         {
             NewTurn();
             return;
+        }
+    }
+
+    static public void rimuoviGiocatore(giocatore g)
+    {
+        if (g == null)
+            return;
+
+        foreach (CasellaAcquistabile item in g.proprieta)
+        {
+            item.proprietario = null;
+            item.cambioProprietario();
+        }
+
+        GameObject.Find("Messaggi").GetComponent<Text>().text = g.name + " È Stato eliminato";
+        DestroyImmediate(GameObject.Find(g.name));
+
+        if (GameObject.FindObjectsOfType<giocatore>().Length == 1)
+        {
+            GameObject.Find("Messaggi").GetComponent<Text>().text += "\n\nPartita Finita";
+            GameObject.Find("TIRA").SetActive(false);
+            GameObject.Find("PASSA").SetActive(false);
+            GameObject.Find("COSTRUISCI").SetActive(false);
         }
     }
 }

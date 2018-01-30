@@ -12,7 +12,7 @@ public class Probabilita : CasellaCarta
         carte[2] = new Carta("Rimborso tassa sul reddito: ritirate 20 dalla banca", 20, 0);
         carte[3] = new Carta("Avete vinto il secondo premio in un concorso di bellezza: ritirate 10", 10, 0);
         carte[4] = new Carta("Scade il vostro premio di assicurazione: pagate 50", -50, 0);
-        carte[5] = new Carta("Uscite gratis di prigione, potete conservare questo bonus oppure venderlo", 0, 0);
+        carte[5] = new Carta("Uscite gratis di prigione la prossima volta che ci finite", 0, 0);
         carte[6] = new Carta("Avete vinto un premio di consolazione alla lotteria di Merano: ritirate 100", 100, 0);
         carte[7] = new Carta("Andate fino al via", 0, 1);
         carte[8] = new Carta("Pagate una multa di 30", -30, 0);

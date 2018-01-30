@@ -15,8 +15,8 @@ public class Stazione : CasellaAcquistabile
     {
         if (proprietario == null)
         {
-            // TODO //
-            // Terreno libero // Compra o Asta
+            schermataAcquisto.stazione = this;
+            schermataAcquisto.OnEnable();
         }
         else
         {
@@ -29,35 +29,13 @@ public class Stazione : CasellaAcquistabile
             }
 
             if (nStazioni == 0)
-            {
-                PagaPedaggio(giocatoreDiTurno, pedaggio);
-            }
+                giocatoreDiTurno.Paga(pedaggio);
             else if (nStazioni == 1)
-            {
-                PagaPedaggio(giocatoreDiTurno, pedaggio2Stazioni);
-            }
+                giocatoreDiTurno.Paga(pedaggio2Stazioni);
             else if (nStazioni == 2)
-            {
-                PagaPedaggio(giocatoreDiTurno, pedaggio3Stazioni);
-            }
+                giocatoreDiTurno.Paga(pedaggio3Stazioni);
             else if (nStazioni == 3)
-            {
-                PagaPedaggio(giocatoreDiTurno, pedaggio4Stazioni);
-            }
-        }
-        return;
-    }
-
-    public void PagaPedaggio(giocatore giocatoreDiTurno, int importo)
-    {
-        if (giocatoreDiTurno.soldi - importo >= 0)
-        {
-            giocatoreDiTurno.soldi -= importo;
-            proprietario.soldi += importo;
-        }
-        else
-        {
-            // TODO // Non ho abbastanza soldi
+                giocatoreDiTurno.Paga(pedaggio4Stazioni);
         }
         return;
     }

@@ -16,7 +16,7 @@ public class Imprevisto : CasellaCarta
         carte[6] = new Carta("Multa di 20 per aver guidato senza patente", -20, 0);
         carte[7] = new Carta("Andate fino a Chieti", 0, 40);
         carte[8] = new Carta("Matrimonio in famiglia: spese impreviste 150", -150, 0);
-        carte[9] = new Carta("Uscite gratis di prigione, potete conservare questo bonus oppure venderlo", 0, 0);
+        carte[9] = new Carta("Uscite gratis di prigione la prossima volta che ci finite", 0, 0);
         carte[10] = new Carta("Maturano le cedole delle vostre cartelle di rendita, ritirate 150", 150, 0);
         carte[11] = new Carta("La banca vi paga gli interessi del vostro conto corrente, ritirate 75", 75, 0);
         carte[12] = new Carta("Andate avanti sino al via", 0, 1);

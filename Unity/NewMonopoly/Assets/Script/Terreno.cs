@@ -12,50 +12,42 @@ public class Terreno : CasellaAcquistabile
     {
         if (proprietario == null)
         {
-            // TODO //
-            // Terreno libero // Compra o Asta
+            schermataAcquisto.terreno = this;
+            schermataAcquisto.OnEnable();
         }
         else
         {
             // Terreno occupato // Pedaggio
             if (nEdifici == 0)
             {
-                PagaPedaggio(giocatoreDiTurno, pedaggio);
+                giocatoreDiTurno.Paga(pedaggio);
+                proprietario.Paga(-pedaggio);
             }
             else if (nEdifici == 1)
             {
-                PagaPedaggio(giocatoreDiTurno, pedaggio1Casa);
+                giocatoreDiTurno.Paga(pedaggio1Casa);
+                proprietario.Paga(-pedaggio1Casa);
             }
             else if (nEdifici == 2)
             {
-                PagaPedaggio(giocatoreDiTurno, pedaggio2Case);
+                giocatoreDiTurno.Paga(pedaggio2Case);
+                proprietario.Paga(-pedaggio2Case);
             }
             else if (nEdifici == 3)
             {
-                PagaPedaggio(giocatoreDiTurno, pedaggio3Case);
+                giocatoreDiTurno.Paga(pedaggio3Case);
+                proprietario.Paga(-pedaggio3Case);
             }
             else if (nEdifici == 4)
             {
-                PagaPedaggio(giocatoreDiTurno, pedaggio4Case);
+                giocatoreDiTurno.Paga(pedaggio4Case);
+                proprietario.Paga(-pedaggio4Case);
             }
             else if (nEdifici == 5)
             {
-                PagaPedaggio(giocatoreDiTurno, pedaggioAlbergo);
+                giocatoreDiTurno.Paga(pedaggioAlbergo);
+                proprietario.Paga(-pedaggioAlbergo);
             }
-        }
-        return;
-    }
-
-    public void PagaPedaggio(giocatore giocatoreDiTurno, int importo)
-    {
-        if (giocatoreDiTurno.soldi - importo >= 0)
-        {
-            giocatoreDiTurno.soldi -= importo;
-            proprietario.soldi += importo;
-        }
-        else
-        {
-            // TODO // Non ho abbastanza soldi
         }
         return;
     }

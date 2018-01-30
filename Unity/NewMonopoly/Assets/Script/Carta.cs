@@ -25,8 +25,7 @@ public class Carta
             return;
         }
 
-        // TODO // da cambiare questa riga
-        giocatoreDiTurno.soldi += this.valore;
+        giocatoreDiTurno.Paga(-this.valore);
 
         if (movimento == -3)
         {
@@ -34,6 +33,7 @@ public class Carta
             movimento = int.Parse(giocatoreDiTurno.partenza.name) - 3;
             if (movimento <= 0)
                 movimento += 40;
+            giocatoreDiTurno.partenza.Fermata(giocatoreDiTurno);
         }
 
         if (movimento != 0)
@@ -50,6 +50,7 @@ public class Carta
             }
             giocatoreDiTurno.SetNewTargetPosition(casella.transform.position);
             giocatoreDiTurno.partenza = casella;
+            giocatoreDiTurno.partenza.Fermata(giocatoreDiTurno);
             return;
         }
     }

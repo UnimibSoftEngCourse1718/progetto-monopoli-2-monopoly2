@@ -14,8 +14,8 @@ public class Societa : CasellaAcquistabile
     {
         if (proprietario == null)
         {
-            // TODO //
-            // Terreno libero // Compra o Asta
+            schermataAcquisto.societa = this;
+            schermataAcquisto.OnEnable();
         }
         else
         {
@@ -28,27 +28,9 @@ public class Societa : CasellaAcquistabile
             }
 
             if (i == 2)
-            {
-                PagaPedaggio(giocatoreDiTurno, 10 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
-            }
+                giocatoreDiTurno.Paga(10 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
             else
-            {
-                PagaPedaggio(giocatoreDiTurno, 4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
-            }
-        }
-        return;
-    }
-
-    public void PagaPedaggio(giocatore giocatoreDiTurno, int importo)
-    {
-        if (giocatoreDiTurno.soldi - importo >= 0)
-        {
-            giocatoreDiTurno.soldi -= importo;
-            proprietario.soldi += importo;
-        }
-        else
-        {
-            // TODO // Non ho abbastanza soldi
+                giocatoreDiTurno.Paga(4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
         }
         return;
     }
