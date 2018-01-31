@@ -22,7 +22,7 @@ public class passa : MonoBehaviour {
     {
         if (controller.verifica == true)
         {
-            GameObject.Find("Messaggi").GetComponent<Text>().text = "";
+            //GameObject.Find("Messaggi").GetComponent<Text>().text = "";
             GameObject.Find("Dado 1").GetComponent<Text>().text = "";
             GameObject.Find("Dado 2").GetComponent<Text>().text = "";
             GameObject.Find("Risultato Dadi").GetComponent<Text>().text = "";

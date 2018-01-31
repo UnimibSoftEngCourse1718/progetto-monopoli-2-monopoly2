@@ -17,6 +17,12 @@ public class CasellaAcquistabile : Casella {
             return;
         }
 
+        if (this as Terreno != null)
+        {
+            Terreno terreno = this as Terreno;
+            terreno.RimuoviEdifici();
+        }
+
         segnalinoProprietario = GameObject.CreatePrimitive(PrimitiveType.Cube);
         segnalinoProprietario.GetComponent<Collider>().enabled = false;
         segnalinoProprietario.transform.position = this.transform.position;

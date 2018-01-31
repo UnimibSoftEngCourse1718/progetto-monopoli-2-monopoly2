@@ -16,7 +16,7 @@ public class Stazione : CasellaAcquistabile
         if (proprietario == null)
         {
             schermataAcquisto.stazione = this;
-            schermataAcquisto.OnEnable();
+            schermataAcquisto.Visualizza();
         }
         else
         {

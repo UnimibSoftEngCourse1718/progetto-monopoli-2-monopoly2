@@ -10,7 +10,7 @@ public class SchermataAcquisto : MonoBehaviour
     public Stazione stazione;
     public GameObject schermata;
 
-    public void OnEnable ()
+    public void Visualizza ()
     {
         if (terreno != null)
         {

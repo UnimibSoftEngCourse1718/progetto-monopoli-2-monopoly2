@@ -8,16 +8,18 @@ public class StateController : MonoBehaviour
     // Modificate questo numero per avere n giocatori senza dover 
     // far partire il play di unity dal menu principale
     static public int giocatoriSelezionati = 6;
-    public GameObject[] listaGiocatori;
-    public bool verifica = false;
     public int NumberOfPlayers;
+    public GameObject[] listaGiocatori;
     public int CurrentPlayerId = 0;
     Button pulsante;
     public int DiceTotal;
     public int doppio;
     public bool IsDoneRolling = false;
     public bool IsDoneClicking = false;
+    public SchermataAvviso schermataAvviso;
+    public GameObject uscitaPrigione;
     public GameObject NoLegalMovesPopup;
+    public bool verifica = false;
 
     // Use this for initialization
     void Start()
@@ -56,6 +58,10 @@ public class StateController : MonoBehaviour
                 i = listaGiocatori.Length;
             }
         }
+
+        foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
+            if (item.attivo)
+                uscitaPrigione.SetActive(item.uscitaDiPrigione);
     }
 
     public void RollAgain()
@@ -77,26 +83,36 @@ public class StateController : MonoBehaviour
         }
     }
 
-    static public void rimuoviGiocatore(giocatore g)
+    public void RimuoviGiocatore(giocatore g)
     {
         if (g == null)
             return;
 
+        Terreno terreno;
         foreach (CasellaAcquistabile item in g.proprieta)
         {
+            terreno = item as Terreno;
+            terreno.RimuoviEdifici();
             item.proprietario = null;
             item.CambioProprietario();
         }
-
-        GameObject.Find("Messaggi").GetComponent<Text>().text = g.name + " È Stato eliminato";
+        this.Avviso(g.name + " È Stato eliminato");
+        //GameObject.Find("Messaggi").GetComponent<Text>().text = g.name + " È Stato eliminato";
         DestroyImmediate(GameObject.Find(g.name));
 
         if (GameObject.FindObjectsOfType<giocatore>().Length == 1)
         {
-            GameObject.Find("Messaggi").GetComponent<Text>().text += "\n\nPartita Finita";
+            this.Avviso("Partita Finita");
+            //GameObject.Find("Messaggi").GetComponent<Text>().text += "\n\nPartita Finita";
             GameObject.Find("TIRA").SetActive(false);
             GameObject.Find("PASSA").SetActive(false);
             GameObject.Find("COSTRUISCI").SetActive(false);
         }
+    }
+
+    public void Avviso(string messaggio)
+    {
+        schermataAvviso.gameObject.SetActive(true);
+        schermataAvviso.GetComponentInChildren<Image>().GetComponentInChildren<Text>().text = messaggio;
     }
 }

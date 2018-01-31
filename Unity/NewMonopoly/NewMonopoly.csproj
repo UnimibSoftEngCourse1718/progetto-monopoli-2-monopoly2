@@ -299,6 +299,7 @@
     <Compile Include="Assets\Script\RANDOM.cs" />
     <Compile Include="Assets\Script\SceltaPedina.cs" />
     <Compile Include="Assets\Script\SchermataAcquisto.cs" />
+    <Compile Include="Assets\Script\SchermataAvviso.cs" />
     <Compile Include="Assets\Script\SchermataCostruzione.cs" />
     <Compile Include="Assets\Script\Societa.cs" />
     <Compile Include="Assets\Script\StateController.cs" />

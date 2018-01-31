@@ -97,7 +97,7 @@ public class giocatore : MonoBehaviour {
 
     public void Bancarotta()
     {
-        StateController.rimuoviGiocatore(this);
+        controller.RimuoviGiocatore(this);
     }
 
     public void AggiungiProprieta(CasellaAcquistabile casella)

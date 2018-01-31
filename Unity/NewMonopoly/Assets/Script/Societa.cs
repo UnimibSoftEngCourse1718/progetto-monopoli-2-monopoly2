@@ -15,7 +15,7 @@ public class Societa : CasellaAcquistabile
         if (proprietario == null)
         {
             schermataAcquisto.societa = this;
-            schermataAcquisto.OnEnable();
+            schermataAcquisto.Visualizza();
         }
         else
         {

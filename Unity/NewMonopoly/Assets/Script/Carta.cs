@@ -29,11 +29,10 @@ public class Carta
 
         if (movimento == -3)
         {
-            // sposta giocatore di 3 caselle indietro
+            // Imposta lo spostamento a 3 caselle indietro
             movimento = int.Parse(giocatoreDiTurno.partenza.name) - 3;
             if (movimento <= 0)
                 movimento += 40;
-            giocatoreDiTurno.partenza.Fermata(giocatoreDiTurno);
         }
 
         if (movimento != 0)
@@ -57,6 +56,6 @@ public class Carta
 
     public void Disegna()
     {
-        GameObject.Find("Messaggi").GetComponent<Text>().text = this.testo;
+        GameObject.FindObjectOfType<StateController>().Avviso(this.testo);
     }
 }
