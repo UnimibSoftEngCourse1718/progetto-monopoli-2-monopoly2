@@ -17,7 +17,8 @@ public class AggiungiProprieta : MonoBehaviour
     private int i = 0;
     private int y = 0;
 
-    //public Text prova;
+    public Text prova;
+    public Text prova1;
 
     public Text Prop1_Player1;
     public Text Prop2_Player1;
@@ -452,7 +453,7 @@ public class AggiungiProprieta : MonoBehaviour
         //EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false;
         arr1[i] = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         i++;
-        //prova.text = arr1[0];
+        prova.text = arr1[0];
     }
 
     public void scegli2()
@@ -460,7 +461,7 @@ public class AggiungiProprieta : MonoBehaviour
         //EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false;
         arr2[y] = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         y++;
-
+        prova1.text = arr2[0];
 
     }
 
@@ -470,7 +471,7 @@ public class AggiungiProprieta : MonoBehaviour
         {
             for (int z = 0; z < 21; z++)
             {
-                Debug.Log(arr1[z]);
+                //Debug.Log(arr1[z]);
                 if (item.nomeCasella == arr1[z])
                 {
                     if (p1.attivo == true)
@@ -583,7 +584,7 @@ public class AggiungiProprieta : MonoBehaviour
                 }
 
             }
-
+        
             i = 0;
             y = 0;
             for (i = 0; i < 21; i++)
@@ -596,15 +597,29 @@ public class AggiungiProprieta : MonoBehaviour
                 arr2[y] = "Nessuna Proprietà";
             }
 
+        b1.active = true;
+        b2.active = true;
 
-
-        }
+    }
    
 
     public void rifiuta()
     {
         b1.active = true;
         b2.active = true;
+
+        i = 0;
+        y = 0;
+        for (i = 0; i < 21; i++)
+        {
+            arr1[i] = "Nessuna Proprietà";
+        }
+
+        for (y = 0; y < 21; y++)
+        {
+            arr2[y] = "Nessuna Proprietà";
+        }
+
 
         GameObject.Find("TRATTATIVA").active = false;
 
