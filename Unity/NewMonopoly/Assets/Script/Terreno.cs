@@ -141,5 +141,6 @@ public class Terreno : CasellaAcquistabile
         foreach (GameObject item in edifici)
             DestroyImmediate(item);
         edifici.Clear();
+        this.nEdifici = 0;
     }
 }

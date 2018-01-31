@@ -38,7 +38,14 @@ public class Offri : MonoBehaviour {
     public giocatore p5;
     public giocatore p6;
 
-  
+    public Text soldi1;
+    public Text soldi2;
+    public Text soldi3;
+    public Text soldi4;
+    public Text soldi5;
+    public Text soldi6;
+
+
 
     // Use this for initialization
     void Start() {
@@ -281,7 +288,12 @@ public class Offri : MonoBehaviour {
         }
 
 
-        
+        soldi1.text = p1.soldi.ToString();
+        soldi2.text = p2.soldi.ToString();
+        soldi3.text = p3.soldi.ToString();
+        soldi4.text = p4.soldi.ToString();
+        soldi5.text = p5.soldi.ToString();
+        soldi6.text = p6.soldi.ToString();
         /*saldoPlayer1 = saldoPlayer1 + soldidaaggiungere - soldidarimuovere; //Se non ci sono offrte sui soldi somma e sottrae 0, quindi rimane invarito, modifico lo il paramentro nel palyer
         saldoPlayer2 = saldoPlayer2 + soldidaaggiungere - soldidarimuovere;*/
         /*GameObject.Find("SOLDI1").GetComponent<Text>().text = saldoPlayer1.ToString();

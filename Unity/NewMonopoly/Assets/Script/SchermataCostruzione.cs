@@ -92,7 +92,7 @@ public class SchermataCostruzione : MonoBehaviour
         {
             // Uso questo controllo per evitare che venga costruito un edificio e distrutto il giocatore
             // I destroy non sono esattamente immediati e veniva lasciato un edificio di nessuno
-            if (giocatoreDiturno.soldi - terreno.costoEdificio >= 0)
+            if (giocatoreDiturno.soldi - terreno.costoEdificio >= 0 && terreno.nEdifici <= 5)
             {
                 giocatoreDiturno.Paga(terreno.costoEdificio);
                 terreno.CostruzioneEdificio();
