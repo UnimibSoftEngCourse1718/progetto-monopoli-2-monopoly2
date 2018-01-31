@@ -470,7 +470,8 @@ public class AggiungiProprieta : MonoBehaviour
         {
             for (int z = 0; z < 21; z++)
             {
-                if (item.nomeCasella.Equals(arr1[z]))
+                Debug.Log(arr1[z]);
+                if (item.nomeCasella == arr1[z])
                 {
                     if (p1.attivo == true)
                     {
@@ -507,20 +508,22 @@ public class AggiungiProprieta : MonoBehaviour
                     }
                     if (Player2.text.Equals("Player 3"))
                     {
-                        p2.AggiungiProprieta(item);
+                        p3.AggiungiProprieta(item);
                     }
                     if (Player2.text.Equals("Player 4"))
                     {
-                        p2.AggiungiProprieta(item);
+                        p4.AggiungiProprieta(item);
                     }
                     if (Player2.text.Equals("Player 5"))
                     {
-                        p2.AggiungiProprieta(item);
+                        p5.AggiungiProprieta(item);
                     }
                     if (Player2.text.Equals("Player 6"))
                     {
-                        p2.AggiungiProprieta(item);
+                        p6.AggiungiProprieta(item);
                     }
+                }
+
                     //------------------//
                     if (item.nomeCasella.Equals(arr2[z]))
                     {
@@ -535,22 +538,18 @@ public class AggiungiProprieta : MonoBehaviour
                         if (p3.attivo == true)
                         {
                             p3.AggiungiProprieta(item);
-
                         }
                         if (p4.attivo == true)
                         {
                             p4.AggiungiProprieta(item);
-
                         }
                         if (p5.attivo == true)
                         {
                             p5.AggiungiProprieta(item);
-
                         }
                         if (p6.attivo == true)
                         {
                             p6.AggiungiProprieta(item);
-
                         }
                         //-------------------------------//
                         if (Player2.text.Equals("Player 1"))
@@ -600,7 +599,7 @@ public class AggiungiProprieta : MonoBehaviour
 
 
         }
-    }
+   
 
     public void rifiuta()
     {

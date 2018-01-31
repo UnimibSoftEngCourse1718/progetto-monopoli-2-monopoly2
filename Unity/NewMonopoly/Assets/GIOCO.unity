@@ -11520,7 +11520,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sv1: {fileID: 538263420}
   sv2: {fileID: 1236357790}
-  prova: {fileID: 0}
   Prop1_Player1: {fileID: 243576451}
   Prop2_Player1: {fileID: 1258402614}
   Prop3_Player1: {fileID: 1134430377}
@@ -27766,6 +27765,12 @@ MonoBehaviour:
   p4: {fileID: 2068463019}
   p5: {fileID: 1394995935}
   p6: {fileID: 1134747640}
+  soldi1: {fileID: 1490972744}
+  soldi2: {fileID: 502136199}
+  soldi3: {fileID: 1076780998}
+  soldi4: {fileID: 1625567307}
+  soldi5: {fileID: 416224757}
+  soldi6: {fileID: 1782366908}
 --- !u!1 &1818988226
 GameObject:
   m_ObjectHideFlags: 0
