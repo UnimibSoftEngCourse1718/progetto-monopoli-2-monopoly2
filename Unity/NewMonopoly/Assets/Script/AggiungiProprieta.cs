@@ -68,7 +68,8 @@ public class AggiungiProprieta : MonoBehaviour
     public giocatore p5;
     public giocatore p6;
 
-    
+    public Text Player1;
+    public Text Player2;
 
     // Use this for initialization
     void Start()
@@ -87,184 +88,326 @@ public class AggiungiProprieta : MonoBehaviour
         b1.active = false;
         //sv1.active = true;
         //List<Proprietà> listaproprietà = //lista proprietà player attivo 
-        Prop1_Player1.text = "Proprietà 1"; //Lista[0];
-        Prop2_Player1.text = "Proprietà 2";
-        Prop3_Player1.text = "Proprietà 3";
-        Prop4_Player1.text = "Proprietà 4";
-        Prop5_Player1.text = "Proprietà 5";
-        Prop6_Player1.text = "Proprietà 6";
-        Prop7_Player1.text = "Proprietà 7";
-        Prop8_Player1.text = "Proprietà 8";
-        Prop9_Player1.text = "Proprietà 9";
-        Prop10_Player1.text = "Proprietà 10";
-        Prop11_Player1.text = "Proprietà 11";
-        Prop12_Player1.text = "Proprietà 12";
-        Prop13_Player1.text = "Proprietà 13";
-        Prop14_Player1.text = "Proprietà 14";
-        Prop15_Player1.text = "Proprietà 15";
-        Prop16_Player1.text = "Proprietà 16";
-        Prop17_Player1.text = "Proprietà 17";
-        Prop18_Player1.text = "Proprietà 18";
-        Prop19_Player1.text = "Proprietà 19";
-        Prop20_Player1.text = "Proprietà 20";
-        Prop21_Player1.text = "Proprietà 21";
+      /*  for(int i = 0; i<= 21; i++)
+        {
+            if (p1.proprieta[i] == null)
+                p1.proprieta[i].nomeCasella = "nessuna proprietà";
+        }*/
+        if (p1.attivo == true)
+        {
+            // Prop1_Player1.text = "Proprietà 1"; //Lista[0];
+            Prop1_Player1.text = p1.proprieta[0].nomeCasella;
+            Prop2_Player1.text = p1.proprieta[1].nomeCasella;
+            Prop3_Player1.text = p1.proprieta[2].nomeCasella;
+            Prop4_Player1.text = p1.proprieta[3].nomeCasella;
+            Prop5_Player1.text = p1.proprieta[4].nomeCasella;
+            Prop6_Player1.text = p1.proprieta[5].nomeCasella;
+            Prop7_Player1.text = p1.proprieta[6].nomeCasella;
+            Prop8_Player1.text = p1.proprieta[7].nomeCasella;
+            Prop9_Player1.text = p1.proprieta[8].nomeCasella;
+            Prop10_Player1.text = p1.proprieta[9].nomeCasella;
+            Prop11_Player1.text = p1.proprieta[10].nomeCasella;
+            Prop12_Player1.text = p1.proprieta[11].nomeCasella;
+            Prop13_Player1.text = p1.proprieta[12].nomeCasella;
+            Prop14_Player1.text = p1.proprieta[13].nomeCasella;
+            Prop15_Player1.text = p1.proprieta[14].nomeCasella;
+            Prop16_Player1.text = p1.proprieta[15].nomeCasella;
+            Prop17_Player1.text = p1.proprieta[16].nomeCasella;
+            Prop18_Player1.text = p1.proprieta[17].nomeCasella;
+            Prop19_Player1.text = p1.proprieta[18].nomeCasella;
+            Prop20_Player1.text = p1.proprieta[19].nomeCasella;
+            Prop21_Player1.text = p1.proprieta[20].nomeCasella;
+        }
+        else if (p2.attivo == true)
+        {
+            Prop1_Player1.text = p2.proprieta[0].nomeCasella;
+            Prop2_Player1.text = p2.proprieta[1].nomeCasella;
+            Prop3_Player1.text = p2.proprieta[2].nomeCasella;
+            Prop4_Player1.text = p2.proprieta[3].nomeCasella;
+            Prop5_Player1.text = p2.proprieta[4].nomeCasella;
+            Prop6_Player1.text = p2.proprieta[5].nomeCasella;
+            Prop7_Player1.text = p2.proprieta[6].nomeCasella;
+            Prop8_Player1.text = p2.proprieta[7].nomeCasella;
+            Prop9_Player1.text = p2.proprieta[8].nomeCasella;
+            Prop10_Player1.text = p2.proprieta[9].nomeCasella;
+            Prop11_Player1.text = p2.proprieta[10].nomeCasella;
+            Prop12_Player1.text = p2.proprieta[11].nomeCasella;
+            Prop13_Player1.text = p2.proprieta[12].nomeCasella;
+            Prop14_Player1.text = p2.proprieta[13].nomeCasella;
+            Prop15_Player1.text = p2.proprieta[14].nomeCasella;
+            Prop16_Player1.text = p2.proprieta[15].nomeCasella;
+            Prop17_Player1.text = p2.proprieta[16].nomeCasella;
+            Prop18_Player1.text = p2.proprieta[17].nomeCasella;
+            Prop19_Player1.text = p2.proprieta[18].nomeCasella;
+            Prop20_Player1.text = p2.proprieta[19].nomeCasella;
+            Prop21_Player1.text = p2.proprieta[20].nomeCasella;
+        }
+        else if (p3.attivo == true)
+        {
+            Prop1_Player1.text = p3.proprieta[0].nomeCasella;
+            Prop2_Player1.text = p3.proprieta[1].nomeCasella;
+            Prop3_Player1.text = p3.proprieta[2].nomeCasella;
+            Prop4_Player1.text = p3.proprieta[3].nomeCasella;
+            Prop5_Player1.text = p3.proprieta[4].nomeCasella;
+            Prop6_Player1.text = p3.proprieta[5].nomeCasella;
+            Prop7_Player1.text = p3.proprieta[6].nomeCasella;
+            Prop8_Player1.text = p3.proprieta[7].nomeCasella;
+            Prop9_Player1.text = p3.proprieta[8].nomeCasella;
+            Prop10_Player1.text = p3.proprieta[9].nomeCasella;
+            Prop11_Player1.text = p3.proprieta[10].nomeCasella;
+            Prop12_Player1.text = p3.proprieta[11].nomeCasella;
+            Prop13_Player1.text = p3.proprieta[12].nomeCasella;
+            Prop14_Player1.text = p3.proprieta[13].nomeCasella;
+            Prop15_Player1.text = p3.proprieta[14].nomeCasella;
+            Prop16_Player1.text = p3.proprieta[15].nomeCasella;
+            Prop17_Player1.text = p3.proprieta[16].nomeCasella;
+            Prop18_Player1.text = p3.proprieta[17].nomeCasella;
+            Prop19_Player1.text = p3.proprieta[18].nomeCasella;
+            Prop20_Player1.text = p3.proprieta[19].nomeCasella;
+            Prop21_Player1.text = p3.proprieta[20].nomeCasella;
+        }
+        else if (p4.attivo == true)
+        {
+            Prop1_Player1.text = p4.proprieta[0].nomeCasella;
+            Prop2_Player1.text = p4.proprieta[1].nomeCasella;
+            Prop3_Player1.text = p4.proprieta[2].nomeCasella;
+            Prop4_Player1.text = p4.proprieta[3].nomeCasella;
+            Prop5_Player1.text = p4.proprieta[4].nomeCasella;
+            Prop6_Player1.text = p4.proprieta[5].nomeCasella;
+            Prop7_Player1.text = p4.proprieta[6].nomeCasella;
+            Prop8_Player1.text = p4.proprieta[7].nomeCasella;
+            Prop9_Player1.text = p4.proprieta[8].nomeCasella;
+            Prop10_Player1.text = p4.proprieta[9].nomeCasella;
+            Prop11_Player1.text = p4.proprieta[10].nomeCasella;
+            Prop12_Player1.text = p4.proprieta[11].nomeCasella;
+            Prop13_Player1.text = p4.proprieta[12].nomeCasella;
+            Prop14_Player1.text = p4.proprieta[13].nomeCasella;
+            Prop15_Player1.text = p4.proprieta[14].nomeCasella;
+            Prop16_Player1.text = p4.proprieta[15].nomeCasella;
+            Prop17_Player1.text = p4.proprieta[16].nomeCasella;
+            Prop18_Player1.text = p4.proprieta[17].nomeCasella;
+            Prop19_Player1.text = p4.proprieta[18].nomeCasella;
+            Prop20_Player1.text = p4.proprieta[19].nomeCasella;
+            Prop21_Player1.text = p4.proprieta[20].nomeCasella;
+        }
+        else if (p5.attivo == true)
+        {
+            Prop1_Player1.text = p5.proprieta[0].nomeCasella;
+            Prop2_Player1.text = p5.proprieta[1].nomeCasella;
+            Prop3_Player1.text = p5.proprieta[2].nomeCasella;
+            Prop4_Player1.text = p5.proprieta[3].nomeCasella;
+            Prop5_Player1.text = p5.proprieta[4].nomeCasella;
+            Prop6_Player1.text = p5.proprieta[5].nomeCasella;
+            Prop7_Player1.text = p5.proprieta[6].nomeCasella;
+            Prop8_Player1.text = p5.proprieta[7].nomeCasella;
+            Prop9_Player1.text = p5.proprieta[8].nomeCasella;
+            Prop10_Player1.text = p5.proprieta[9].nomeCasella;
+            Prop11_Player1.text = p5.proprieta[10].nomeCasella;
+            Prop12_Player1.text = p5.proprieta[11].nomeCasella;
+            Prop13_Player1.text = p5.proprieta[12].nomeCasella;
+            Prop14_Player1.text = p5.proprieta[13].nomeCasella;
+            Prop15_Player1.text = p5.proprieta[14].nomeCasella;
+            Prop16_Player1.text = p5.proprieta[15].nomeCasella;
+            Prop17_Player1.text = p5.proprieta[16].nomeCasella;
+            Prop18_Player1.text = p5.proprieta[17].nomeCasella;
+            Prop19_Player1.text = p5.proprieta[18].nomeCasella;
+            Prop20_Player1.text = p5.proprieta[19].nomeCasella;
+            Prop21_Player1.text = p5.proprieta[20].nomeCasella;
+        }
+        else if (p6.attivo == true)
+        {
+            Prop1_Player1.text = p6.proprieta[0].nomeCasella;
+            Prop2_Player1.text = p6.proprieta[1].nomeCasella;
+            Prop3_Player1.text = p6.proprieta[2].nomeCasella;
+            Prop4_Player1.text = p6.proprieta[3].nomeCasella;
+            Prop5_Player1.text = p6.proprieta[4].nomeCasella;
+            Prop6_Player1.text = p6.proprieta[5].nomeCasella;
+            Prop7_Player1.text = p6.proprieta[6].nomeCasella;
+            Prop8_Player1.text = p6.proprieta[7].nomeCasella;
+            Prop9_Player1.text = p6.proprieta[8].nomeCasella;
+            Prop10_Player1.text = p6.proprieta[9].nomeCasella;
+            Prop11_Player1.text = p6.proprieta[10].nomeCasella;
+            Prop12_Player1.text = p6.proprieta[11].nomeCasella;
+            Prop13_Player1.text = p6.proprieta[12].nomeCasella;
+            Prop14_Player1.text = p6.proprieta[13].nomeCasella;
+            Prop15_Player1.text = p6.proprieta[14].nomeCasella;
+            Prop16_Player1.text = p6.proprieta[15].nomeCasella;
+            Prop17_Player1.text = p6.proprieta[16].nomeCasella;
+            Prop18_Player1.text = p6.proprieta[17].nomeCasella;
+            Prop19_Player1.text = p6.proprieta[18].nomeCasella;
+            Prop20_Player1.text = p6.proprieta[19].nomeCasella;
+            Prop21_Player1.text = p6.proprieta[20].nomeCasella;
+        }
+        
 
     }
 
     public void AddPropieta2()
     {
         b2.active = false;
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
+        //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa1"))
+        if(Player2.text.Equals("Player 1"))
         {
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p1.proprieta[0].name;
-            Prop2_Player2.text = p1.proprieta[1].name;
-            Prop3_Player2.text = p1.proprieta[2].name;
-            Prop4_Player2.text = p1.proprieta[3].name;
-            Prop5_Player2.text = p1.proprieta[4].name;
-            Prop6_Player2.text = p1.proprieta[5].name;
-            Prop7_Player2.text = p1.proprieta[6].name;
-            Prop8_Player2.text = p1.proprieta[7].name;
-            Prop9_Player2.text = p1.proprieta[8].name;
-            Prop10_Player2.text = p1.proprieta[9].name;
-            Prop11_Player2.text = p1.proprieta[10].name;
-            Prop12_Player2.text = p1.proprieta[11].name;
-            Prop13_Player2.text = p1.proprieta[12].name;
-            Prop14_Player2.text = p1.proprieta[13].name;
-            Prop15_Player2.text = p1.proprieta[14].name;
-            Prop16_Player2.text = p1.proprieta[15].name;
-            Prop17_Player2.text = p1.proprieta[16].name;
-            Prop18_Player2.text = p1.proprieta[17].name;
-            Prop19_Player2.text = p1.proprieta[18].name;
-            Prop20_Player2.text = p1.proprieta[19].name;
-            Prop21_Player2.text = p1.proprieta[20].name;
+            Prop1_Player2.text = p1.proprieta[0].nomeCasella;
+            Prop2_Player2.text = p1.proprieta[1].nomeCasella;
+            Prop3_Player2.text = p1.proprieta[2].nomeCasella;
+            Prop4_Player2.text = p1.proprieta[3].nomeCasella;
+            Prop5_Player2.text = p1.proprieta[4].nomeCasella;
+            Prop6_Player2.text = p1.proprieta[5].nomeCasella;
+            Prop7_Player2.text = p1.proprieta[6].nomeCasella;
+            Prop8_Player2.text = p1.proprieta[7].nomeCasella;
+            Prop9_Player2.text = p1.proprieta[8].nomeCasella;
+            Prop10_Player2.text = p1.proprieta[9].nomeCasella;
+            Prop11_Player2.text = p1.proprieta[10].nomeCasella;
+            Prop12_Player2.text = p1.proprieta[11].nomeCasella;
+            Prop13_Player2.text = p1.proprieta[12].nomeCasella;
+            Prop14_Player2.text = p1.proprieta[13].nomeCasella;
+            Prop15_Player2.text = p1.proprieta[14].nomeCasella;
+            Prop16_Player2.text = p1.proprieta[15].nomeCasella;
+            Prop17_Player2.text = p1.proprieta[16].nomeCasella;
+            Prop18_Player2.text = p1.proprieta[17].nomeCasella;
+            Prop19_Player2.text = p1.proprieta[18].nomeCasella;
+            Prop20_Player2.text = p1.proprieta[19].nomeCasella;
+            Prop21_Player2.text = p1.proprieta[20].nomeCasella;
         }
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
+        //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa2"))
+        if (Player2.text.Equals("Player 2"))
         {
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p2.proprieta[0].name;
-            Prop2_Player2.text = p2.proprieta[1].name;
-            Prop3_Player2.text = p2.proprieta[2].name;
-            Prop4_Player2.text = p2.proprieta[3].name;
-            Prop5_Player2.text = p2.proprieta[4].name;
-            Prop6_Player2.text = p2.proprieta[5].name;
-            Prop7_Player2.text = p2.proprieta[6].name;
-            Prop8_Player2.text = p2.proprieta[7].name;
-            Prop9_Player2.text = p2.proprieta[8].name;
-            Prop10_Player2.text = p2.proprieta[9].name;
-            Prop11_Player2.text = p2.proprieta[10].name;
-            Prop12_Player2.text = p2.proprieta[11].name;
-            Prop13_Player2.text = p2.proprieta[12].name;
-            Prop14_Player2.text = p2.proprieta[13].name;
-            Prop15_Player2.text = p2.proprieta[14].name;
-            Prop16_Player2.text = p2.proprieta[15].name;
-            Prop17_Player2.text = p2.proprieta[16].name;
-            Prop18_Player2.text = p2.proprieta[17].name;
-            Prop19_Player2.text = p2.proprieta[18].name;
-            Prop20_Player2.text = p2.proprieta[19].name;
-            Prop21_Player2.text = p2.proprieta[20].name;
+            Prop1_Player2.text = p2.proprieta[0].nomeCasella;
+            Prop2_Player2.text = p2.proprieta[1].nomeCasella;
+            Prop3_Player2.text = p2.proprieta[2].nomeCasella;
+            Prop4_Player2.text = p2.proprieta[3].nomeCasella;
+            Prop5_Player2.text = p2.proprieta[4].nomeCasella;
+            Prop6_Player2.text = p2.proprieta[5].nomeCasella;
+            Prop7_Player2.text = p2.proprieta[6].nomeCasella;
+            Prop8_Player2.text = p2.proprieta[7].nomeCasella;
+            Prop9_Player2.text = p2.proprieta[8].nomeCasella;
+            Prop10_Player2.text = p2.proprieta[9].nomeCasella;
+            Prop11_Player2.text = p2.proprieta[10].nomeCasella;
+            Prop12_Player2.text = p2.proprieta[11].nomeCasella;
+            Prop13_Player2.text = p2.proprieta[12].nomeCasella;
+            Prop14_Player2.text = p2.proprieta[13].nomeCasella;
+            Prop15_Player2.text = p2.proprieta[14].nomeCasella;
+            Prop16_Player2.text = p2.proprieta[15].nomeCasella;
+            Prop17_Player2.text = p2.proprieta[16].nomeCasella;
+            Prop18_Player2.text = p2.proprieta[17].nomeCasella;
+            Prop19_Player2.text = p2.proprieta[18].nomeCasella;
+            Prop20_Player2.text = p2.proprieta[19].nomeCasella;
+            Prop21_Player2.text = p2.proprieta[20].nomeCasella;
         }
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
+        //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa3"))
+        if (Player2.text.Equals("Player 3"))
         {
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p3.proprieta[0].name;
-            Prop2_Player2.text = p3.proprieta[1].name;
-            Prop3_Player2.text = p3.proprieta[2].name;
-            Prop4_Player2.text = p3.proprieta[3].name;
-            Prop5_Player2.text = p3.proprieta[4].name;
-            Prop6_Player2.text = p3.proprieta[5].name;
-            Prop7_Player2.text = p3.proprieta[6].name;
-            Prop8_Player2.text = p3.proprieta[7].name;
-            Prop9_Player2.text = p3.proprieta[8].name;
-            Prop10_Player2.text = p3.proprieta[9].name;
-            Prop11_Player2.text = p3.proprieta[10].name;
-            Prop12_Player2.text = p3.proprieta[11].name;
-            Prop13_Player2.text = p3.proprieta[12].name;
-            Prop14_Player2.text = p3.proprieta[13].name;
-            Prop15_Player2.text = p3.proprieta[14].name;
-            Prop16_Player2.text = p3.proprieta[15].name;
-            Prop17_Player2.text = p3.proprieta[16].name;
-            Prop18_Player2.text = p3.proprieta[17].name;
-            Prop19_Player2.text = p3.proprieta[18].name;
-            Prop20_Player2.text = p3.proprieta[19].name;
-            Prop21_Player2.text = p3.proprieta[20].name;
+            Prop1_Player2.text = p3.proprieta[0].nomeCasella;
+            Prop2_Player2.text = p3.proprieta[1].nomeCasella;
+            Prop3_Player2.text = p3.proprieta[2].nomeCasella;
+            Prop4_Player2.text = p3.proprieta[3].nomeCasella;
+            Prop5_Player2.text = p3.proprieta[4].nomeCasella;
+            Prop6_Player2.text = p3.proprieta[5].nomeCasella;
+            Prop7_Player2.text = p3.proprieta[6].nomeCasella;
+            Prop8_Player2.text = p3.proprieta[7].nomeCasella;
+            Prop9_Player2.text = p3.proprieta[8].nomeCasella;
+            Prop10_Player2.text = p3.proprieta[9].nomeCasella;
+            Prop11_Player2.text = p3.proprieta[10].nomeCasella;
+            Prop12_Player2.text = p3.proprieta[11].nomeCasella;
+            Prop13_Player2.text = p3.proprieta[12].nomeCasella;
+            Prop14_Player2.text = p3.proprieta[13].nomeCasella;
+            Prop15_Player2.text = p3.proprieta[14].nomeCasella;
+            Prop16_Player2.text = p3.proprieta[15].nomeCasella;
+            Prop17_Player2.text = p3.proprieta[16].nomeCasella;
+            Prop18_Player2.text = p3.proprieta[17].nomeCasella;
+            Prop19_Player2.text = p3.proprieta[18].nomeCasella;
+            Prop20_Player2.text = p3.proprieta[19].nomeCasella;
+            Prop21_Player2.text = p3.proprieta[20].nomeCasella;
         }
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
+        //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa4"))
+        if (Player2.text.Equals("Player 4"))
         {
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p4.proprieta[0].name;
-            Prop2_Player2.text = p4.proprieta[1].name;
-            Prop3_Player2.text = p4.proprieta[2].name;
-            Prop4_Player2.text = p4.proprieta[3].name;
-            Prop5_Player2.text = p4.proprieta[4].name;
-            Prop6_Player2.text = p4.proprieta[5].name;
-            Prop7_Player2.text = p4.proprieta[6].name;
-            Prop8_Player2.text = p4.proprieta[7].name;
-            Prop9_Player2.text = p4.proprieta[8].name;
-            Prop10_Player2.text = p4.proprieta[9].name;
-            Prop11_Player2.text = p4.proprieta[10].name;
-            Prop12_Player2.text = p4.proprieta[11].name;
-            Prop13_Player2.text = p4.proprieta[12].name;
-            Prop14_Player2.text = p4.proprieta[13].name;
-            Prop15_Player2.text = p4.proprieta[14].name;
-            Prop16_Player2.text = p4.proprieta[15].name;
-            Prop17_Player2.text = p4.proprieta[16].name;
-            Prop18_Player2.text = p4.proprieta[17].name;
-            Prop19_Player2.text = p4.proprieta[18].name;
-            Prop20_Player2.text = p4.proprieta[19].name;
-            Prop21_Player2.text = p4.proprieta[20].name;
+            Prop1_Player2.text = p4.proprieta[0].nomeCasella;
+            Prop2_Player2.text = p4.proprieta[1].nomeCasella;
+            Prop3_Player2.text = p4.proprieta[2].nomeCasella;
+            Prop4_Player2.text = p4.proprieta[3].nomeCasella;
+            Prop5_Player2.text = p4.proprieta[4].nomeCasella;
+            Prop6_Player2.text = p4.proprieta[5].nomeCasella;
+            Prop7_Player2.text = p4.proprieta[6].nomeCasella;
+            Prop8_Player2.text = p4.proprieta[7].nomeCasella;
+            Prop9_Player2.text = p4.proprieta[8].nomeCasella;
+            Prop10_Player2.text = p4.proprieta[9].nomeCasella;
+            Prop11_Player2.text = p4.proprieta[10].nomeCasella;
+            Prop12_Player2.text = p4.proprieta[11].nomeCasella;
+            Prop13_Player2.text = p4.proprieta[12].nomeCasella;
+            Prop14_Player2.text = p4.proprieta[13].nomeCasella;
+            Prop15_Player2.text = p4.proprieta[14].nomeCasella;
+            Prop16_Player2.text = p4.proprieta[15].nomeCasella;
+            Prop17_Player2.text = p4.proprieta[16].nomeCasella;
+            Prop18_Player2.text = p4.proprieta[17].nomeCasella;
+            Prop19_Player2.text = p4.proprieta[18].nomeCasella;
+            Prop20_Player2.text = p4.proprieta[19].nomeCasella;
+            Prop21_Player2.text = p4.proprieta[20].nomeCasella;
         }
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
+        //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa5"))
+        if (Player2.text.Equals("Player 5"))
         {
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p5.proprieta[0].name;
-            Prop2_Player2.text = p5.proprieta[1].name;
-            Prop3_Player2.text = p5.proprieta[2].name;
-            Prop4_Player2.text = p5.proprieta[3].name;
-            Prop5_Player2.text = p5.proprieta[4].name;
-            Prop6_Player2.text = p5.proprieta[5].name;
-            Prop7_Player2.text = p5.proprieta[6].name;
-            Prop8_Player2.text = p5.proprieta[7].name;
-            Prop9_Player2.text = p5.proprieta[8].name;
-            Prop10_Player2.text = p5.proprieta[9].name;
-            Prop11_Player2.text = p5.proprieta[10].name;
-            Prop12_Player2.text = p5.proprieta[11].name;
-            Prop13_Player2.text = p5.proprieta[12].name;
-            Prop14_Player2.text = p5.proprieta[13].name;
-            Prop15_Player2.text = p5.proprieta[14].name;
-            Prop16_Player2.text = p5.proprieta[15].name;
-            Prop17_Player2.text = p5.proprieta[16].name;
-            Prop18_Player2.text = p5.proprieta[17].name;
-            Prop19_Player2.text = p5.proprieta[18].name;
-            Prop20_Player2.text = p5.proprieta[19].name;
-            Prop21_Player2.text = p5.proprieta[20].name;
+            Prop1_Player2.text = p5.proprieta[0].nomeCasella;
+            Prop2_Player2.text = p5.proprieta[1].nomeCasella;
+            Prop3_Player2.text = p5.proprieta[2].nomeCasella;
+            Prop4_Player2.text = p5.proprieta[3].nomeCasella;
+            Prop5_Player2.text = p5.proprieta[4].nomeCasella;
+            Prop6_Player2.text = p5.proprieta[5].nomeCasella;
+            Prop7_Player2.text = p5.proprieta[6].nomeCasella;
+            Prop8_Player2.text = p5.proprieta[7].nomeCasella;
+            Prop9_Player2.text = p5.proprieta[8].nomeCasella;
+            Prop10_Player2.text = p5.proprieta[9].nomeCasella;
+            Prop11_Player2.text = p5.proprieta[10].nomeCasella;
+            Prop12_Player2.text = p5.proprieta[11].nomeCasella;
+            Prop13_Player2.text = p5.proprieta[12].nomeCasella;
+            Prop14_Player2.text = p5.proprieta[13].nomeCasella;
+            Prop15_Player2.text = p5.proprieta[14].nomeCasella;
+            Prop16_Player2.text = p5.proprieta[15].nomeCasella;
+            Prop17_Player2.text = p5.proprieta[16].nomeCasella;
+            Prop18_Player2.text = p5.proprieta[17].nomeCasella;
+            Prop19_Player2.text = p5.proprieta[18].nomeCasella;
+            Prop20_Player2.text = p5.proprieta[19].nomeCasella;
+            Prop21_Player2.text = p5.proprieta[20].nomeCasella;
         }
-        if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
+        //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
+        //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa1"))
+        if (Player2.text.Equals("Player 6"))
         {
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p6.proprieta[0].name;
-            Prop2_Player2.text = p6.proprieta[1].name;
-            Prop3_Player2.text = p6.proprieta[2].name;
-            Prop4_Player2.text = p6.proprieta[3].name;
-            Prop5_Player2.text = p6.proprieta[4].name;
-            Prop6_Player2.text = p6.proprieta[5].name;
-            Prop7_Player2.text = p6.proprieta[6].name;
-            Prop8_Player2.text = p6.proprieta[7].name;
-            Prop9_Player2.text = p6.proprieta[8].name;
-            Prop10_Player2.text = p6.proprieta[9].name;
-            Prop11_Player2.text = p6.proprieta[10].name;
-            Prop12_Player2.text = p6.proprieta[11].name;
-            Prop13_Player2.text = p6.proprieta[12].name;
-            Prop14_Player2.text = p6.proprieta[13].name;
-            Prop15_Player2.text = p6.proprieta[14].name;
-            Prop16_Player2.text = p6.proprieta[15].name;
-            Prop17_Player2.text = p6.proprieta[16].name;
-            Prop18_Player2.text = p6.proprieta[17].name;
-            Prop19_Player2.text = p6.proprieta[18].name;
-            Prop20_Player2.text = p6.proprieta[19].name;
-            Prop21_Player2.text = p6.proprieta[20].name;
+            Prop1_Player2.text = p6.proprieta[0].nomeCasella;
+            Prop2_Player2.text = p6.proprieta[1].nomeCasella;
+            Prop3_Player2.text = p6.proprieta[2].nomeCasella;
+            Prop4_Player2.text = p6.proprieta[3].nomeCasella;
+            Prop5_Player2.text = p6.proprieta[4].nomeCasella;
+            Prop6_Player2.text = p6.proprieta[5].nomeCasella;
+            Prop7_Player2.text = p6.proprieta[6].nomeCasella;
+            Prop8_Player2.text = p6.proprieta[7].nomeCasella;
+            Prop9_Player2.text = p6.proprieta[8].nomeCasella;
+            Prop10_Player2.text = p6.proprieta[9].nomeCasella;
+            Prop11_Player2.text = p6.proprieta[10].nomeCasella;
+            Prop12_Player2.text = p6.proprieta[11].nomeCasella;
+            Prop13_Player2.text = p6.proprieta[12].nomeCasella;
+            Prop14_Player2.text = p6.proprieta[13].nomeCasella;
+            Prop15_Player2.text = p6.proprieta[14].nomeCasella;
+            Prop16_Player2.text = p6.proprieta[15].nomeCasella;
+            Prop17_Player2.text = p6.proprieta[16].nomeCasella;
+            Prop18_Player2.text = p6.proprieta[17].nomeCasella;
+            Prop19_Player2.text = p6.proprieta[18].nomeCasella;
+            Prop20_Player2.text = p6.proprieta[19].nomeCasella;
+            Prop21_Player2.text = p6.proprieta[20].nomeCasella;
         }
-
+        
 
     }
 
