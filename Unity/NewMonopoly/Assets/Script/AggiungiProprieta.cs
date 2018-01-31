@@ -14,6 +14,11 @@ public class AggiungiProprieta : MonoBehaviour
     private string[] arr1 = new string[21];
     private string[] arr2 = new string[21];
 
+    private int i = 0;
+    private int y = 0;
+
+    //public Text prova;
+
     public Text Prop1_Player1;
     public Text Prop2_Player1;
     public Text Prop3_Player1;
@@ -85,14 +90,31 @@ public class AggiungiProprieta : MonoBehaviour
 
     public void AddPropieta1()
     {
+
+        /* for (int p = 0; p < 21; p++)
+         {
+             if (p1.proprieta[p] == null)
+                 p1.proprieta[p].nomeCasella = "Nessuna Proprietà";
+             if (p2.proprieta[p] == null)
+                 p2.proprieta[p].nomeCasella = "Nessuna Proprietà";
+             if (p3.proprieta[p] == null)
+                 p3.proprieta[p].nomeCasella = "Nessuna Proprietà";
+             if (p4.proprieta[p] == null)
+                 p4.proprieta[p].nomeCasella = "Nessuna Proprietà";
+             if (p5.proprieta[p] == null)
+                 p5.proprieta[p].nomeCasella = "Nessuna Proprietà";
+             if (p6.proprieta[p] == null)
+                 p6.proprieta[p].nomeCasella = "Nessuna Proprietà";
+         }*/
         b1.active = false;
         //sv1.active = true;
         //List<Proprietà> listaproprietà = //lista proprietà player attivo 
-      /*  for(int i = 0; i<= 21; i++)
-        {
-            if (p1.proprieta[i] == null)
-                p1.proprieta[i].nomeCasella = "nessuna proprietà";
-        }*/
+        /*  for(int i = 0; i<= 21; i++)
+          {
+              if (p1.proprieta[i] == null)
+                  p1.proprieta[i].nomeCasella = "nessuna proprietà";
+          }*/
+
         if (p1.attivo == true)
         {
             // Prop1_Player1.text = "Proprietà 1"; //Lista[0];
@@ -238,7 +260,7 @@ public class AggiungiProprieta : MonoBehaviour
             Prop20_Player1.text = p6.proprieta[19].nomeCasella;
             Prop21_Player1.text = p6.proprieta[20].nomeCasella;
         }
-        
+
 
     }
 
@@ -247,7 +269,9 @@ public class AggiungiProprieta : MonoBehaviour
         b2.active = false;
         //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 1"))
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa1"))
-        if(Player2.text.Equals("Player 1"))
+
+
+        if (Player2.text.Equals("Player 1"))
         {
             //Prop2_Player2.text = "Proprietà 1";
             Prop1_Player2.text = p1.proprieta[0].nomeCasella;
@@ -407,7 +431,7 @@ public class AggiungiProprieta : MonoBehaviour
             Prop20_Player2.text = p6.proprieta[19].nomeCasella;
             Prop21_Player2.text = p6.proprieta[20].nomeCasella;
         }
-        
+
 
     }
 
@@ -425,27 +449,212 @@ public class AggiungiProprieta : MonoBehaviour
 
     public void scegli1()
     {
-
-        int i = 0;
-        arr1[i] = EventSystem.current.currentSelectedGameObject.GetComponent<Text>().text;
+        //EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false;
+        arr1[i] = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
         i++;
-        EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false;
+        //prova.text = arr1[0];
     }
 
     public void scegli2()
     {
+        //EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false;
+        arr2[y] = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<Text>().text;
+        y++;
 
-        int i = 0;
-        arr2[i] = EventSystem.current.currentSelectedGameObject.GetComponent<Text>().text;
-        i++;
-        EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false;
+
+    }
+
+    public void accetta()
+    {
+        foreach (CasellaAcquistabile item in GameObject.FindObjectsOfType<CasellaAcquistabile>())
+        {
+            for (int z = 0; z < 21; z++)
+            {
+                if (item.nomeCasella.Equals(arr1[z]))
+                {
+                    if (p1.attivo == true)
+                    {
+                        p1.RimuoviProprieta(item);
+                    }
+                    if (p2.attivo == true)
+                    {
+                        p2.RimuoviProprieta(item);
+                    }
+                    if (p3.attivo == true)
+                    {
+                        p3.RimuoviProprieta(item);
+                    }
+                    if (p4.attivo == true)
+                    {
+                        p4.RimuoviProprieta(item);
+                    }
+                    if (p5.attivo == true)
+                    {
+                        p5.RimuoviProprieta(item);
+                    }
+                    if (p6.attivo == true)
+                    {
+                        p6.RimuoviProprieta(item);
+                    }
+                    //-------------------------------//
+                    if (Player2.text.Equals("Player 1"))
+                    {
+                        p1.AggiungiProprieta(item);
+                    }
+                    if (Player2.text.Equals("Player 2"))
+                    {
+                        p2.AggiungiProprieta(item);
+                    }
+                    if (Player2.text.Equals("Player 3"))
+                    {
+                        p2.AggiungiProprieta(item);
+                    }
+                    if (Player2.text.Equals("Player 4"))
+                    {
+                        p2.AggiungiProprieta(item);
+                    }
+                    if (Player2.text.Equals("Player 5"))
+                    {
+                        p2.AggiungiProprieta(item);
+                    }
+                    if (Player2.text.Equals("Player 6"))
+                    {
+                        p2.AggiungiProprieta(item);
+                    }
+                    //------------------//
+                    if (item.nomeCasella.Equals(arr2[z]))
+                    {
+                        if (p1.attivo == true)
+                        {
+                            p1.AggiungiProprieta(item);
+                        }
+                        if (p2.attivo == true)
+                        {
+                            p2.AggiungiProprieta(item);
+                        }
+                        if (p3.attivo == true)
+                        {
+                            p3.AggiungiProprieta(item);
+
+                        }
+                        if (p4.attivo == true)
+                        {
+                            p4.AggiungiProprieta(item);
+
+                        }
+                        if (p5.attivo == true)
+                        {
+                            p5.AggiungiProprieta(item);
+
+                        }
+                        if (p6.attivo == true)
+                        {
+                            p6.AggiungiProprieta(item);
+
+                        }
+                        //-------------------------------//
+                        if (Player2.text.Equals("Player 1"))
+                        {
+                            p1.RimuoviProprieta(item);
+                        }
+                        if (Player2.text.Equals("Player 2"))
+                        {
+                            p2.RimuoviProprieta(item);
+                        }
+                        if (Player2.text.Equals("Player 3"))
+                        {
+                            p3.RimuoviProprieta(item);
+                        }
+                        if (Player2.text.Equals("Player 4"))
+                        {
+                            p4.RimuoviProprieta(item);
+                        }
+                        if (Player2.text.Equals("Player 5"))
+                        {
+                            p5.RimuoviProprieta(item);
+                        }
+                        if (Player2.text.Equals("Player 6"))
+                        {
+                            p6.RimuoviProprieta(item);
+                        }
+
+
+                    }
+
+                }
+
+            }
+
+            i = 0;
+            y = 0;
+            for (i = 0; i < 21; i++)
+            {
+                arr1[i] = "Nessuna Proprietà";
+            }
+
+            for (y = 0; y < 21; y++)
+            {
+                arr2[y] = "Nessuna Proprietà";
+            }
+
+
+
+        }
     }
 
     public void rifiuta()
     {
         b1.active = true;
         b2.active = true;
+
         GameObject.Find("TRATTATIVA").active = false;
 
+    }
+
+    public void reset()
+    {
+        Prop1_Player1.text = "Nessuna Proprietà";
+        Prop2_Player1.text = "Nessuna Proprietà";
+        Prop3_Player1.text = "Nessuna Proprietà";
+        Prop4_Player1.text = "Nessuna Proprietà";
+        Prop5_Player1.text = "Nessuna Proprietà";
+        Prop6_Player1.text = "Nessuna Proprietà";
+        Prop7_Player1.text = "Nessuna Proprietà";
+        Prop8_Player1.text = "Nessuna Proprietà";
+        Prop9_Player1.text = "Nessuna Proprietà";
+        Prop10_Player1.text = "Nessuna Proprietà";
+        Prop11_Player1.text = "Nessuna Proprietà";
+        Prop12_Player1.text = "Nessuna Proprietà";
+        Prop13_Player1.text = "Nessuna Proprietà";
+        Prop14_Player1.text = "Nessuna Proprietà";
+        Prop15_Player1.text = "Nessuna Proprietà";
+        Prop16_Player1.text = "Nessuna Proprietà";
+        Prop17_Player1.text = "Nessuna Proprietà";
+        Prop18_Player1.text = "Nessuna Proprietà";
+        Prop19_Player1.text = "Nessuna Proprietà";
+        Prop20_Player1.text = "Nessuna Proprietà";
+        Prop21_Player1.text = "Nessuna Proprietà";
+
+        Prop1_Player2.text = "Nessuna Proprietà";
+        Prop2_Player2.text = "Nessuna Proprietà";
+        Prop3_Player2.text = "Nessuna Proprietà";
+        Prop4_Player2.text = "Nessuna Proprietà";
+        Prop5_Player2.text = "Nessuna Proprietà";
+        Prop6_Player2.text = "Nessuna Proprietà";
+        Prop7_Player2.text = "Nessuna Proprietà";
+        Prop8_Player2.text = "Nessuna Proprietà";
+        Prop9_Player2.text = "Nessuna Proprietà";
+        Prop10_Player2.text = "Nessuna Proprietà";
+        Prop11_Player2.text = "Nessuna Proprietà";
+        Prop12_Player2.text = "Nessuna Proprietà";
+        Prop13_Player2.text = "Nessuna Proprietà";
+        Prop14_Player2.text = "Nessuna Proprietà";
+        Prop15_Player2.text = "Nessuna Proprietà";
+        Prop16_Player2.text = "Nessuna Proprietà";
+        Prop17_Player2.text = "Nessuna Proprietà";
+        Prop18_Player2.text = "Nessuna Proprietà";
+        Prop19_Player2.text = "Nessuna Proprietà";
+        Prop20_Player2.text = "Nessuna Proprietà";
+        Prop21_Player2.text = "Nessuna Proprietà";
     }
 }
