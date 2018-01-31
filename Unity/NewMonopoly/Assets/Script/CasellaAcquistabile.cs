@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class CasellaAcquistabile : Casella {
     public giocatore proprietario;
-    public GameObject segnalinoProprietario;
+    protected GameObject segnalinoProprietario;
     public string nomeCasella;
     public SchermataAcquisto schermataAcquisto;
 
-    public void cambioProprietario()
+    public void CambioProprietario()
     {
         if (proprietario == null)
         {

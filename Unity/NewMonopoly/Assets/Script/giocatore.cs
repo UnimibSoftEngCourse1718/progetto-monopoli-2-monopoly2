@@ -104,7 +104,7 @@ public class giocatore : MonoBehaviour {
     {
         this.proprieta.Add(casella);
         casella.proprietario = this;
-        casella.cambioProprietario();
+        casella.CambioProprietario();
     }
 
     public void RimuoviProprieta(CasellaAcquistabile casella)

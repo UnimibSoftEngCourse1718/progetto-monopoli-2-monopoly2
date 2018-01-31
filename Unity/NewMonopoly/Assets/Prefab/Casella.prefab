@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4030930736270734}
   - component: {fileID: 33201413674827246}
-  - component: {fileID: 65146804688176146}
   - component: {fileID: 23043235331920574}
   m_Layer: 0
   m_Name: Casella
@@ -83,15 +82,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1947978157206306}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65146804688176146
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1947978157206306}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 10, z: 1}
-  m_Center: {x: 0, y: -1, z: 0}

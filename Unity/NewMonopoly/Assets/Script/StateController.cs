@@ -85,7 +85,7 @@ public class StateController : MonoBehaviour
         foreach (CasellaAcquistabile item in g.proprieta)
         {
             item.proprietario = null;
-            item.cambioProprietario();
+            item.CambioProprietario();
         }
 
         GameObject.Find("Messaggi").GetComponent<Text>().text = g.name + " È Stato eliminato";

@@ -9,7 +9,6 @@ public class SchermataAcquisto : MonoBehaviour
     public Societa societa;
     public Stazione stazione;
     public GameObject schermata;
-    public StateController controller;
 
     public void OnEnable ()
     {
