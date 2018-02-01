@@ -9,9 +9,6 @@ public class Casella : MonoBehaviour
 
     public virtual void Fermata(giocatore giocatoreDiTurno)
     {
-        // Se il giocatore passa dalla casella 1, il via, e non è stato
-        // diretto alla prigione allora prende i soldi
-        if (this.name == "1" && giocatoreDiTurno.contatorePrigione < 0)
-            giocatoreDiTurno.Paga(-200);
+        return;
     }
 }

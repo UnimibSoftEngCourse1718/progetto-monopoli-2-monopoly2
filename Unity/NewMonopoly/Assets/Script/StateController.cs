@@ -43,33 +43,26 @@ public class StateController : MonoBehaviour
         IsDoneRolling = false;
         IsDoneClicking = false;
         verifica = false;
-
-        for (int i = CurrentPlayerId; i < listaGiocatori.Length; i++)
+        if (doppio == 0)
         {
-            if (i == listaGiocatori.Length - 1)
+            for (int i = CurrentPlayerId; i < listaGiocatori.Length; i++)
             {
-                i = -1;
-                CurrentPlayerId = 0;
-            }
+                if (i == listaGiocatori.Length - 1)
+                {
+                    i = -1;
+                    CurrentPlayerId = 0;
+                }
 
-            if (listaGiocatori[i + 1] != null)
-            {
-                CurrentPlayerId = i + 1;
-                i = listaGiocatori.Length;
+                if (listaGiocatori[i + 1] != null)
+                {
+                    CurrentPlayerId = i + 1;
+                    i = listaGiocatori.Length;
+                }
             }
+            foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
+                if (item.attivo)
+                    uscitaPrigione.SetActive(item.uscitaDiPrigione);
         }
-
-        foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
-            if (item.attivo)
-                uscitaPrigione.SetActive(item.uscitaDiPrigione);
-    }
-
-    public void RollAgain()
-    {
-        IsDoneRolling = false;
-        IsDoneClicking = false;
-        verifica = false;
-        doppio++;
     }
 
     // Update is called once per frame

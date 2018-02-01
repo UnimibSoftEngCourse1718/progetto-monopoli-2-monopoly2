@@ -28,13 +28,13 @@ public class Stazione : CasellaAcquistabile
                     nStazioni++;
             }
 
-            if (nStazioni == 0)
+            if (nStazioni == 1)
                 giocatoreDiTurno.Paga(pedaggio);
-            else if (nStazioni == 1)
-                giocatoreDiTurno.Paga(pedaggio2Stazioni);
             else if (nStazioni == 2)
-                giocatoreDiTurno.Paga(pedaggio3Stazioni);
+                giocatoreDiTurno.Paga(pedaggio2Stazioni);
             else if (nStazioni == 3)
+                giocatoreDiTurno.Paga(pedaggio3Stazioni);
+            else if (nStazioni == 4)
                 giocatoreDiTurno.Paga(pedaggio4Stazioni);
         }
         return;

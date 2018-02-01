@@ -18,7 +18,7 @@ public class Probabilita : CasellaCarta
         carte[8] = new Carta("Pagate una multa di 30", -30, 0);
         carte[9] = new Carta("Siete creditori verso la banca di 200, ritirateli", 200, 0);
         carte[10] = new Carta("Avete perso una causa: pagate 100", -100, 0);
-        carte[11] = new Carta("Andate in prigione direttamente e senza passare dal via", 0, 31);
+        carte[11] = new Carta("Andate in prigione direttamente e senza passare dal via", 0, 11);
         carte[12] = new Carta("Avete ceduto delle azioni: ricavate 50", 50, 0);
         carte[13] = new Carta("Pagate il conto del dottore di 50", -50, 0);
         carte[14] = new Carta("Ereditate 50 da un lontano parente", 50, 0);

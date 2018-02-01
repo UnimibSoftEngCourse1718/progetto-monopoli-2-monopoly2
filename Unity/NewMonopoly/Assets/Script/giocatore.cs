@@ -6,24 +6,29 @@ using UnityEngine.UI;
 public class giocatore : MonoBehaviour {
 
     Prigione prigione;
+    
+    public int contatorePrigione { get; set; }
+    public bool uscitaDiPrigione { get; set; }
+    public int soldi { get; set; }
+    public Casella partenza { get; set; }
+    public StateController controller { get; set; }
     public List<CasellaAcquistabile> proprieta;
-    public int contatorePrigione;
-    public bool uscitaDiPrigione;
-    public int soldi;
     public Text testoSoldi;
-    public StateController controller;
-    bool isAnimating;
     public int PlayerId;
     public bool attivo;
-    public Casella partenza;
+    public bool isAnimating, effettoCasella;
+    Casella[] percorso;
+    int indicePercorso;
 
     //istruzioni per animazione 
     Vector3 targetPosition;
-    Vector3 velocity;
-    float smoothTime = 0.5f;
+    Vector3 vettoreVelocita;
+    float tempoPerSpostamento = 0.15f;
+    private bool arrivato;
 
     // Use this for initialization
     void Start () {
+        effettoCasella = true;
         proprieta = new List<CasellaAcquistabile>();
         soldi = 2500;
         testoSoldi.text = this.soldi.ToString() + " $";
@@ -43,49 +48,88 @@ public class giocatore : MonoBehaviour {
 
 	void Update ()
     {
-        if (this.transform.position != targetPosition)
-            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);
+        if (Vector3.Distance(this.transform.position, targetPosition) < 1f)
+        {
+            if (percorso != null && indicePercorso < percorso.Length)
+            {
+                this.SetNewTargetPosition(percorso[indicePercorso].transform.position);
+                indicePercorso++;
+            }
+            else
+            {
+                this.isAnimating = false;
+                if (!effettoCasella)
+                {
+                    effettoCasella = true;
+                    partenza.Fermata(this);
+                }
+            }
+        }
+        this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref vettoreVelocita, tempoPerSpostamento);
 	}
 
     public void SetNewTargetPosition(Vector3 pos)
     {
-        targetPosition = pos + new Vector3(-3, 3, 0);
-        velocity = Vector3.zero;
+        targetPosition = pos + new Vector3(-3, 0.1f, 0);
+        vettoreVelocita = Vector3.zero;
     }
 
     private void OnMouseUp()
     {
+        //controllo di chi è il turno e se ho già tirato
+        if (controller.CurrentPlayerId != PlayerId || controller.IsDoneClicking == true) return;
+        Casella arrivo = partenza;
+
+        // Se è il terzo doppio tiro si finisce in prigione
         if (controller.doppio == 3)
         {
             this.contatorePrigione = 0;
-            this.SetNewTargetPosition(prigione.transform.position);
-            this.partenza = prigione;
+            arrivo = Muovi(partenza, prigione);
         }
-
-        int spazio = int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text);
-
-        //controllo di chi è il turno 
-        if (controller.CurrentPlayerId != PlayerId) return;
-
-        if (controller.IsDoneClicking == true) return; // ho già tirato , mo basta
-
-        Casella arrivo = partenza;
-        for (int i = 0; i < spazio; i++)
+        else
         {
-            if (partenza == null) arrivo = partenza;
-            else
-            {
-                arrivo = arrivo.prossimaCasella;
-            }
+            arrivo = Muovi(controller.DiceTotal);
         }
-        if (arrivo == null) return;
+        this.partenza = arrivo;
 
         controller.IsDoneClicking = true;
-        this.isAnimating = true;
-        SetNewTargetPosition(arrivo.transform.position);
-        partenza = arrivo;
-        arrivo.Fermata(this);
     }
+    public Casella Muovi(int dado)
+    {
+        effettoCasella = false;
+        Casella arrivo = partenza;
+        percorso = new Casella[dado];
+        for (int i = 0; i < dado; i++)
+        {
+            arrivo = arrivo.prossimaCasella;
+            percorso[i] = arrivo;
+        }
+        // Se il giocatore passa dalla casella 1, il via, e non è stato
+        // diretto alla prigione allora prende i soldi
+        foreach (Casella item in percorso)
+            if (item.name == "1" && this.contatorePrigione < 0)
+                this.Paga(-200);
+
+        this.indicePercorso = 0;
+        this.isAnimating = true;
+        return arrivo;
+    }
+
+    public Casella Muovi(Casella partenza, Casella arrivo)
+    {
+        int numeroPartenza = int.Parse(partenza.name);
+        int numeroArrivo = int.Parse(arrivo.name);
+        if (numeroPartenza < numeroArrivo)
+        {
+            return Muovi(numeroArrivo - numeroPartenza);
+        }
+        else
+        {
+            return Muovi(40 + numeroArrivo - numeroPartenza);
+        }
+    }
+
+
 
     public void Paga(int importo)
     {

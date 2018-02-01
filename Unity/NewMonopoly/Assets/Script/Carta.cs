@@ -47,9 +47,11 @@ public class Carta
                     casella = item;
                 }
             }
-            giocatoreDiTurno.SetNewTargetPosition(casella.transform.position);
-            giocatoreDiTurno.partenza = casella;
-            giocatoreDiTurno.partenza.Fermata(giocatoreDiTurno);
+            if (casella.name == "11")
+            {
+                giocatoreDiTurno.contatorePrigione = 0;
+            }
+            giocatoreDiTurno.partenza = giocatoreDiTurno.Muovi(giocatoreDiTurno.partenza, casella);
             return;
         }
     }

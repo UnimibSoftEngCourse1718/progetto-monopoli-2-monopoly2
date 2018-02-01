@@ -8,7 +8,7 @@ public class Imprevisto : CasellaCarta
     {
         carte = new Carta[16];
         carte[0] = new Carta("Andate sino ad Ischia. Se passate dal via ritirate 200", 0, 25);
-        carte[1] = new Carta("Andate in prigione direttamente e senza passare dal via", 0, 31);
+        carte[1] = new Carta("Andate in prigione direttamente e senza passare dal via", 0, 11);
         carte[2] = new Carta("Fate 3 passi indietro", 0, -3);
         carte[3] = new Carta("Andate sino a Cosenza. Se passate dal via ritirate 200", 0, 12);
         carte[4] = new Carta("Versate 20 per beneficenza", -50, 0);

@@ -5807,7 +5807,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5969,7 +5969,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -22726,7 +22726,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -28477,7 +28477,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -30838,7 +30838,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -32008,7 +32008,6 @@ MonoBehaviour:
   - {fileID: 1796235372}
   - {fileID: 1489355731}
   risultato: 0
-  doppio: 0
   theStateController: {fileID: 1840371097}
 --- !u!4 &1962837532 stripped
 Transform:
@@ -33748,7 +33747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4934866022478168, guid: 996331e311863294d95a60de9e24ff29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -34362,7 +34361,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108800303
 MonoBehaviour:
