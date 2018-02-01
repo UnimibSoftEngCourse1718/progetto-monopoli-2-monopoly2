@@ -47,24 +47,23 @@ public class SchermataAcquisto : MonoBehaviour
             }
         }
 
-        if (terreno != null && terreno.costo <= giocatoreDiturno.soldi)
+        if (giocatoreDiturno != null && terreno != null && terreno.costo <= giocatoreDiturno.soldi)
         {
             giocatoreDiturno.Paga(terreno.costo);
             giocatoreDiturno.AggiungiProprieta(terreno);
         }
-        else if (societa != null && societa.costo <= giocatoreDiturno.soldi)
+        else if (giocatoreDiturno != null && societa != null && societa.costo <= giocatoreDiturno.soldi)
         {
             giocatoreDiturno.Paga(societa.costo);
             giocatoreDiturno.AggiungiProprieta(societa);
         }
-        else if (stazione != null && stazione.costo <= giocatoreDiturno.soldi)
+        else if (giocatoreDiturno != null && stazione != null && stazione.costo <= giocatoreDiturno.soldi)
         {
             giocatoreDiturno.Paga(stazione.costo);
             giocatoreDiturno.AggiungiProprieta(stazione);
         }
 
         PulsanteAnnulla();
-        return;
     }
 
     public void PulsanteAnnulla()
@@ -73,6 +72,5 @@ public class SchermataAcquisto : MonoBehaviour
         this.societa = null;
         this.stazione = null;
         schermata.SetActive(false);
-        return;
     }
 }

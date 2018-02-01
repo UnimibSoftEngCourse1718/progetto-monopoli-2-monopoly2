@@ -21,10 +21,8 @@ public class RANDOM : MonoBehaviour {
     {
         //controllo se ho già tirato
         if (theStateController.IsDoneRolling == true)
-        {
-            //controllo che io abbia passato prima di poter ritirare 
             return;
-        }
+
         text[0].text = UnityEngine.Random.Range(1, 7).ToString(); //Il 7 è escluso
         text[1].text = UnityEngine.Random.Range(1, 7).ToString();
 
@@ -34,10 +32,18 @@ public class RANDOM : MonoBehaviour {
         text[2].text = risultato.ToString();
         theStateController.DiceTotal = risultato;
 
-        if (text[0].text.Equals(text[1].text))
+        giocatore giocatoreAttivo = null;
+        foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
+            if (item.attivo)
+                giocatoreAttivo = item;
+
+        if (giocatoreAttivo.contatorePrigione == -1)
         {
-            theStateController.doppio++;
-            theStateController.Avviso("Tiro Doppio!\nQuando passi il turono puoi tirare di nuovo!\nFallo tre volte di seguito e finisci in prigione\n( ͡° ͜ʖ ͡°)");
+            if (text[0].text.Equals(text[1].text))
+            {
+                theStateController.doppio++;
+                theStateController.Avviso("Tiro Doppio!\nQuando passi il turno puoi tirare di nuovo!\n\nFallo tre volte di seguito e finisci in prigione");
+            }
         }
         else
             theStateController.doppio = 0;

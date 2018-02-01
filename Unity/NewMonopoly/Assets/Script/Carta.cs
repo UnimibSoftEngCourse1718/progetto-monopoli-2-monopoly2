@@ -22,6 +22,7 @@ public class Carta
         {
             //carta salva dalla prigione
             giocatoreDiTurno.uscitaDiPrigione = true;
+            GameObject.FindObjectOfType<StateController>().uscitaPrigione.SetActive(true);
             return;
         }
 
@@ -37,6 +38,7 @@ public class Carta
 
         if (movimento != 0)
         {
+            GameObject.FindObjectOfType<StateController>().IsDoneClicking = false;
             // sposta giocatore alla casella numero "movimento"
             Casella[] caselle = GameObject.FindObjectsOfType<Casella>();
             Casella casella = null;
@@ -52,7 +54,6 @@ public class Carta
                 giocatoreDiTurno.contatorePrigione = 0;
             }
             giocatoreDiTurno.partenza = giocatoreDiTurno.Muovi(giocatoreDiTurno.partenza, casella);
-            return;
         }
     }
 

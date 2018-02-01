@@ -11,10 +11,8 @@ public class CasellaInPrigione : Casella
     }
     public override void Fermata(giocatore giocatoreDiTurno)
     {
-        // TODO // Da correggere l'animazione e da evitare i soldi del passaggio del via
         GameObject.FindObjectOfType<StateController>().Avviso("Vai in prigione");
         giocatoreDiTurno.contatorePrigione = 0;
         giocatoreDiTurno.partenza = giocatoreDiTurno.Muovi(giocatoreDiTurno.partenza, prigione);
-        return;
     }
 }

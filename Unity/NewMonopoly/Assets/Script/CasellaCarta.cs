@@ -5,12 +5,15 @@ using UnityEngine;
 public class CasellaCarta : Casella
 {
     protected Carta[] carte;
+    protected string tipo;
+    protected int i;
 
     //Pesca una carta dal mazzo a caso e ne applica l'effetto
     public override void Fermata(giocatore giocatoreDiTurno)
     {
-        int i = UnityEngine.Random.Range(0, carte.Length - 1);
+        i = UnityEngine.Random.Range(0, 16);
         carte[i].Effetto(giocatoreDiTurno);
-        carte[i].Disegna();
+        GameObject.FindObjectOfType<StateController>().Avviso(tipo + "\n\n" + carte[i].testo);
+        Debug.Log(i + " " + carte[i].testo);
     }
 }

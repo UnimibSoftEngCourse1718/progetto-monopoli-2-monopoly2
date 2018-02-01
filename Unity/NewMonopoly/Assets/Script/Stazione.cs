@@ -37,6 +37,5 @@ public class Stazione : CasellaAcquistabile
             else if (nStazioni == 4)
                 giocatoreDiTurno.Paga(pedaggio4Stazioni);
         }
-        return;
     }
 }

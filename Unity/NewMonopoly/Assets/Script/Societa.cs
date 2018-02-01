@@ -32,6 +32,5 @@ public class Societa : CasellaAcquistabile
             else
                 giocatoreDiTurno.Paga(4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
         }
-        return;
     }
 }

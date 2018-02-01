@@ -6,7 +6,7 @@ public class Terreno : CasellaAcquistabile
 {
     // Se si possiedono tutti i terreni di quel colore il pedaggio senza case si raddoppia
     // Se si possiedono tutti i terreni di quel colore è possibile costruire
-    public int costo, ipoteca, costoEdificio, pedaggio, pedaggio1Casa, pedaggio2Case, pedaggio3Case, pedaggio4Case, pedaggioAlbergo, nEdifici;
+    public int costo, ipoteca, costoEdificio, pedaggio, pedaggio1Casa, pedaggio2Case, pedaggio3Case, pedaggio4Case, pedaggioAlbergo, nEdifici = 0;
     public GameObject prefabCasa, prefabAlbergo;
     List<GameObject> edifici = new List<GameObject>();
 
@@ -51,57 +51,59 @@ public class Terreno : CasellaAcquistabile
                 proprietario.Paga(-pedaggioAlbergo);
             }
         }
-        return;
     }
 
     public void CostruzioneEdificio()
     {
-        this.nEdifici += 1;
         float x = 0, z = 0;
         GameObject edificio = null;
 
-        if (nEdifici == 1)
+        if (nEdifici == 0)
         {
             edificio = Instantiate(prefabCasa) as GameObject;
             edificio.GetComponent<Transform>().localScale = new Vector3(0.17f, 0.28f, 0.25f);
             edificio.transform.position = this.transform.position;
             x = 4;
             z = 7.8f;
+            this.nEdifici++;
         }
-        else if (nEdifici == 2)
+        else if (nEdifici == 1)
         {
             edificio = Instantiate(prefabCasa) as GameObject;
             edificio.GetComponent<Transform>().localScale = new Vector3(0.17f, 0.28f, 0.25f);
             edificio.transform.position = this.transform.position;
             x = 2f;
             z = 7.8f;
+            this.nEdifici++;
         }
-        else if (nEdifici == 3)
+        else if (nEdifici == 2)
         {
             edificio = Instantiate(prefabCasa) as GameObject;
             edificio.GetComponent<Transform>().localScale = new Vector3(0.17f, 0.28f, 0.25f);
             edificio.transform.position = this.transform.position;
             x = 0;
             z = 7.8f;
+            this.nEdifici++;
         }
-        else if (nEdifici == 4)
+        else if (nEdifici == 3)
         {
             edificio = Instantiate(prefabCasa) as GameObject;
             edificio.GetComponent<Transform>().localScale = new Vector3(0.17f, 0.28f, 0.25f);
             edificio.transform.position = this.transform.position;
             x = -2;
             z = 7.8f;
+            this.nEdifici++;
         }
-        else if (nEdifici == 5)
+        else if (nEdifici == 4)
         {
             // Rimuovo le case prima di mettere l'albergo, pazienza per le famiglie
             RimuoviEdifici();
-
             edificio = Instantiate(prefabAlbergo) as GameObject;
             edificio.GetComponent<Transform>().localScale = new Vector3(0.33f, 0.28f, 0.25f);
             edificio.transform.position = this.transform.position;
             x = 3;
             z = 7.8f;
+            this.nEdifici = 5;
         }
 
         edificio.transform.position = this.transform.position;

@@ -20,6 +20,7 @@ public class StateController : MonoBehaviour
     public GameObject uscitaPrigione;
     public GameObject NoLegalMovesPopup;
     public bool verifica = false;
+    public float tempoPerSpostamento= 0.15f;
 
     // Use this for initialization
     void Start()
@@ -59,9 +60,19 @@ public class StateController : MonoBehaviour
                     i = listaGiocatori.Length;
                 }
             }
-            foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
-                if (item.attivo)
-                    uscitaPrigione.SetActive(item.uscitaDiPrigione);
+        }
+
+        giocatore giocatoreAttivo = null;
+        foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
+            if (item.attivo)
+                giocatoreAttivo = item;
+
+        uscitaPrigione.SetActive(giocatoreAttivo.uscitaDiPrigione);
+        // Controllo se il giocatore è in prigione
+        if (giocatoreAttivo.contatorePrigione != -1)
+        {
+            giocatoreAttivo.partenza.Fermata(giocatoreAttivo);
+            // TODO // Disabilitare i tasti tira,passa,costruisci
         }
     }
 
@@ -72,7 +83,6 @@ public class StateController : MonoBehaviour
         if (IsDoneRolling && IsDoneClicking && verifica == true )
         {
             NewTurn();
-            return;
         }
     }
 

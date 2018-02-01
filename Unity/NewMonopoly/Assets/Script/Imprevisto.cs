@@ -6,6 +6,7 @@ public class Imprevisto : CasellaCarta
 {
     private void Start()
     {
+        tipo = "IMPREVISTO";
         carte = new Carta[16];
         carte[0] = new Carta("Andate sino ad Ischia. Se passate dal via ritirate 200", 0, 25);
         carte[1] = new Carta("Andate in prigione direttamente e senza passare dal via", 0, 11);

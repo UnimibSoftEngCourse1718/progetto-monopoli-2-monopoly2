@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class giocatore : MonoBehaviour {
 
     Prigione prigione;
-    
-    public int contatorePrigione { get; set; }
+
+    public int contatorePrigione;
     public bool uscitaDiPrigione { get; set; }
     public int soldi { get; set; }
     public Casella partenza { get; set; }
@@ -23,11 +23,13 @@ public class giocatore : MonoBehaviour {
     //istruzioni per animazione 
     Vector3 targetPosition;
     Vector3 vettoreVelocita;
-    float tempoPerSpostamento = 0.15f;
+    float tempoPerSpostamento;
     private bool arrivato;
 
     // Use this for initialization
     void Start () {
+        uscitaDiPrigione = true;
+        contatorePrigione = -1;
         effettoCasella = true;
         proprieta = new List<CasellaAcquistabile>();
         soldi = 2500;
@@ -62,6 +64,7 @@ public class giocatore : MonoBehaviour {
                 {
                     effettoCasella = true;
                     partenza.Fermata(this);
+                    controller.IsDoneClicking = true;
                 }
             }
         }
@@ -80,9 +83,11 @@ public class giocatore : MonoBehaviour {
         if (controller.CurrentPlayerId != PlayerId || controller.IsDoneClicking == true) return;
         Casella arrivo = partenza;
 
+
         // Se è il terzo doppio tiro si finisce in prigione
         if (controller.doppio == 3)
         {
+            controller.doppio = 0;
             this.contatorePrigione = 0;
             arrivo = Muovi(partenza, prigione);
         }
@@ -91,11 +96,11 @@ public class giocatore : MonoBehaviour {
             arrivo = Muovi(controller.DiceTotal);
         }
         this.partenza = arrivo;
-
-        controller.IsDoneClicking = true;
     }
     public Casella Muovi(int dado)
     {
+        controller.IsDoneClicking = false;
+        tempoPerSpostamento = controller.tempoPerSpostamento;
         effettoCasella = false;
         Casella arrivo = partenza;
         percorso = new Casella[dado];
@@ -103,12 +108,11 @@ public class giocatore : MonoBehaviour {
         {
             arrivo = arrivo.prossimaCasella;
             percorso[i] = arrivo;
-        }
-        // Se il giocatore passa dalla casella 1, il via, e non è stato
-        // diretto alla prigione allora prende i soldi
-        foreach (Casella item in percorso)
-            if (item.name == "1" && this.contatorePrigione < 0)
+            if (percorso[i].name == "1" && this.contatorePrigione == -1)
+            {
                 this.Paga(-200);
+            }
+        }
 
         this.indicePercorso = 0;
         this.isAnimating = true;
@@ -128,9 +132,6 @@ public class giocatore : MonoBehaviour {
             return Muovi(40 + numeroArrivo - numeroPartenza);
         }
     }
-
-
-
     public void Paga(int importo)
     {
         this.soldi -= importo;

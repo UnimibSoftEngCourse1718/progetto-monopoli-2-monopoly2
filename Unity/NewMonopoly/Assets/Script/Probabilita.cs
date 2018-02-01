@@ -6,6 +6,7 @@ public class Probabilita : CasellaCarta
 {
     private void Start()
     {
+        tipo = "PROBABILITÀ";
         carte = new Carta[16];
         carte[0] = new Carta("Ritornate a Teramo", 0, 2);
         carte[1] = new Carta("È maturata la cedola delle vostre azioni: ritirate 40", 40, 0);
