@@ -67,6 +67,8 @@ public class AggiungiProprieta : MonoBehaviour
     public GameObject b1;
     public GameObject b2;
 
+   
+
     public giocatore p1;
     public giocatore p2;
     public giocatore p3;

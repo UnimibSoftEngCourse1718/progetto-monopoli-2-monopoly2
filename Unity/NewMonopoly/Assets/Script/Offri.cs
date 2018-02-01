@@ -26,6 +26,8 @@ public class Offri : MonoBehaviour {
     public GameObject controproposta1;
     public GameObject rifiuta1;
 
+    public GameObject annulla;
+
     public Text text1;
     public Text text2;
 
@@ -308,17 +310,20 @@ public class Offri : MonoBehaviour {
     public void offri()
     {
         offri1.active = false;
+        annulla.active = false;
         accetta1.active = true;
         controproposta1.active = false;
         rifiuta1.active = true;
         bga.active = false;
         bga1.active = true;
+       
     }
 
     public void controproposta()
     {
         
         offri1.active = true;
+        annulla.active = true;
         accetta1.active = false;
         controproposta1.active = false;
         rifiuta1.active = false;
