@@ -20,7 +20,10 @@ public class AggiungiProprieta : MonoBehaviour
     public Text prova;
     public Text prova1;
 
-    public Text Prop1_Player1;
+    public Text[] array1;
+    public Text[] array2;
+
+    /*public Text Prop1_Player1;
     public Text Prop2_Player1;
     public Text Prop3_Player1;
     public Text Prop4_Player1;
@@ -62,7 +65,7 @@ public class AggiungiProprieta : MonoBehaviour
     public Text Prop18_Player2;
     public Text Prop19_Player2;
     public Text Prop20_Player2;
-    public Text Prop21_Player2;
+    public Text Prop21_Player2;*/
 
     public GameObject b1;
     public GameObject b2;
@@ -118,10 +121,15 @@ public class AggiungiProprieta : MonoBehaviour
                   p1.proprieta[i].nomeCasella = "nessuna proprietà";
           }*/
 
+        
         if (p1.attivo == true)
         {
+            for (int r = 0; r < 21; r++)
+            {
+                array1[r].text = p1.proprieta[r].nomeCasella;
+            }
             // Prop1_Player1.text = "Proprietà 1"; //Lista[0];
-            Prop1_Player1.text = p1.proprieta[0].nomeCasella;
+           /* Prop1_Player1.text = p1.proprieta[0].nomeCasella;
             Prop2_Player1.text = p1.proprieta[1].nomeCasella;
             Prop3_Player1.text = p1.proprieta[2].nomeCasella;
             Prop4_Player1.text = p1.proprieta[3].nomeCasella;
@@ -141,11 +149,16 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player1.text = p1.proprieta[17].nomeCasella;
             Prop19_Player1.text = p1.proprieta[18].nomeCasella;
             Prop20_Player1.text = p1.proprieta[19].nomeCasella;
-            Prop21_Player1.text = p1.proprieta[20].nomeCasella;
+            Prop21_Player1.text = p1.proprieta[20].nomeCasella;*/
         }
         else if (p2.attivo == true)
         {
-            Prop1_Player1.text = p2.proprieta[0].nomeCasella;
+
+            for (int r = 0; r < 21; r++)
+            {
+                array1[r].text = p2.proprieta[r].nomeCasella;
+            }
+            /*Prop1_Player1.text = p2.proprieta[0].nomeCasella;
             Prop2_Player1.text = p2.proprieta[1].nomeCasella;
             Prop3_Player1.text = p2.proprieta[2].nomeCasella;
             Prop4_Player1.text = p2.proprieta[3].nomeCasella;
@@ -165,11 +178,15 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player1.text = p2.proprieta[17].nomeCasella;
             Prop19_Player1.text = p2.proprieta[18].nomeCasella;
             Prop20_Player1.text = p2.proprieta[19].nomeCasella;
-            Prop21_Player1.text = p2.proprieta[20].nomeCasella;
+            Prop21_Player1.text = p2.proprieta[20].nomeCasella;*/
         }
         else if (p3.attivo == true)
         {
-            Prop1_Player1.text = p3.proprieta[0].nomeCasella;
+            for (int r = 0; r < 21; r++)
+            {
+                array1[r].text = p3.proprieta[r].nomeCasella;
+            }
+           /* Prop1_Player1.text = p3.proprieta[0].nomeCasella;
             Prop2_Player1.text = p3.proprieta[1].nomeCasella;
             Prop3_Player1.text = p3.proprieta[2].nomeCasella;
             Prop4_Player1.text = p3.proprieta[3].nomeCasella;
@@ -189,11 +206,15 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player1.text = p3.proprieta[17].nomeCasella;
             Prop19_Player1.text = p3.proprieta[18].nomeCasella;
             Prop20_Player1.text = p3.proprieta[19].nomeCasella;
-            Prop21_Player1.text = p3.proprieta[20].nomeCasella;
+            Prop21_Player1.text = p3.proprieta[20].nomeCasella;*/
         }
         else if (p4.attivo == true)
         {
-            Prop1_Player1.text = p4.proprieta[0].nomeCasella;
+            for (int r = 0; r < 21; r++)
+            {
+                array1[r].text = p4.proprieta[r].nomeCasella;
+            }
+            /*Prop1_Player1.text = p4.proprieta[0].nomeCasella;
             Prop2_Player1.text = p4.proprieta[1].nomeCasella;
             Prop3_Player1.text = p4.proprieta[2].nomeCasella;
             Prop4_Player1.text = p4.proprieta[3].nomeCasella;
@@ -213,11 +234,15 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player1.text = p4.proprieta[17].nomeCasella;
             Prop19_Player1.text = p4.proprieta[18].nomeCasella;
             Prop20_Player1.text = p4.proprieta[19].nomeCasella;
-            Prop21_Player1.text = p4.proprieta[20].nomeCasella;
+            Prop21_Player1.text = p4.proprieta[20].nomeCasella;*/
         }
         else if (p5.attivo == true)
         {
-            Prop1_Player1.text = p5.proprieta[0].nomeCasella;
+            for (int r = 0; r < 21; r++)
+            {
+                array1[r].text = p5.proprieta[r].nomeCasella;
+            }
+            /*Prop1_Player1.text = p5.proprieta[0].nomeCasella;
             Prop2_Player1.text = p5.proprieta[1].nomeCasella;
             Prop3_Player1.text = p5.proprieta[2].nomeCasella;
             Prop4_Player1.text = p5.proprieta[3].nomeCasella;
@@ -237,11 +262,15 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player1.text = p5.proprieta[17].nomeCasella;
             Prop19_Player1.text = p5.proprieta[18].nomeCasella;
             Prop20_Player1.text = p5.proprieta[19].nomeCasella;
-            Prop21_Player1.text = p5.proprieta[20].nomeCasella;
+            Prop21_Player1.text = p5.proprieta[20].nomeCasella;*/
         }
         else if (p6.attivo == true)
         {
-            Prop1_Player1.text = p6.proprieta[0].nomeCasella;
+            for (int r = 0; r < 21; r++)
+            {
+                array1[r].text = p6.proprieta[r].nomeCasella;
+            }
+           /* Prop1_Player1.text = p6.proprieta[0].nomeCasella;
             Prop2_Player1.text = p6.proprieta[1].nomeCasella;
             Prop3_Player1.text = p6.proprieta[2].nomeCasella;
             Prop4_Player1.text = p6.proprieta[3].nomeCasella;
@@ -261,7 +290,7 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player1.text = p6.proprieta[17].nomeCasella;
             Prop19_Player1.text = p6.proprieta[18].nomeCasella;
             Prop20_Player1.text = p6.proprieta[19].nomeCasella;
-            Prop21_Player1.text = p6.proprieta[20].nomeCasella;
+            Prop21_Player1.text = p6.proprieta[20].nomeCasella;*/
         }
 
 
@@ -276,8 +305,12 @@ public class AggiungiProprieta : MonoBehaviour
 
         if (Player2.text.Equals("Player 1"))
         {
+            for (int r = 0; r < 21; r++)
+            {
+                array2[r].text = p1.proprieta[r].nomeCasella;
+            }
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p1.proprieta[0].nomeCasella;
+            /*Prop1_Player2.text = p1.proprieta[0].nomeCasella;
             Prop2_Player2.text = p1.proprieta[1].nomeCasella;
             Prop3_Player2.text = p1.proprieta[2].nomeCasella;
             Prop4_Player2.text = p1.proprieta[3].nomeCasella;
@@ -297,14 +330,18 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player2.text = p1.proprieta[17].nomeCasella;
             Prop19_Player2.text = p1.proprieta[18].nomeCasella;
             Prop20_Player2.text = p1.proprieta[19].nomeCasella;
-            Prop21_Player2.text = p1.proprieta[20].nomeCasella;
+            Prop21_Player2.text = p1.proprieta[20].nomeCasella;*/
         }
         //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 2"))
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa2"))
         if (Player2.text.Equals("Player 2"))
         {
+            for (int r = 0; r < 21; r++)
+            {
+                array2[r].text = p2.proprieta[r].nomeCasella;
+            }
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p2.proprieta[0].nomeCasella;
+           /* Prop1_Player2.text = p2.proprieta[0].nomeCasella;
             Prop2_Player2.text = p2.proprieta[1].nomeCasella;
             Prop3_Player2.text = p2.proprieta[2].nomeCasella;
             Prop4_Player2.text = p2.proprieta[3].nomeCasella;
@@ -324,14 +361,18 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player2.text = p2.proprieta[17].nomeCasella;
             Prop19_Player2.text = p2.proprieta[18].nomeCasella;
             Prop20_Player2.text = p2.proprieta[19].nomeCasella;
-            Prop21_Player2.text = p2.proprieta[20].nomeCasella;
+            Prop21_Player2.text = p2.proprieta[20].nomeCasella;*/
         }
         //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 3"))
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa3"))
         if (Player2.text.Equals("Player 3"))
         {
+            for (int r = 0; r < 21; r++)
+            {
+                array2[r].text = p3.proprieta[r].nomeCasella;
+            }
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p3.proprieta[0].nomeCasella;
+           /* Prop1_Player2.text = p3.proprieta[0].nomeCasella;
             Prop2_Player2.text = p3.proprieta[1].nomeCasella;
             Prop3_Player2.text = p3.proprieta[2].nomeCasella;
             Prop4_Player2.text = p3.proprieta[3].nomeCasella;
@@ -351,14 +392,18 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player2.text = p3.proprieta[17].nomeCasella;
             Prop19_Player2.text = p3.proprieta[18].nomeCasella;
             Prop20_Player2.text = p3.proprieta[19].nomeCasella;
-            Prop21_Player2.text = p3.proprieta[20].nomeCasella;
+            Prop21_Player2.text = p3.proprieta[20].nomeCasella;*/
         }
         //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 4"))
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa4"))
         if (Player2.text.Equals("Player 4"))
         {
+            for (int r = 0; r < 21; r++)
+            {
+                array2[r].text = p4.proprieta[r].nomeCasella;
+            }
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p4.proprieta[0].nomeCasella;
+           /* Prop1_Player2.text = p4.proprieta[0].nomeCasella;
             Prop2_Player2.text = p4.proprieta[1].nomeCasella;
             Prop3_Player2.text = p4.proprieta[2].nomeCasella;
             Prop4_Player2.text = p4.proprieta[3].nomeCasella;
@@ -378,14 +423,18 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player2.text = p4.proprieta[17].nomeCasella;
             Prop19_Player2.text = p4.proprieta[18].nomeCasella;
             Prop20_Player2.text = p4.proprieta[19].nomeCasella;
-            Prop21_Player2.text = p4.proprieta[20].nomeCasella;
+            Prop21_Player2.text = p4.proprieta[20].nomeCasella;*/
         }
         //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 5"))
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa5"))
         if (Player2.text.Equals("Player 5"))
         {
+            for (int r = 0; r < 21; r++)
+            {
+                array2[r].text = p5.proprieta[r].nomeCasella;
+            }
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p5.proprieta[0].nomeCasella;
+            /*Prop1_Player2.text = p5.proprieta[0].nomeCasella;
             Prop2_Player2.text = p5.proprieta[1].nomeCasella;
             Prop3_Player2.text = p5.proprieta[2].nomeCasella;
             Prop4_Player2.text = p5.proprieta[3].nomeCasella;
@@ -405,14 +454,18 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player2.text = p5.proprieta[17].nomeCasella;
             Prop19_Player2.text = p5.proprieta[18].nomeCasella;
             Prop20_Player2.text = p5.proprieta[19].nomeCasella;
-            Prop21_Player2.text = p5.proprieta[20].nomeCasella;
+            Prop21_Player2.text = p5.proprieta[20].nomeCasella;*/
         }
         //if (GameObject.Find("Player2").GetComponent<Text>().text.Equals("Player 6"))
         //if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa1"))
         if (Player2.text.Equals("Player 6"))
         {
+            for (int r = 0; r < 21; r++)
+            {
+                array2[r].text = p6.proprieta[r].nomeCasella;
+            }
             //Prop2_Player2.text = "Proprietà 1";
-            Prop1_Player2.text = p6.proprieta[0].nomeCasella;
+            /*Prop1_Player2.text = p6.proprieta[0].nomeCasella;
             Prop2_Player2.text = p6.proprieta[1].nomeCasella;
             Prop3_Player2.text = p6.proprieta[2].nomeCasella;
             Prop4_Player2.text = p6.proprieta[3].nomeCasella;
@@ -432,7 +485,7 @@ public class AggiungiProprieta : MonoBehaviour
             Prop18_Player2.text = p6.proprieta[17].nomeCasella;
             Prop19_Player2.text = p6.proprieta[18].nomeCasella;
             Prop20_Player2.text = p6.proprieta[19].nomeCasella;
-            Prop21_Player2.text = p6.proprieta[20].nomeCasella;
+            Prop21_Player2.text = p6.proprieta[20].nomeCasella;*/
         }
 
 
@@ -632,7 +685,16 @@ public class AggiungiProprieta : MonoBehaviour
 
     public void reset()
     {
-        Prop1_Player1.text = "Nessuna Proprietà";
+
+        for (int r = 0; r < 21; r++)
+        {
+            array1[r].text = "Nessuna Proprietà";
+        }
+        for (int r = 0; r < 21; r++)
+        {
+            array2[r].text = "Nessuna Proprietà";
+        }
+        /*Prop1_Player1.text = "Nessuna Proprietà";
         Prop2_Player1.text = "Nessuna Proprietà";
         Prop3_Player1.text = "Nessuna Proprietà";
         Prop4_Player1.text = "Nessuna Proprietà";
@@ -674,6 +736,6 @@ public class AggiungiProprieta : MonoBehaviour
         Prop18_Player2.text = "Nessuna Proprietà";
         Prop19_Player2.text = "Nessuna Proprietà";
         Prop20_Player2.text = "Nessuna Proprietà";
-        Prop21_Player2.text = "Nessuna Proprietà";
+        Prop21_Player2.text = "Nessuna Proprietà";*/
     }
 }
