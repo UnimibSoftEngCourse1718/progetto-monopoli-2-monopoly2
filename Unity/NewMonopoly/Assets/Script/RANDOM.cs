@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RANDOM : MonoBehaviour {
-
+    // TODO // controllare cosa fa questo "Passa"
     public bool Passa;
     public Text[] text;
-    public int risultato = 0; // Ogni volta che si tira si azzera il punteggio dei dadi
+    public int risultato;
     public StateController theStateController;
 
     public void ok()
@@ -22,13 +22,17 @@ public class RANDOM : MonoBehaviour {
         //controllo se ho già tirato
         if (theStateController.IsDoneRolling == true)
             return;
+        risultato = 0;
 
-        text[0].text = UnityEngine.Random.Range(1, 7).ToString(); //Il 7 è escluso
-        text[1].text = UnityEngine.Random.Range(1, 7).ToString();
+        int dado1, dado2;
+        dado1 = UnityEngine.Random.Range(1, 7);
+        dado2 = UnityEngine.Random.Range(1, 7);
+        text[0].text = dado1.ToString();
+        text[1].text = dado2.ToString();
 
         theStateController.IsDoneRolling = true;//tiro effettivo
 
-        risultato = int.Parse(text[0].text) + int.Parse(text[1].text);
+        risultato = dado1 + dado2;
         text[2].text = risultato.ToString();
         theStateController.DiceTotal = risultato;
 
@@ -39,13 +43,15 @@ public class RANDOM : MonoBehaviour {
 
         if (giocatoreAttivo.contatorePrigione == -1)
         {
-            if (text[0].text.Equals(text[1].text))
+            if (dado1 == dado2)
             {
                 theStateController.doppio++;
                 theStateController.Avviso("Tiro Doppio!\nQuando passi il turno puoi tirare di nuovo!\n\nFallo tre volte di seguito e finisci in prigione");
             }
+            else
+            {
+                theStateController.doppio = 0;
+            }
         }
-        else
-            theStateController.doppio = 0;
     }
 }

@@ -21,6 +21,7 @@ public class StateController : MonoBehaviour
     public GameObject NoLegalMovesPopup;
     public bool verifica = false;
     public float tempoPerSpostamento= 0.15f;
+    giocatore giocatoreAttivo = null;
 
     // Use this for initialization
     void Start()
@@ -37,10 +38,14 @@ public class StateController : MonoBehaviour
         {
             listaGiocatori[i - 1] = GameObject.Find("P" + i);
         }
+        giocatoreAttivo = this.getGiocatoreAttivo();
+        giocatoreAttivo.GetComponent<BoxCollider>().enabled = true;
     }
 
     public void NewTurn()
     {
+        giocatoreAttivo.GetComponent<BoxCollider>().enabled = false;
+        giocatoreAttivo = null;
         IsDoneRolling = false;
         IsDoneClicking = false;
         verifica = false;
@@ -62,28 +67,26 @@ public class StateController : MonoBehaviour
             }
         }
 
-        giocatore giocatoreAttivo = null;
-        foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
-            if (item.attivo)
-                giocatoreAttivo = item;
-
+        giocatoreAttivo = this.getGiocatoreAttivo();
+        giocatoreAttivo.GetComponent<BoxCollider>().enabled = true;
         uscitaPrigione.SetActive(giocatoreAttivo.uscitaDiPrigione);
+
         // Controllo se il giocatore è in prigione
         if (giocatoreAttivo.contatorePrigione != -1)
         {
             giocatoreAttivo.partenza.Fermata(giocatoreAttivo);
-            // TODO // Disabilitare i tasti tira,passa,costruisci
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public giocatore getGiocatoreAttivo()
     {
-        // È finito il turno?
-        if (IsDoneRolling && IsDoneClicking && verifica == true )
+        if (this.giocatoreAttivo == null)
         {
-            NewTurn();
+            foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
+                if (item.attivo)
+                    this.giocatoreAttivo = item;
         }
+        return giocatoreAttivo;
     }
 
     public void RimuoviGiocatore(giocatore g)

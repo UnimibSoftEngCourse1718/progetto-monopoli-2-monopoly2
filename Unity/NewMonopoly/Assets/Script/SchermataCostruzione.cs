@@ -9,60 +9,60 @@ public class SchermataCostruzione : MonoBehaviour
     public Terreno terreno;
     public GameObject schermata;
     private giocatore giocatoreDiturno;
-    private int marrone = 0, azzurro = 0, rosa = 0, arancione = 0, rosso = 0, giallo = 0, verde = 0, blu = 0;
+    private int[] colori = new int[8];
     private Button[] listaPulsanti;
     List<Terreno> listaTerreni = new List<Terreno>();
 
     public void Visualizza()
     {
         // Trovo il giocatore attivo
-        foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
-            if (item.attivo)
-                giocatoreDiturno = item;
+        giocatoreDiturno = GameObject.FindObjectOfType<StateController>().getGiocatoreAttivo();
 
         foreach (CasellaAcquistabile item in giocatoreDiturno.proprieta)
         {
             if (item.nomeCasella == "TERAMO" || item.nomeCasella == "SANREMO")
-                marrone++;
+                colori[0]++;
             else if (item.nomeCasella == "L'AQUILA" || item.nomeCasella == "TRANI" || item.nomeCasella == "TORINO")
-                azzurro++;
+                colori[1]++;
             else if (item.nomeCasella == "COSENZA" || item.nomeCasella == "MILANO" || item.nomeCasella == "VIAREGGIO")
-                rosa++;
+                colori[2]++;
             else if (item.nomeCasella == "TERNI" || item.nomeCasella == "MESSINA" || item.nomeCasella == "FOGGIA")
-                arancione++;
+                colori[3]++;
             else if (item.nomeCasella == "CASERTA" || item.nomeCasella == "BRINDISI" || item.nomeCasella == "ISCHIA")
-                rosso++;
+                colori[4]++;
             else if (item.nomeCasella == "MONOPOLI" || item.nomeCasella == "ASCOLI PICENO" || item.nomeCasella == "ISOLA D'ELBA")
-                giallo++;
+                colori[5]++;
             else if (item.nomeCasella == "ANDRIA" || item.nomeCasella == "BARLETTA" || item.nomeCasella == "CATANZARO")
-                verde++;
+                colori[6]++;
             else if (item.nomeCasella == "REGGIO CALABRIA" || item.nomeCasella == "CHIETI")
-                blu++;
+                colori[7]++;
+            /*
+            // Togliere il commento per poter costruire ovunque
             if (item as Terreno != null)
             {
                 listaTerreni.Add(item as Terreno);
-            }
+            }*/
         }
-        /*
+        
         foreach (CasellaAcquistabile item in giocatoreDiturno.proprieta)
         {
-            if (marrone == 2 && item.nomeCasella == "TERAMO" || item.nomeCasella == "SANREMO")
+            if (colori[0] == 2 && (item.nomeCasella == "TERAMO" || item.nomeCasella == "SANREMO"))
                 listaTerreni.Add(item as Terreno);
-            else if (azzurro == 3 && item.nomeCasella == "L'AQUILA" || item.nomeCasella == "TRANI" || item.nomeCasella == "TORINO")
+            else if (colori[1] == 3 && (item.nomeCasella == "L'AQUILA" || item.nomeCasella == "TRANI" || item.nomeCasella == "TORINO"))
                 listaTerreni.Add(item as Terreno);
-            else if (rosa == 3 && item.nomeCasella == "COSENZA" || item.nomeCasella == "MILANO" || item.nomeCasella == "VIAREGGIO")
+            else if (colori[2] == 3 && (item.nomeCasella == "COSENZA" || item.nomeCasella == "MILANO" || item.nomeCasella == "VIAREGGIO"))
                 listaTerreni.Add(item as Terreno);
-            else if (arancione == 3 && item.nomeCasella == "TERNI" || item.nomeCasella == "MESSINA" || item.nomeCasella == "FOGGIA")
+            else if (colori[3] == 3 && (item.nomeCasella == "TERNI" || item.nomeCasella == "MESSINA" || item.nomeCasella == "FOGGIA"))
                 listaTerreni.Add(item as Terreno);
-            else if (rosso == 3 && item.nomeCasella == "CASERTA" || item.nomeCasella == "BRINDISI" || item.nomeCasella == "ISCHIA")
+            else if (colori[4] == 3 && (item.nomeCasella == "CASERTA" || item.nomeCasella == "BRINDISI" || item.nomeCasella == "ISCHIA"))
                 listaTerreni.Add(item as Terreno);
-            else if (giallo == 3 && item.nomeCasella == "MONOPOLI" || item.nomeCasella == "ASCOLI PICENO" || item.nomeCasella == "ISOLA D'ELBA")
+            else if (colori[5] == 3 && (item.nomeCasella == "MONOPOLI" || item.nomeCasella == "ASCOLI PICENO" || item.nomeCasella == "ISOLA D'ELBA"))
                 listaTerreni.Add(item as Terreno);
-            else if (verde == 3 && item.nomeCasella == "ANDRIA" || item.nomeCasella == "BARLETTA" || item.nomeCasella == "CATANZARO")
+            else if (colori[6] == 3 && (item.nomeCasella == "ANDRIA" || item.nomeCasella == "BARLETTA" || item.nomeCasella == "CATANZARO"))
                 listaTerreni.Add(item as Terreno);
-            else if (blu == 2 && item.nomeCasella == "REGGIO CALABRIA" || item.nomeCasella == "CHIETI")
+            else if (colori[7] == 2 && (item.nomeCasella == "REGGIO CALABRIA" || item.nomeCasella == "CHIETI"))
                 listaTerreni.Add(item as Terreno);
-        }*/
+        }
         schermata.SetActive(true);
 
         // Disabilito i pulsanti in eccesso
@@ -107,6 +107,7 @@ public class SchermataCostruzione : MonoBehaviour
         this.giocatoreDiturno = null;
         listaTerreni = new List<Terreno>();
         terreno = null;
+        colori = new int[8];
 
         GameObject.Find("ScrollPulsanti").SetActiveRecursively(true);
         listaPulsanti = GameObject.Find("ScrollPulsanti").GetComponentsInChildren<Button>();

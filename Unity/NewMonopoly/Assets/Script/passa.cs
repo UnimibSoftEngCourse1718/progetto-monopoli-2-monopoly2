@@ -13,21 +13,12 @@ public class passa : MonoBehaviour {
     {
         if (controller.IsDoneRolling && controller.IsDoneClicking == true)
         {
-            controller.verifica = true;
-            Passaturno();
-        }
-    }
-
-    public void Passaturno()
-    {
-        if (controller.verifica == true)
-        {
-            //GameObject.Find("Messaggi").GetComponent<Text>().text = "";
             GameObject.Find("Dado 1").GetComponent<Text>().text = "";
             GameObject.Find("Dado 2").GetComponent<Text>().text = "";
             GameObject.Find("Risultato Dadi").GetComponent<Text>().text = "";
             if (controller.doppio == 0)
             {
+                // Se non c'è stato un doppio tiro, bisogna cambiare la targhetta attiva
                 int vecchioGiocatore = contatoreGiocatoreAttivo;
                 for (int i = contatoreGiocatoreAttivo; i < listaGiocatori.Length; i++)
                 {
@@ -42,13 +33,12 @@ public class passa : MonoBehaviour {
                         i = listaGiocatori.Length;
                     }
                 }
-
                 listaOverlay[contatoreGiocatoreAttivo].SetActive(true);
                 listaGiocatori[contatoreGiocatoreAttivo].attivo = true;
-
                 listaOverlay[vecchioGiocatore].SetActive(false);
                 listaGiocatori[vecchioGiocatore].attivo = false;
             }
+            controller.NewTurn();
         }
     }
 }

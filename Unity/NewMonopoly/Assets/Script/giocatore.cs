@@ -16,7 +16,7 @@ public class giocatore : MonoBehaviour {
     public Text testoSoldi;
     public int PlayerId;
     public bool attivo;
-    public bool isAnimating, effettoCasella;
+    public bool effettoCasella;
     Casella[] percorso;
     int indicePercorso;
 
@@ -28,7 +28,7 @@ public class giocatore : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        uscitaDiPrigione = true;
+        uscitaDiPrigione = false;
         contatorePrigione = -1;
         effettoCasella = true;
         proprieta = new List<CasellaAcquistabile>();
@@ -57,15 +57,11 @@ public class giocatore : MonoBehaviour {
                 this.SetNewTargetPosition(percorso[indicePercorso].transform.position);
                 indicePercorso++;
             }
-            else
+            else if (!effettoCasella)
             {
-                this.isAnimating = false;
-                if (!effettoCasella)
-                {
-                    effettoCasella = true;
-                    partenza.Fermata(this);
-                    controller.IsDoneClicking = true;
-                }
+                effettoCasella = true;
+                partenza.Fermata(this);
+                controller.IsDoneClicking = true;
             }
         }
         this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref vettoreVelocita, tempoPerSpostamento);
@@ -81,24 +77,25 @@ public class giocatore : MonoBehaviour {
     {
         //controllo di chi è il turno e se ho già tirato
         if (controller.CurrentPlayerId != PlayerId || controller.IsDoneClicking == true) return;
-        Casella arrivo = partenza;
-
 
         // Se è il terzo doppio tiro si finisce in prigione
         if (controller.doppio == 3)
         {
             controller.doppio = 0;
             this.contatorePrigione = 0;
-            arrivo = Muovi(partenza, prigione);
+            this.partenza = Muovi(partenza, prigione);
         }
         else
         {
-            arrivo = Muovi(controller.DiceTotal);
+            this.partenza = Muovi(controller.DiceTotal);
         }
-        this.partenza = arrivo;
     }
     public Casella Muovi(int dado)
     {
+        if (this.contatorePrigione != -1)
+        {
+            controller.doppio = 0;
+        }
         controller.IsDoneClicking = false;
         tempoPerSpostamento = controller.tempoPerSpostamento;
         effettoCasella = false;
@@ -115,7 +112,6 @@ public class giocatore : MonoBehaviour {
         }
 
         this.indicePercorso = 0;
-        this.isAnimating = true;
         return arrivo;
     }
 
