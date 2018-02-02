@@ -38,14 +38,10 @@ public class giocatore : MonoBehaviour {
         prigione = GameObject.FindObjectOfType<Prigione>();
         controller = GameObject.FindObjectOfType<StateController>();
 
-        Casella[] caselle = GameObject.FindObjectsOfType<Casella>();
-        foreach (Casella item in caselle)
-        {
+        foreach (Casella item in GameObject.FindObjectsOfType<Casella>())
             if (item.name == "1")
-            {
                 partenza = item;
-            }
-        }
+
     }
 
 	void Update ()
@@ -150,6 +146,7 @@ public class giocatore : MonoBehaviour {
 
     public void RimuoviProprieta(CasellaAcquistabile casella)
     {
+        casella.CambioProprietario();
         this.proprieta.Remove(casella);
     }
 }
