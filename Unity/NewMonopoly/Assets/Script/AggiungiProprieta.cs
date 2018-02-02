@@ -587,8 +587,7 @@ public class AggiungiProprieta : MonoBehaviour
 
             }
         
-            i = 0;
-            y = 0;
+            
             for (i = 0; i < 21; i++)
             {
                 arr1[i] = "Nessuna Proprietà";
@@ -598,6 +597,9 @@ public class AggiungiProprieta : MonoBehaviour
             {
                 arr2[y] = "Nessuna Proprietà";
             }
+
+        i = 0;
+        y = 0;
 
         b1.active = true;
         b2.active = true;
@@ -610,8 +612,7 @@ public class AggiungiProprieta : MonoBehaviour
         b1.active = true;
         b2.active = true;
 
-        i = 0;
-        y = 0;
+        
         for (i = 0; i < 21; i++)
         {
             arr1[i] = "Nessuna Proprietà";
@@ -622,6 +623,8 @@ public class AggiungiProprieta : MonoBehaviour
             arr2[y] = "Nessuna Proprietà";
         }
 
+        i = 0;
+        y = 0;
 
         GameObject.Find("TRATTATIVA").active = false;
 
