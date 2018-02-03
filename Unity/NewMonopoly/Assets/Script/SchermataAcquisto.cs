@@ -49,17 +49,17 @@ public class SchermataAcquisto : MonoBehaviour
 
         if (giocatoreDiturno != null && terreno != null && terreno.costo <= giocatoreDiturno.soldi)
         {
-            giocatoreDiturno.Paga(terreno.costo);
+            giocatoreDiturno.TrasferimentoDenaro(-terreno.costo);
             giocatoreDiturno.AggiungiProprieta(terreno);
         }
         else if (giocatoreDiturno != null && societa != null && societa.costo <= giocatoreDiturno.soldi)
         {
-            giocatoreDiturno.Paga(societa.costo);
+            giocatoreDiturno.TrasferimentoDenaro(-societa.costo);
             giocatoreDiturno.AggiungiProprieta(societa);
         }
         else if (giocatoreDiturno != null && stazione != null && stazione.costo <= giocatoreDiturno.soldi)
         {
-            giocatoreDiturno.Paga(stazione.costo);
+            giocatoreDiturno.TrasferimentoDenaro(-stazione.costo);
             giocatoreDiturno.AggiungiProprieta(stazione);
         }
 

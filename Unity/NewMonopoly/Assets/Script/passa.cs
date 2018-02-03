@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class passa : MonoBehaviour {
-
+public class passa : MonoBehaviour
+{
     private int contatoreGiocatoreAttivo = 0;
     public GameObject[] listaOverlay;
     public giocatore[] listaGiocatori;
@@ -18,7 +18,6 @@ public class passa : MonoBehaviour {
             GameObject.Find("Risultato Dadi").GetComponent<Text>().text = "";
             if (controller.doppio == 0)
             {
-                // Se non c'è stato un doppio tiro, bisogna cambiare la targhetta attiva
                 int vecchioGiocatore = contatoreGiocatoreAttivo;
                 for (int i = contatoreGiocatoreAttivo; i < listaGiocatori.Length; i++)
                 {

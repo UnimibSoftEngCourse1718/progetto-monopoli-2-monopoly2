@@ -15,7 +15,6 @@ public class SchermataCostruzione : MonoBehaviour
 
     public void Visualizza()
     {
-        // Trovo il giocatore attivo
         giocatoreDiturno = GameObject.FindObjectOfType<StateController>().getGiocatoreAttivo();
 
         foreach (CasellaAcquistabile item in giocatoreDiturno.proprieta)
@@ -65,17 +64,14 @@ public class SchermataCostruzione : MonoBehaviour
         }
         schermata.SetActive(true);
 
-        // Disabilito i pulsanti in eccesso
         listaPulsanti = GameObject.Find("ScrollPulsanti").GetComponentsInChildren<Button>();
         for (int i = listaPulsanti.Length - 1; i >= listaTerreni.Count; i--)
             listaPulsanti[i].gameObject.SetActive(false);
 
-        // Do il nome giusto ai pulsanti
         Terreno[] supporto = listaTerreni.ToArray();
         for (int i = 0; i < supporto.Length; i++)
             listaPulsanti[i].GetComponentInChildren<Text>().text = supporto[i].nomeCasella;
 
-        // Ridimensiono il box che conterrà i pulsanti
         int altezza = listaTerreni.Count * 55 - 5;
         GameObject.Find("ScrollPulsanti").GetComponent<RectTransform>().sizeDelta = new Vector2(0, altezza);
     }
@@ -90,11 +86,9 @@ public class SchermataCostruzione : MonoBehaviour
 
         if (terreno != null && terreno.costoEdificio <= giocatoreDiturno.soldi)
         {
-            // Uso questo controllo per evitare che venga costruito un edificio e distrutto il giocatore
-            // I destroy non sono esattamente immediati e veniva lasciato un edificio di nessuno
             if (giocatoreDiturno.soldi - terreno.costoEdificio >= 0 && terreno.nEdifici < 5)
             {
-                giocatoreDiturno.Paga(terreno.costoEdificio);
+                giocatoreDiturno.TrasferimentoDenaro(-terreno.costoEdificio);
                 terreno.CostruzioneEdificio();
             }
         }

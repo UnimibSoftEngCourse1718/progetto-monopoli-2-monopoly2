@@ -8,6 +8,6 @@ public class Tassa : Casella
 
     public override void Fermata(giocatore giocatoreDiTurno)
     {
-        giocatoreDiTurno.Paga(valoreTassa);
+        giocatoreDiTurno.TrasferimentoDenaro(-valoreTassa);
     }
 }

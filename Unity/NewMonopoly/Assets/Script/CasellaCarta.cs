@@ -8,7 +8,6 @@ public class CasellaCarta : Casella
     protected string tipo;
     protected int i;
 
-    //Pesca una carta dal mazzo a caso e ne applica l'effetto
     public override void Fermata(giocatore giocatoreDiTurno)
     {
         i = UnityEngine.Random.Range(0, 16);

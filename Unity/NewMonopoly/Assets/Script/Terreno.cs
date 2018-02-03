@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Terreno : CasellaAcquistabile
 {
-    // Se si possiedono tutti i terreni di quel colore il pedaggio senza case si raddoppia
-    // Se si possiedono tutti i terreni di quel colore è possibile costruire
     public int costo, ipoteca, costoEdificio, pedaggio, pedaggio1Casa, pedaggio2Case, pedaggio3Case, pedaggio4Case, pedaggioAlbergo, nEdifici = 0;
     public GameObject prefabCasa, prefabAlbergo;
     List<GameObject> edifici = new List<GameObject>();
@@ -19,36 +17,35 @@ public class Terreno : CasellaAcquistabile
         }
         else
         {
-            // Terreno occupato // Pedaggio
             if (nEdifici == 0)
             {
-                giocatoreDiTurno.Paga(pedaggio);
-                proprietario.Paga(-pedaggio);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio);
+                proprietario.TrasferimentoDenaro(pedaggio);
             }
             else if (nEdifici == 1)
             {
-                giocatoreDiTurno.Paga(pedaggio1Casa);
-                proprietario.Paga(-pedaggio1Casa);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio1Casa);
+                proprietario.TrasferimentoDenaro(pedaggio1Casa);
             }
             else if (nEdifici == 2)
             {
-                giocatoreDiTurno.Paga(pedaggio2Case);
-                proprietario.Paga(-pedaggio2Case);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio2Case);
+                proprietario.TrasferimentoDenaro(pedaggio2Case);
             }
             else if (nEdifici == 3)
             {
-                giocatoreDiTurno.Paga(pedaggio3Case);
-                proprietario.Paga(-pedaggio3Case);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio3Case);
+                proprietario.TrasferimentoDenaro(pedaggio3Case);
             }
             else if (nEdifici == 4)
             {
-                giocatoreDiTurno.Paga(pedaggio4Case);
-                proprietario.Paga(-pedaggio4Case);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio4Case);
+                proprietario.TrasferimentoDenaro(pedaggio4Case);
             }
             else if (nEdifici == 5)
             {
-                giocatoreDiTurno.Paga(pedaggioAlbergo);
-                proprietario.Paga(-pedaggioAlbergo);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggioAlbergo);
+                proprietario.TrasferimentoDenaro(pedaggioAlbergo);
             }
         }
     }
@@ -96,7 +93,6 @@ public class Terreno : CasellaAcquistabile
         }
         else if (nEdifici == 4)
         {
-            // Rimuovo le case prima di mettere l'albergo, pazienza per le famiglie
             RimuoviEdifici();
             edificio = Instantiate(prefabAlbergo) as GameObject;
             edificio.GetComponent<Transform>().localScale = new Vector3(0.33f, 0.28f, 0.25f);
@@ -112,24 +108,20 @@ public class Terreno : CasellaAcquistabile
         int i = int.Parse(this.name);
         if (i < 11)
         {
-            // caselle sotto
             edificio.transform.position += new Vector3(-x, 0, z);
         }
         else if (i < 21)
         {
-            // caselle sinistra
             edificio.transform.position += new Vector3(z, 0, x);
             edificio.transform.Rotate(new Vector3(0, 90, 0));
         }
         else if (i < 31)
         {
-            // caselle sopra
             edificio.transform.position += new Vector3(x, 0, -z);
             edificio.transform.Rotate(new Vector3(0, 180, 0));
         }
         else
         {
-            // caselle destra
             edificio.transform.position += new Vector3(-z, 0, -x);
             edificio.transform.Rotate(new Vector3(0, -90, 0));
         }

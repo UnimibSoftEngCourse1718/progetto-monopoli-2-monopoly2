@@ -20,7 +20,6 @@ public class Stazione : CasellaAcquistabile
         }
         else
         {
-            // Terreno occupato // Pedaggio
             int nStazioni = 0;
             foreach (Casella item in proprietario.proprieta)
             {
@@ -29,13 +28,13 @@ public class Stazione : CasellaAcquistabile
             }
 
             if (nStazioni == 1)
-                giocatoreDiTurno.Paga(pedaggio);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio);
             else if (nStazioni == 2)
-                giocatoreDiTurno.Paga(pedaggio2Stazioni);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio2Stazioni);
             else if (nStazioni == 3)
-                giocatoreDiTurno.Paga(pedaggio3Stazioni);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio3Stazioni);
             else if (nStazioni == 4)
-                giocatoreDiTurno.Paga(pedaggio4Stazioni);
+                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio4Stazioni);
         }
     }
 }

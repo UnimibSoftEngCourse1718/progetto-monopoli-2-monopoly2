@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RANDOM : MonoBehaviour {
-    // TODO // controllare cosa fa questo "Passa"
+public class RANDOM : MonoBehaviour
+{
     public bool Passa;
     public Text[] text;
     public int risultato;
@@ -13,13 +13,12 @@ public class RANDOM : MonoBehaviour {
 
     public void ok()
     {
-        SceneManager.UnloadScene(3);
+        SceneManager.UnloadSceneAsync(3);
         SceneManager.LoadScene(2);
     }
 
     public void Randomizza()
     {
-        //controllo se ho già tirato
         if (theStateController.IsDoneRolling == true)
             return;
         risultato = 0;
@@ -30,7 +29,7 @@ public class RANDOM : MonoBehaviour {
         text[0].text = dado1.ToString();
         text[1].text = dado2.ToString();
 
-        theStateController.IsDoneRolling = true;//tiro effettivo
+        theStateController.IsDoneRolling = true;
 
         risultato = dado1 + dado2;
         text[2].text = risultato.ToString();

@@ -21,7 +21,6 @@ public class Prigione : Casella
             else if (item.name == "PASSA")
                 passa = item;
         }
-
     }
 
     public override void Fermata(giocatore giocatoreDiTurno)
@@ -36,13 +35,12 @@ public class Prigione : Casella
         }
         else if (giocatoreDiTurno.contatorePrigione == 3)
         {
-            giocatoreDiTurno.Paga(125);
+            giocatoreDiTurno.TrasferimentoDenaro(-125);
             giocatoreDiTurno.contatorePrigione = -1;
             controller.Avviso("Sono passati tre turni, hai pagato 125$ per uscire");
         }
         else
         {
-            //Abilito schermata prigione
             giocatoreInPrigione = giocatoreDiTurno;
             this.abilitaSchermata();
         }
@@ -50,7 +48,6 @@ public class Prigione : Casella
 
     public void pulsanteCarta()
     {
-        // O uso la carta
         if (giocatoreInPrigione.uscitaDiPrigione)
         {
             giocatoreInPrigione.uscitaDiPrigione = false;
@@ -64,7 +61,6 @@ public class Prigione : Casella
 
     public void pulsanteDadi()
     {
-        // O tiro i dadi
         RANDOM dado = GameObject.FindObjectOfType<RANDOM>();
         controller.IsDoneRolling = false;
         controller.IsDoneClicking = false;
@@ -72,7 +68,6 @@ public class Prigione : Casella
 
         if (int.Parse(dado.text[0].text) != int.Parse(dado.text[1].text))
         {
-            // fuga fallita
             giocatoreInPrigione.contatorePrigione++;
             this.disabilitaSchermata();
         }
@@ -85,10 +80,9 @@ public class Prigione : Casella
 
     public void pulsantePaga()
     {
-        // Se ho 125 pago ed esco
         if (giocatoreInPrigione.soldi >= 125)
         {
-            giocatoreInPrigione.Paga(125);
+            giocatoreInPrigione.TrasferimentoDenaro(-125);
             giocatoreInPrigione.contatorePrigione = -1;
             controller.IsDoneClicking = false;
             controller.IsDoneRolling = false;

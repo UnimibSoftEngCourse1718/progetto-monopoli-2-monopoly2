@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class Societa : CasellaAcquistabile
 {
-    //se si possiede solo una società il pedaggio è pari a 4 volte il tiro del dado
-    //se si possiedono due società il pedaggio è pari a 10 volte il tiro del dado
     public int costo = 150;
     public int ipoteca = 75;
 
@@ -19,7 +17,6 @@ public class Societa : CasellaAcquistabile
         }
         else
         {
-            // Terreno occupato // Pedaggio
             int i = 0;
             foreach (Casella item in proprietario.proprieta)
             {
@@ -28,9 +25,9 @@ public class Societa : CasellaAcquistabile
             }
 
             if (i == 2)
-                giocatoreDiTurno.Paga(10 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
+                giocatoreDiTurno.TrasferimentoDenaro(-10 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
             else
-                giocatoreDiTurno.Paga(4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
+                giocatoreDiTurno.TrasferimentoDenaro(-4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
         }
     }
 }

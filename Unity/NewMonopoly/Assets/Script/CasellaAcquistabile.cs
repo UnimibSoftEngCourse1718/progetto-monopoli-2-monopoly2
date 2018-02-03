@@ -33,25 +33,21 @@ public class CasellaAcquistabile : Casella {
             int i = int.Parse(this.name);
             if (i < 11)
             {
-                // caselle sotto
                 segnalinoProprietario.transform.localScale = new Vector3(8, 1, 2);
                 segnalinoProprietario.transform.position += new Vector3(0, 0, -7);
             }
             else if (i < 21)
             {
-                // caselle sinistra
                 segnalinoProprietario.transform.localScale = new Vector3(2, 1, 8);
                 segnalinoProprietario.transform.position += new Vector3(-7, 0, 0);
             }
             else if (i < 31)
             {
-                // caselle sopra
                 segnalinoProprietario.transform.localScale = new Vector3(8, 1, 2);
                 segnalinoProprietario.transform.position += new Vector3(0, 0, 7);
             }
             else
             {
-                // caselle destra
                 segnalinoProprietario.transform.localScale = new Vector3(2, 1, 8);
                 segnalinoProprietario.transform.position += new Vector3(7, 0, 0);
             }

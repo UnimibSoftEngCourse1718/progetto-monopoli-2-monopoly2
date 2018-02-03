@@ -20,17 +20,16 @@ public class Carta
     {
         if (valore == 0 && movimento == 0)
         {
-            //carta salva dalla prigione
             giocatoreDiTurno.uscitaDiPrigione = true;
             GameObject.FindObjectOfType<StateController>().uscitaPrigione.SetActive(true);
             return;
         }
 
-        giocatoreDiTurno.Paga(-this.valore);
+        giocatoreDiTurno.TrasferimentoDenaro(this.valore);
 
         if (movimento == -3)
         {
-            // Imposta lo spostamento a 3 caselle indietro
+            giocatoreDiTurno.contatorePrigione = -2;
             movimento = int.Parse(giocatoreDiTurno.partenza.name) - 3;
             if (movimento <= 0)
                 movimento += 40;
@@ -39,7 +38,7 @@ public class Carta
         if (movimento != 0)
         {
             GameObject.FindObjectOfType<StateController>().IsDoneClicking = false;
-            // sposta giocatore alla casella numero "movimento"
+
             Casella[] caselle = GameObject.FindObjectsOfType<Casella>();
             Casella casella = null;
             foreach (Casella item in caselle)

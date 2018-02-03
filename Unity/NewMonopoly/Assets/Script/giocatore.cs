@@ -20,13 +20,11 @@ public class giocatore : MonoBehaviour {
     Casella[] percorso;
     int indicePercorso;
 
-    //istruzioni per animazione 
     Vector3 targetPosition;
     Vector3 vettoreVelocita;
     float tempoPerSpostamento;
     private bool arrivato;
 
-    // Use this for initialization
     void Start () {
         uscitaDiPrigione = false;
         contatorePrigione = -1;
@@ -71,10 +69,8 @@ public class giocatore : MonoBehaviour {
 
     private void OnMouseUp()
     {
-        //controllo di chi è il turno e se ho già tirato
         if (controller.CurrentPlayerId != PlayerId || controller.IsDoneClicking == true) return;
 
-        // Se è il terzo doppio tiro si finisce in prigione
         if (controller.doppio == 3)
         {
             controller.doppio = 0;
@@ -103,8 +99,10 @@ public class giocatore : MonoBehaviour {
             percorso[i] = arrivo;
             if (percorso[i].name == "1" && this.contatorePrigione == -1)
             {
-                this.Paga(-200);
+                this.TrasferimentoDenaro(200);
             }
+            if (this.contatorePrigione == -2)
+                this.contatorePrigione = -1;
         }
 
         this.indicePercorso = 0;
@@ -124,12 +122,15 @@ public class giocatore : MonoBehaviour {
             return Muovi(40 + numeroArrivo - numeroPartenza);
         }
     }
-    public void Paga(int importo)
+
+    public void TrasferimentoDenaro(int importo)
     {
-        this.soldi -= importo;
+        this.soldi += importo;
         this.testoSoldi.text = this.soldi.ToString() + " $";
         if (this.soldi < 0)
+        {
             this.Bancarotta();
+        }
     }
 
     public void Bancarotta()
