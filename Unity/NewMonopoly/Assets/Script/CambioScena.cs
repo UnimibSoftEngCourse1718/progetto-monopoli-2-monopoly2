@@ -19,12 +19,12 @@ public class CambioScena : MonoBehaviour {
 
     public void view()
     {
-        schermataesci.active = true;
+        schermataesci.SetActive(true);
     }
 
     public void hide()
     {
-        schermataesci.active = false;
+        schermataesci.SetActive(false);
     }
 
    

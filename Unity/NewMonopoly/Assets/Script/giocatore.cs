@@ -30,7 +30,7 @@ public class giocatore : MonoBehaviour {
         contatorePrigione = -1;
         effettoCasella = true;
         proprieta = new List<CasellaAcquistabile>();
-        soldi = 1000;
+        soldi = 2500;
         testoSoldi.text = this.soldi.ToString() + " $";
         targetPosition = this.transform.position;
         prigione = GameObject.FindObjectOfType<Prigione>();
@@ -88,7 +88,7 @@ public class giocatore : MonoBehaviour {
         {
             controller.doppio = 0;
         }
-        controller.IsDoneClicking = false;
+
         tempoPerSpostamento = controller.tempoPerSpostamento;
         effettoCasella = false;
         Casella arrivo = partenza;

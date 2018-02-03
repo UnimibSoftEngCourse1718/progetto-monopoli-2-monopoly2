@@ -4,13 +4,34 @@ using UnityEngine;
 
 public class TEST : MonoBehaviour {
     StateController controller;
-	// Use this for initialization
-	void Start () {
+    giocatore giocatoreAttivo;
+    // Use this for initialization
+    void Start ()
+    {
         controller = GameObject.FindObjectOfType<StateController>();
 	}
-	
-	// Update is called once per frame
-	void OnMouseUp () {
-        controller.getGiocatoreAttivo().Bancarotta();
-	}
+
+	void OnMouseUp ()
+    {
+        giocatoreAttivo = controller.getGiocatoreAttivo();
+    }
+
+    void MandaInBancarotta()
+    {
+        giocatoreAttivo.Bancarotta();
+    }
+
+    void MandaInPrigione()
+    {
+        Casella prigione = null;
+        foreach (Casella item in GameObject.FindObjectsOfType<Casella>())
+        {
+            if (item.name == "11")
+            {
+                prigione = item;
+            }
+        }
+        giocatoreAttivo.contatorePrigione = 0;
+        giocatoreAttivo.partenza = giocatoreAttivo.Muovi(giocatoreAttivo.partenza, prigione);
+    }
 }

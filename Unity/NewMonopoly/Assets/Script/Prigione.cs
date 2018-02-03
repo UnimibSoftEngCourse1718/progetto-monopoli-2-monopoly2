@@ -8,7 +8,6 @@ public class Prigione : Casella
     StateController controller;
     public GameObject schermata;
     giocatore giocatoreInPrigione;
-    float tempo;
 
     private void Start()
     {
@@ -52,29 +51,25 @@ public class Prigione : Casella
             controller.IsDoneClicking = false;
             controller.IsDoneRolling = false;
             controller.Tira.interactable = true;
-            this.disabilitaSchermata(true);
+            this.disabilitaSchermata(false);
         }
     }
 
     public void pulsanteDadi()
     {
         RANDOM dado = GameObject.FindObjectOfType<RANDOM>();
-        controller.IsDoneRolling = false;
-        controller.IsDoneClicking = false;
         dado.Randomizza();
 
         if (int.Parse(dado.text[0].text) != int.Parse(dado.text[1].text))
         {
             giocatoreInPrigione.contatorePrigione++;
-            controller.IsDoneRolling = true;
             controller.IsDoneClicking = true;
             this.disabilitaSchermata(true);
-            controller.Avviso("Hai tirato doppio!\nPuoi uscire e ti muovi di quanto hai tirato", false);
         }
         else
         {
             giocatoreInPrigione.contatorePrigione = -1;
-            // Da simulare il tiro
+            controller.Avviso("Hai tirato doppio!\nPuoi uscire e ti muovi di quanto hai tirato", false);
             this.disabilitaSchermata(false);
         }
     }
@@ -98,18 +93,17 @@ public class Prigione : Casella
         controller.Passa.interactable = false;
         controller.Costruisci.interactable = false;
         schermata.SetActive(true);
-        tempo = Time.timeScale;
         Time.timeScale = 0;
     }
 
     public void disabilitaSchermata(bool pulsanti)
     {
+        Time.timeScale = 1;
         if (pulsanti)
         {
             controller.Passa.interactable = true;
             controller.Costruisci.interactable = true;
         }
         schermata.SetActive(false);
-        Time.timeScale = tempo;
     }
 }
