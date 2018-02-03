@@ -1,4 +1,4 @@
-WindowsStandalone
+Android
 SceneListBegin?
 Assets/HOME.unity
 Assets/Scelta Pedine.unity
