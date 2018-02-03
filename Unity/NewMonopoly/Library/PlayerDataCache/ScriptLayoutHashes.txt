@@ -162,7 +162,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 ca629fc5c9f86e3bd643219d1f866576 Assembly-CSharp.dll:.Casella
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 e671023b15cc3ac077b287038bb69354 Assembly-CSharp.dll:.CambioScena
-d1d0f37cdd0a514a989cec61560e5f64 Assembly-CSharp.dll:.StateController
+157d1adeeeef5c3a502a103092cfc7b4 Assembly-CSharp.dll:.StateController
 e2df5e25e0c249e96c1a36d79d58ebb3 Assembly-CSharp.dll:.giocatore
 4c8502dd398fdedd6088d51ad7b6a0c3 Assembly-CSharp.dll:.Societa
 6f4c0c0464b3e48ded7cf0da07ac989b Assembly-CSharp.dll:.Prigione

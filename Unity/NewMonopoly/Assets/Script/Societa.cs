@@ -30,6 +30,7 @@ public class Societa : CasellaAcquistabile
                 giocatoreDiTurno.TrasferimentoDenaro(-4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
             giocatoreDiTurno.controller.Passa.interactable = true;
             giocatoreDiTurno.controller.Costruisci.interactable = true;
+            giocatoreDiTurno.controller.AttivaTrattativa();
         }
     }
 }

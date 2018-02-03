@@ -9,7 +9,6 @@ public class SchermataAcquisto : MonoBehaviour
     public Societa societa;
     public Stazione stazione;
     public GameObject schermata;
-    Button Passa, Costruisci;
     giocatore giocatoreDiturno = null;
 
     public void Visualizza ()
@@ -17,8 +16,6 @@ public class SchermataAcquisto : MonoBehaviour
         if (giocatoreDiturno == null)
         {
             giocatoreDiturno = GameObject.FindObjectOfType<StateController>().getGiocatoreAttivo();
-            Passa = giocatoreDiturno.controller.Passa;
-            Costruisci = giocatoreDiturno.controller.Costruisci;
         }
         if (terreno != null)
         {
@@ -41,8 +38,9 @@ public class SchermataAcquisto : MonoBehaviour
                 "\nCON 2 STAZIONI : " + stazione.pedaggio2Stazioni + "\nCON 3 STAZIONI : " + stazione.pedaggio3Stazioni +
                 "\nCON 4 STAZIONI : " + stazione.pedaggio4Stazioni + "\nIPOTECA : " + stazione.ipoteca;
         }
-        Passa.interactable = false;
-        Costruisci.interactable = false;
+        giocatoreDiturno.controller.Passa.interactable = false;
+        giocatoreDiturno.controller.Costruisci.interactable = false;
+        giocatoreDiturno.controller.DisattivaTrattativa();
         schermata.SetActive(true);
     }
 
@@ -69,12 +67,13 @@ public class SchermataAcquisto : MonoBehaviour
 
     public void PulsanteAnnulla()
     {
+        giocatoreDiturno.controller.Passa.interactable = true;
+        giocatoreDiturno.controller.Costruisci.interactable = true;
+        giocatoreDiturno.controller.AttivaTrattativa();
         this.giocatoreDiturno = null;
         this.terreno = null;
         this.societa = null;
         this.stazione = null;
-        Passa.interactable = true;
-        Costruisci.interactable = true;
         schermata.SetActive(false);
     }
 }

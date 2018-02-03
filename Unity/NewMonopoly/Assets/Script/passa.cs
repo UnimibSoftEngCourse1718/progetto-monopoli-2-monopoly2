@@ -36,7 +36,6 @@ public class passa : MonoBehaviour
                 listaOverlay[controller.CurrentPlayerId].SetActive(true);
                 listaGiocatori[controller.CurrentPlayerId].attivo = true;
 
-
                 listaOverlay[vecchioGiocatore].SetActive(false);
                 listaGiocatori[vecchioGiocatore].attivo = false;
             }

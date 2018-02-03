@@ -12,6 +12,7 @@ public class SchermataAvviso : MonoBehaviour
     {
         controller.Passa.interactable = false;
         controller.Costruisci.interactable = false;
+        controller.DisattivaTrattativa();
         Time.timeScale = 0;
     }
 
@@ -21,6 +22,7 @@ public class SchermataAvviso : MonoBehaviour
         {
             controller.Passa.interactable = true;
             controller.Costruisci.interactable = true;
+            controller.AttivaTrattativa();
         }
         Time.timeScale = 1;
         schermata.SetActive(false);

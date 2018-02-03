@@ -10,5 +10,6 @@ public class Casella : MonoBehaviour
     {
         giocatoreDiTurno.controller.Passa.interactable = true;
         giocatoreDiTurno.controller.Costruisci.interactable = true;
+        giocatoreDiTurno.controller.AttivaTrattativa();
     }
 }

@@ -23,6 +23,7 @@ public class StateController : MonoBehaviour
     public Button Tira { get; set; }
     public Button Passa { get; set; }
     public Button Costruisci { get; set; }
+    public Button[] trattativa;
 
     void Start()
     {
@@ -53,6 +54,7 @@ public class StateController : MonoBehaviour
         }
         this.Passa.interactable = false;
         this.Costruisci.interactable = false;
+        this.DisattivaTrattativa();
     }
 
     public void NewTurn()
@@ -60,8 +62,14 @@ public class StateController : MonoBehaviour
         Tira.interactable = true;
         Passa.interactable = false;
         Costruisci.interactable = false;
-        giocatoreAttivo.GetComponent<BoxCollider>().enabled = false;
-        giocatoreAttivo = null;
+        this.DisattivaTrattativa();
+
+        if (giocatoreAttivo != null)
+        {
+            giocatoreAttivo.GetComponent<BoxCollider>().enabled = false;
+            giocatoreAttivo = null;
+        }
+
         this.verifica = false;
         giocatoreAttivo = this.getGiocatoreAttivo();
         uscitaPrigione.SetActive(giocatoreAttivo.uscitaDiPrigione);
@@ -100,6 +108,8 @@ public class StateController : MonoBehaviour
             item.CambioProprietario();
         }
         this.Avviso(giocatoreDaRimuovere.name + " È Stato eliminato", false);
+        trattativa[CurrentPlayerId].interactable = false;
+        trattativa[CurrentPlayerId] = null;
         DestroyImmediate(GameObject.Find(giocatoreDaRimuovere.name));
         this.Passa.interactable = true;
 
@@ -113,6 +123,29 @@ public class StateController : MonoBehaviour
         this.IsDoneClicking = true;
         this.IsDoneRolling = true;
         this.Passa.onClick.Invoke();
+    }
+
+    public void DisattivaTrattativa()
+    {
+        foreach (Button item in trattativa)
+        {
+            if (item != null)
+            {
+                item.interactable = false;
+            }
+        }
+    }
+
+    public void AttivaTrattativa()
+    {
+        foreach (Button item in trattativa)
+        {
+            if (item != null)
+            {
+                item.interactable = true;
+            }
+        }
+        trattativa[CurrentPlayerId].interactable = false;
     }
 
     public void Avviso(string messaggio, bool attivoPulsanti)

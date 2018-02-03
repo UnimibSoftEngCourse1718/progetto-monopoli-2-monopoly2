@@ -54,5 +54,6 @@ public class RANDOM : MonoBehaviour
         controller.Tira.interactable = false;
         controller.Passa.interactable = false;
         controller.Costruisci.interactable = false;
+        controller.DisattivaTrattativa();
     }
 }
