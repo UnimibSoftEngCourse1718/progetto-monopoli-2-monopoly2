@@ -10,11 +10,6 @@ public class CambioScena : MonoBehaviour {
         SceneManager.LoadScene(level);
     }
 
-    public void Caricascena(int level)
-    {
-        SceneManager.LoadScene(level);
-    }
-
     public void ESCI()
     {
         Application.Quit();

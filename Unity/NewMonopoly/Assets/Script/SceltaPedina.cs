@@ -7,7 +7,12 @@ using UnityEngine.UI;
 
 public class SceltaPedina : MonoBehaviour {
 	
-    public int contatoregiocatori = 0;
+    public int contatoregiocatori = 2;
+
+    private void Start()
+    {
+        StateController.giocatoriSelezionati = 2;
+    }
 
     public void numgiocatori()
     {
