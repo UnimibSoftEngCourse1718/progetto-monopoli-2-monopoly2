@@ -12,10 +12,13 @@ public class SchermataCostruzione : MonoBehaviour
     private int[] colori = new int[8];
     private Button[] listaPulsanti;
     List<Terreno> listaTerreni = new List<Terreno>();
+    Button Passa, Costruisci;
 
     public void Visualizza()
     {
         giocatoreDiturno = GameObject.FindObjectOfType<StateController>().getGiocatoreAttivo();
+        Passa = giocatoreDiturno.controller.Passa;
+        Costruisci = giocatoreDiturno.controller.Costruisci;
 
         foreach (CasellaAcquistabile item in giocatoreDiturno.proprieta)
         {
@@ -62,6 +65,9 @@ public class SchermataCostruzione : MonoBehaviour
             else if (colori[7] == 2 && (item.nomeCasella == "REGGIO CALABRIA" || item.nomeCasella == "CHIETI"))
                 listaTerreni.Add(item as Terreno);
         }
+
+        Passa.interactable = false;
+        Costruisci.interactable = false;
         schermata.SetActive(true);
 
         listaPulsanti = GameObject.Find("ScrollPulsanti").GetComponentsInChildren<Button>();
@@ -109,6 +115,8 @@ public class SchermataCostruzione : MonoBehaviour
         for (int i = 0; i < listaPulsanti.Length; i++)
             listaPulsanti[i].GetComponentInChildren<Text>().text = "PROPRIETÀ";
 
+        Passa.interactable = true;
+        Costruisci.interactable = true;
         schermata.SetActive(false);
     }
 }

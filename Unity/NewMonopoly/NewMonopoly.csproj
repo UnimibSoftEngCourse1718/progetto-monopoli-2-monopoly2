@@ -309,6 +309,7 @@
     <Compile Include="Assets\Script\Stazione.cs" />
     <Compile Include="Assets\Script\Tassa.cs" />
     <Compile Include="Assets\Script\Terreno.cs" />
+    <Compile Include="Assets\Script\TEST.cs" />
     <Compile Include="Assets\Script\Trade.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

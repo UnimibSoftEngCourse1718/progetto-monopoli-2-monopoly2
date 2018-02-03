@@ -8,36 +8,32 @@ public class Prigione : Casella
     StateController controller;
     public GameObject schermata;
     giocatore giocatoreInPrigione;
-    Button tira, passa;
     float tempo;
 
     private void Start()
     {
         controller = GameObject.FindObjectOfType<StateController>();
-        foreach (Button item in GameObject.FindObjectsOfType<Button>())
-        {
-            if (item.name=="TIRA")
-                tira = item;
-            else if (item.name == "PASSA")
-                passa = item;
-        }
     }
 
     public override void Fermata(giocatore giocatoreDiTurno)
     {
         if (giocatoreDiTurno.contatorePrigione == -1)
         {
-            return;
+            giocatoreDiTurno.controller.Passa.interactable = true;
+            giocatoreDiTurno.controller.Costruisci.interactable = true;
         }
         else if (giocatoreDiTurno.contatorePrigione == 0)
         {
+            giocatoreDiTurno.controller.Passa.interactable = true;
+            giocatoreDiTurno.controller.Costruisci.interactable = true;
             giocatoreDiTurno.contatorePrigione++;
         }
         else if (giocatoreDiTurno.contatorePrigione == 3)
         {
             giocatoreDiTurno.TrasferimentoDenaro(-125);
             giocatoreDiTurno.contatorePrigione = -1;
-            controller.Avviso("Sono passati tre turni, hai pagato 125$ per uscire");
+            controller.Avviso("Sono passati tre turni, hai pagato 125$ per uscire", false);
+            controller.Tira.interactable = true;
         }
         else
         {
@@ -55,7 +51,8 @@ public class Prigione : Casella
             controller.uscitaPrigione.SetActive(false);
             controller.IsDoneClicking = false;
             controller.IsDoneRolling = false;
-            this.disabilitaSchermata();
+            controller.Tira.interactable = true;
+            this.disabilitaSchermata(true);
         }
     }
 
@@ -69,12 +66,16 @@ public class Prigione : Casella
         if (int.Parse(dado.text[0].text) != int.Parse(dado.text[1].text))
         {
             giocatoreInPrigione.contatorePrigione++;
-            this.disabilitaSchermata();
+            controller.IsDoneRolling = true;
+            controller.IsDoneClicking = true;
+            this.disabilitaSchermata(true);
+            controller.Avviso("Hai tirato doppio!\nPuoi uscire e ti muovi di quanto hai tirato", false);
         }
         else
         {
             giocatoreInPrigione.contatorePrigione = -1;
-            this.disabilitaSchermata();
+            // Da simulare il tiro
+            this.disabilitaSchermata(false);
         }
     }
 
@@ -86,23 +87,28 @@ public class Prigione : Casella
             giocatoreInPrigione.contatorePrigione = -1;
             controller.IsDoneClicking = false;
             controller.IsDoneRolling = false;
-            this.disabilitaSchermata();
+            controller.Tira.interactable = true;
+            this.disabilitaSchermata(false);
         }
     }
 
     public void abilitaSchermata()
     {
-        tira.interactable = false;
-        passa.interactable = false;
+        controller.Tira.interactable = false;
+        controller.Passa.interactable = false;
+        controller.Costruisci.interactable = false;
         schermata.SetActive(true);
         tempo = Time.timeScale;
         Time.timeScale = 0;
     }
 
-    public void disabilitaSchermata()
+    public void disabilitaSchermata(bool pulsanti)
     {
-        tira.interactable = true;
-        passa.interactable = true;
+        if (pulsanti)
+        {
+            controller.Passa.interactable = true;
+            controller.Costruisci.interactable = true;
+        }
         schermata.SetActive(false);
         Time.timeScale = tempo;
     }

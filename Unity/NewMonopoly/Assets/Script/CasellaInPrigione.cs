@@ -11,7 +11,7 @@ public class CasellaInPrigione : Casella
     }
     public override void Fermata(giocatore giocatoreDiTurno)
     {
-        GameObject.FindObjectOfType<StateController>().Avviso("Vai in prigione");
+        GameObject.FindObjectOfType<StateController>().Avviso("Vai in prigione", false);
         giocatoreDiTurno.contatorePrigione = 0;
         giocatoreDiTurno.partenza = giocatoreDiTurno.Muovi(giocatoreDiTurno.partenza, prigione);
     }

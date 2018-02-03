@@ -9339,6 +9339,7 @@ GameObject:
   - component: {fileID: 554852420}
   - component: {fileID: 554852421}
   - component: {fileID: 554852422}
+  - component: {fileID: 554852424}
   m_Layer: 0
   m_Name: Tavolo
   m_TagString: Untagged
@@ -9416,6 +9417,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.51, y: 1, z: 1.02}
   m_Center: {x: 2.09, y: 0, z: 2.62}
+--- !u!114 &554852424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 554852419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15581d52d1986fa4481598871a510ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &563708608
 GameObject:
   m_ObjectHideFlags: 0
@@ -27786,6 +27798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   schermata: {fileID: 1755716337}
+  controller: {fileID: 1840371097}
 --- !u!114 &1755716340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29808,7 +29821,7 @@ MonoBehaviour:
   uscitaPrigione: {fileID: 814367631}
   NoLegalMovesPopup: {fileID: 0}
   verifica: 0
-  tempoPerSpostamento: 0.15
+  tempoPerSpostamento: 0
 --- !u!1 &1840923650
 GameObject:
   m_ObjectHideFlags: 0
@@ -32867,7 +32880,7 @@ MonoBehaviour:
   - {fileID: 1796235372}
   - {fileID: 1489355731}
   risultato: 0
-  theStateController: {fileID: 1840371097}
+  controller: {fileID: 1840371097}
 --- !u!4 &1962837532 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,

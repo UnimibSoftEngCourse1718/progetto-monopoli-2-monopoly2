@@ -18,11 +18,15 @@ public class StateController : MonoBehaviour
     public GameObject uscitaPrigione;
     public GameObject NoLegalMovesPopup;
     public bool verifica = false;
-    public float tempoPerSpostamento= 0.15f;
+    public float tempoPerSpostamento;
     giocatore giocatoreAttivo = null;
+    public Button Tira { get; set; }
+    public Button Passa { get; set; }
+    public Button Costruisci { get; set; }
 
     void Start()
     {
+        tempoPerSpostamento = 0.15f;
         NumberOfPlayers = giocatoriSelezionati;
         for (int i = 6; i > NumberOfPlayers; i--) 
         {
@@ -36,36 +40,30 @@ public class StateController : MonoBehaviour
             listaGiocatori[i - 1] = GameObject.Find("P" + i);
         }
         giocatoreAttivo = this.getGiocatoreAttivo();
-        giocatoreAttivo.GetComponent<BoxCollider>().enabled = true;
+        //giocatoreAttivo.GetComponent<BoxCollider>().enabled = true;
+
+        foreach (Button item in GameObject.FindObjectsOfType<Button>())
+        {
+            if (item.name == "TIRA")
+                Tira = item;
+            if (item.name == "PASSA")
+                Passa = item;
+            if (item.name == "COSTRUISCI")
+                Costruisci = item;
+        }
+        this.Passa.interactable = false;
+        this.Costruisci.interactable = false;
     }
 
     public void NewTurn()
     {
+        Tira.interactable = true;
+        Passa.interactable = false;
+        Costruisci.interactable = false;
         giocatoreAttivo.GetComponent<BoxCollider>().enabled = false;
         giocatoreAttivo = null;
-        IsDoneRolling = false;
-        IsDoneClicking = false;
-        verifica = false;
-        if (doppio == 0)
-        {
-            for (int i = CurrentPlayerId; i < listaGiocatori.Length; i++)
-            {
-                if (i == listaGiocatori.Length - 1)
-                {
-                    i = -1;
-                    CurrentPlayerId = 0;
-                }
-
-                if (listaGiocatori[i + 1] != null)
-                {
-                    CurrentPlayerId = i + 1;
-                    i = listaGiocatori.Length;
-                }
-            }
-        }
-
+        this.verifica = false;
         giocatoreAttivo = this.getGiocatoreAttivo();
-        giocatoreAttivo.GetComponent<BoxCollider>().enabled = true;
         uscitaPrigione.SetActive(giocatoreAttivo.uscitaDiPrigione);
 
         if (giocatoreAttivo.contatorePrigione != -1)
@@ -94,25 +92,33 @@ public class StateController : MonoBehaviour
         foreach (CasellaAcquistabile item in giocatoreDaRimuovere.proprieta)
         {
             terreno = item as Terreno;
-            terreno.RimuoviEdifici();
+            if (terreno != null)
+            {
+                terreno.RimuoviEdifici();
+            }
             item.proprietario = null;
             item.CambioProprietario();
         }
-        this.Avviso(giocatoreDaRimuovere.name + " È Stato eliminato");
+        this.Avviso(giocatoreDaRimuovere.name + " È Stato eliminato", false);
         DestroyImmediate(GameObject.Find(giocatoreDaRimuovere.name));
+        this.Passa.interactable = true;
 
         if (GameObject.FindObjectsOfType<giocatore>().Length == 1)
         {
-            this.Avviso("Partita Finita");
+            this.Avviso("Partita Finita", false);
             GameObject.Find("TIRA").SetActive(false);
             GameObject.Find("PASSA").SetActive(false);
             GameObject.Find("COSTRUISCI").SetActive(false);
         }
+        this.IsDoneClicking = true;
+        this.IsDoneRolling = true;
+        this.Passa.onClick.Invoke();
     }
 
-    public void Avviso(string messaggio)
+    public void Avviso(string messaggio, bool attivoPulsanti)
     {
         schermataAvviso.gameObject.SetActive(true);
+        schermataAvviso.attivoPulsanti = attivoPulsanti;
         schermataAvviso.GetComponentInChildren<Image>().GetComponentInChildren<Text>().text = messaggio;
     }
 }

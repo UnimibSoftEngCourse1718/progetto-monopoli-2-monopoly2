@@ -11,7 +11,11 @@ public class CasellaCarta : Casella
     public override void Fermata(giocatore giocatoreDiTurno)
     {
         i = UnityEngine.Random.Range(0, 16);
+        if (carte[i] == null)
+        {
+            GameObject.FindObjectOfType<StateController>().Avviso("Non succede nulla", true);
+        }
         carte[i].Effetto(giocatoreDiTurno);
-        GameObject.FindObjectOfType<StateController>().Avviso(tipo + "\n\n" + carte[i].testo);
+        GameObject.FindObjectOfType<StateController>().Avviso(tipo + "\n\n" + carte[i].testo, carte[i].attivaPulsanti);
     }
 }

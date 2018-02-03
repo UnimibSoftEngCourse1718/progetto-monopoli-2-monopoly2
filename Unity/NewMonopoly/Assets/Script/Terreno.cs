@@ -47,6 +47,8 @@ public class Terreno : CasellaAcquistabile
                 giocatoreDiTurno.TrasferimentoDenaro(-pedaggioAlbergo);
                 proprietario.TrasferimentoDenaro(pedaggioAlbergo);
             }
+            giocatoreDiTurno.controller.Passa.interactable = true;
+            giocatoreDiTurno.controller.Costruisci.interactable = true;
         }
     }
 

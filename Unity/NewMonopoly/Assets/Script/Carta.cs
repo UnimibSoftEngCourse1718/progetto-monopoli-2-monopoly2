@@ -8,12 +8,14 @@ public class Carta
     public string testo { get; set; }
     int valore { get; set; }
     int movimento { get; set; }
+    public bool attivaPulsanti { get; set; }
 
-    public Carta(string Testo, int Valore, int Movimento)
+    public Carta(string Testo, int Valore, int Movimento, bool attivaPulsanti)
     {
-        testo = Testo;
-        valore = Valore;
-        movimento = Movimento;
+        this.testo = Testo;
+        this.valore = Valore;
+        this.movimento = Movimento;
+        this.attivaPulsanti = attivaPulsanti;
     }
     
     public void Effetto(giocatore giocatoreDiTurno)
@@ -54,10 +56,5 @@ public class Carta
             }
             giocatoreDiTurno.partenza = giocatoreDiTurno.Muovi(giocatoreDiTurno.partenza, casella);
         }
-    }
-
-    public void Disegna()
-    {
-        GameObject.FindObjectOfType<StateController>().Avviso(this.testo);
     }
 }

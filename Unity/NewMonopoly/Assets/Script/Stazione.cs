@@ -35,6 +35,8 @@ public class Stazione : CasellaAcquistabile
                 giocatoreDiTurno.TrasferimentoDenaro(-pedaggio3Stazioni);
             else if (nStazioni == 4)
                 giocatoreDiTurno.TrasferimentoDenaro(-pedaggio4Stazioni);
+            giocatoreDiTurno.controller.Passa.interactable = true;
+            giocatoreDiTurno.controller.Costruisci.interactable = true;
         }
     }
 }

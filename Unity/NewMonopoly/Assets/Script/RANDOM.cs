@@ -9,7 +9,7 @@ public class RANDOM : MonoBehaviour
     public bool Passa;
     public Text[] text;
     public int risultato;
-    public StateController theStateController;
+    public StateController controller;
 
     public void ok()
     {
@@ -19,7 +19,7 @@ public class RANDOM : MonoBehaviour
 
     public void Randomizza()
     {
-        if (theStateController.IsDoneRolling == true)
+        if (controller.IsDoneRolling == true)
             return;
         risultato = 0;
 
@@ -29,28 +29,30 @@ public class RANDOM : MonoBehaviour
         text[0].text = dado1.ToString();
         text[1].text = dado2.ToString();
 
-        theStateController.IsDoneRolling = true;
+        controller.IsDoneRolling = true;
 
         risultato = dado1 + dado2;
         text[2].text = risultato.ToString();
-        theStateController.DiceTotal = risultato;
+        controller.DiceTotal = risultato;
 
-        giocatore giocatoreAttivo = null;
-        foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
-            if (item.attivo)
-                giocatoreAttivo = item;
+        giocatore giocatoreAttivo = controller.getGiocatoreAttivo();
 
         if (giocatoreAttivo.contatorePrigione == -1)
         {
             if (dado1 == dado2)
             {
-                theStateController.doppio++;
-                theStateController.Avviso("Tiro Doppio!\nQuando passi il turno puoi tirare di nuovo!\n\nFallo tre volte di seguito e finisci in prigione");
+                controller.doppio++;
+                controller.Avviso("Tiro Doppio!\nQuando passi il turno puoi tirare di nuovo!\n\nFallo tre volte di seguito e finisci in prigione", false);
             }
             else
             {
-                theStateController.doppio = 0;
+                controller.doppio = 0;
             }
         }
+
+        giocatoreAttivo.GetComponent<BoxCollider>().enabled = true;
+        controller.Tira.interactable = false;
+        controller.Passa.interactable = false;
+        controller.Costruisci.interactable = false;
     }
 }

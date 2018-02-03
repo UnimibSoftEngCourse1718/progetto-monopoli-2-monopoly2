@@ -9,5 +9,7 @@ public class Tassa : Casella
     public override void Fermata(giocatore giocatoreDiTurno)
     {
         giocatoreDiTurno.TrasferimentoDenaro(-valoreTassa);
+        giocatoreDiTurno.controller.Passa.interactable = true;
+        giocatoreDiTurno.controller.Costruisci.interactable = true;
     }
 }
