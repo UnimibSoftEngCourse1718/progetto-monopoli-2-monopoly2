@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CambioScena : MonoBehaviour {
 
+    public GameObject schermataesci;
+
     public void Adattivo(int level)
     {
         SceneManager.LoadScene(level);
@@ -15,4 +17,15 @@ public class CambioScena : MonoBehaviour {
         Application.Quit();
     }
 
+    public void view()
+    {
+        schermataesci.active = true;
+    }
+
+    public void hide()
+    {
+        schermataesci.active = false;
+    }
+
+   
 }
