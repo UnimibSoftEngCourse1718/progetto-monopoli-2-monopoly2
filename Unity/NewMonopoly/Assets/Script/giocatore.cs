@@ -24,7 +24,7 @@ public class giocatore : MonoBehaviour {
     int indicePercorso;
     Vector3 targetPosition;
     Vector3 vettoreVelocita;
-    float tempoPerSpostamento = 0.00000000015f;
+    float tempoPerSpostamento = 0.15f;
     bool arrivato;
     bool effettoCasella;
 
