@@ -5,14 +5,18 @@ using UnityEngine.UI;
 
 public class Societa : CasellaAcquistabile
 {
-    public int costo = 150;
-    public int ipoteca = 75;
+    public int Costo { get; set; }
+
+    private void Start()
+    {
+        Costo = 150;
+    }
 
     public override void Fermata(giocatore giocatoreDiTurno)
     {
         if (proprietario == null)
         {
-            schermataAcquisto.societa = this;
+            schermataAcquisto.Societa = this;
             schermataAcquisto.Visualizza();
         }
         else
@@ -28,9 +32,8 @@ public class Societa : CasellaAcquistabile
                 giocatoreDiTurno.TrasferimentoDenaro(-10 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
             else
                 giocatoreDiTurno.TrasferimentoDenaro(-4 * int.Parse(GameObject.Find("Risultato Dadi").GetComponent<Text>().text));
-            giocatoreDiTurno.controller.Passa.interactable = true;
-            giocatoreDiTurno.controller.Costruisci.interactable = true;
-            giocatoreDiTurno.controller.AttivaTrattativa();
+
+            giocatoreDiTurno.controller.AttivaPulsantiFineTurno();
         }
     }
 }

@@ -16,6 +16,13 @@ public class TEST : MonoBehaviour {
         giocatoreAttivo = controller.getGiocatoreAttivo();
     }
 
+    void EffettoTrePassi()
+    {
+        Carta carta = new Carta("Fate 3 passi indietro", 0, -3, true);
+        carta.Effetto(giocatoreAttivo);
+        GameObject.FindObjectOfType<StateController>().Avviso(carta.testo, carta.AttivaPulsanti);
+    }
+
     void MandaInBancarotta()
     {
         giocatoreAttivo.Bancarotta();

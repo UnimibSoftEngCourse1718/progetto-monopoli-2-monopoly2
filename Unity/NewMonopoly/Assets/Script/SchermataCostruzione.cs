@@ -6,11 +6,11 @@ using UnityEngine.EventSystems;
 
 public class SchermataCostruzione : MonoBehaviour
 {
-    public Terreno terreno;
+    public Terreno terreno { get; set; }
     public GameObject schermata;
-    private giocatore giocatoreDiturno;
-    private int[] colori = new int[8];
-    private Button[] listaPulsanti;
+    giocatore giocatoreDiturno;
+    int[] colori = new int[8];
+    Button[] listaPulsanti;
     List<Terreno> listaTerreni = new List<Terreno>();
 
     public void Visualizza()
@@ -63,9 +63,7 @@ public class SchermataCostruzione : MonoBehaviour
                 listaTerreni.Add(item as Terreno);
         }
 
-        giocatoreDiturno.controller.Passa.interactable = false;
-        giocatoreDiturno.controller.Costruisci.interactable = false;
-        giocatoreDiturno.controller.DisattivaTrattativa();
+        giocatoreDiturno.controller.DisattivaPulsantiFineTurno();
         schermata.SetActive(true);
 
         listaPulsanti = GameObject.Find("ScrollPulsanti").GetComponentsInChildren<Button>();
@@ -102,9 +100,7 @@ public class SchermataCostruzione : MonoBehaviour
 
     public void PulsanteAnnulla()
     {
-        giocatoreDiturno.controller.Passa.interactable = true;
-        giocatoreDiturno.controller.Costruisci.interactable = true;
-        giocatoreDiturno.controller.AttivaTrattativa();
+        giocatoreDiturno.controller.AttivaPulsantiFineTurno();
         this.giocatoreDiturno = null;
         listaTerreni = new List<Terreno>();
         terreno = null;

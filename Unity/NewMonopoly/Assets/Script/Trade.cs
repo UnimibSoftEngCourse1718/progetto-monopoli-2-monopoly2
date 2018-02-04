@@ -22,54 +22,57 @@ public class Trade : MonoBehaviour {
 
     public void trade()
     {
+        string pulsantePremuto = EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name;
         TRATTATIVA.SetActive(true);
 
-        if (p1.attivo == true)
+        GameObject.FindObjectOfType<StateController>().DisattivaPulsantiFineTurno();
+
+        if (p1.Attivo)
         {
             player1.text = "Player 1";
         }
-        else if (p2.attivo == true)
+        else if (p2.Attivo)
         {
             player1.text = "Player 2";
         }
-        else if (p3.attivo == true)
+        else if (p3.Attivo)
         {
             player1.text = "Player 3";
         }
-        else if (p4.attivo == true)
+        else if (p4.Attivo)
         {
             player1.text = "Player 4";
         }
-        else if (p5.attivo == true)
+        else if (p5.Attivo)
         {
             player1.text = "Player 5";
         }
-        else if (p6.attivo == true)
+        else if (p6.Attivo)
         {
             player1.text = "Player 6";
         }
 
-        if(EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa1"))
+        if (pulsantePremuto.Equals("Trattativa1"))
         {
             Player2.text = "Player 1";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa2"))
+        else if (pulsantePremuto.Equals("Trattativa2"))
         {
             Player2.text = "Player 2";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa3"))
+        else if (pulsantePremuto.Equals("Trattativa3"))
         {
             Player2.text = "Player 3";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa4"))
+        else if (pulsantePremuto.Equals("Trattativa4"))
         {
             Player2.text = "Player 4";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa5"))
+        else if (pulsantePremuto.Equals("Trattativa5"))
         {
             Player2.text = "Player 5";
         }
-        else if (EventSystem.current.currentSelectedGameObject.GetComponent<Button>().name.Equals("Trattativa6"))
+        else if (pulsantePremuto.Equals("Trattativa6"))
         {
             Player2.text = "Player 6";
         }

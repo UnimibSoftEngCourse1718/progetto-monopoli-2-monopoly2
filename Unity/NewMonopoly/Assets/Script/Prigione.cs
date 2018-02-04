@@ -18,15 +18,11 @@ public class Prigione : Casella
     {
         if (giocatoreDiTurno.contatorePrigione == -1)
         {
-            giocatoreDiTurno.controller.Passa.interactable = true;
-            giocatoreDiTurno.controller.Costruisci.interactable = true;
-            giocatoreDiTurno.controller.AttivaTrattativa();
+            giocatoreDiTurno.controller.AttivaPulsantiFineTurno();
         }
         else if (giocatoreDiTurno.contatorePrigione == 0)
         {
-            giocatoreDiTurno.controller.Passa.interactable = true;
-            giocatoreDiTurno.controller.Costruisci.interactable = true;
-            giocatoreDiTurno.controller.AttivaTrattativa();
+            giocatoreDiTurno.controller.AttivaPulsantiFineTurno();
             giocatoreDiTurno.contatorePrigione++;
         }
         else if (giocatoreDiTurno.contatorePrigione == 3)
@@ -92,9 +88,7 @@ public class Prigione : Casella
     public void abilitaSchermata()
     {
         controller.Tira.interactable = false;
-        controller.Passa.interactable = false;
-        controller.Costruisci.interactable = false;
-        controller.DisattivaTrattativa();
+        controller.DisattivaPulsantiFineTurno();
         schermata.SetActive(true);
         Time.timeScale = 0;
     }
@@ -103,11 +97,8 @@ public class Prigione : Casella
     {
         Time.timeScale = 1;
         if (pulsanti)
-        {
-            controller.Passa.interactable = true;
-            controller.Costruisci.interactable = true;
-            controller.AttivaTrattativa();
-        }
+            controller.AttivaPulsantiFineTurno();
+
         schermata.SetActive(false);
     }
 }

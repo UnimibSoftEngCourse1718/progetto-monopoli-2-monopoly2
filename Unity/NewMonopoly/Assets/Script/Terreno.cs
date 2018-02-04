@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Terreno : CasellaAcquistabile
 {
-    public int costo, ipoteca, costoEdificio, pedaggio, pedaggio1Casa, pedaggio2Case, pedaggio3Case, pedaggio4Case, pedaggioAlbergo, nEdifici = 0;
+    public int costo, costoEdificio, pedaggio, pedaggio1Casa, pedaggio2Case, pedaggio3Case, pedaggio4Case, pedaggioAlbergo, nEdifici = 0;
     public GameObject prefabCasa, prefabAlbergo;
     List<GameObject> edifici = new List<GameObject>();
 
@@ -12,7 +12,7 @@ public class Terreno : CasellaAcquistabile
     {
         if (proprietario == null)
         {
-            schermataAcquisto.terreno = this;
+            schermataAcquisto.Terreno = this;
             schermataAcquisto.Visualizza();
         }
         else
@@ -49,7 +49,7 @@ public class Terreno : CasellaAcquistabile
             }
             giocatoreDiTurno.controller.Passa.interactable = true;
             giocatoreDiTurno.controller.Costruisci.interactable = true;
-            giocatoreDiTurno.controller.AttivaTrattativa();
+            giocatoreDiTurno.controller.AttivaPulsantiFineTurno();
         }
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CasellaAcquistabile : Casella {
-    public giocatore proprietario;
+    public giocatore proprietario { get; set; }
     protected GameObject segnalinoProprietario;
     public string nomeCasella;
     public SchermataAcquisto schermataAcquisto;

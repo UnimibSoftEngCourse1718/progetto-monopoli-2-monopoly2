@@ -16,6 +16,6 @@ public class CasellaCarta : Casella
             GameObject.FindObjectOfType<StateController>().Avviso("Non succede nulla", true);
         }
         carte[i].Effetto(giocatoreDiTurno);
-        GameObject.FindObjectOfType<StateController>().Avviso(tipo + "\n\n" + carte[i].testo, carte[i].attivaPulsanti);
+        GameObject.FindObjectOfType<StateController>().Avviso(tipo + "\n\n" + carte[i].testo, carte[i].AttivaPulsanti);
     }
 }

@@ -6,24 +6,30 @@ using UnityEngine.UI;
 public class giocatore : MonoBehaviour {
 
     Prigione prigione;
-
-    public int contatorePrigione;
-    public bool uscitaDiPrigione { get; set; }
-    public int soldi { get; set; }
-    public Casella partenza { get; set; }
     public StateController controller { get; set; }
-    public List<CasellaAcquistabile> proprieta;
-    public Text testoSoldi;
+
     public int PlayerId;
-    public bool attivo;
-    public bool effettoCasella;
+    public bool Attivo;
+
+    public int soldi { get; set; }
+    int soldiPrecedenti;
+    float tempoAnimazioneSoldi;
+    float durataAnimazioneSoldi = 10f;
+    public Text testoSoldi;
+
+    public List<CasellaAcquistabile> proprieta { get; set; }
+    public Casella partenza { get; set; }
+
     Casella[] percorso;
     int indicePercorso;
-
     Vector3 targetPosition;
     Vector3 vettoreVelocita;
-    float tempoPerSpostamento;
-    private bool arrivato;
+    float tempoPerSpostamento = 0.15f;
+    bool arrivato;
+    bool effettoCasella;
+
+    public int contatorePrigione { get; set; }
+    public bool uscitaDiPrigione { get; set; }
 
     void Start () {
         uscitaDiPrigione = false;
@@ -31,6 +37,7 @@ public class giocatore : MonoBehaviour {
         effettoCasella = true;
         proprieta = new List<CasellaAcquistabile>();
         soldi = 2500;
+        soldiPrecedenti = 2500;
         testoSoldi.text = this.soldi.ToString() + " $";
         targetPosition = this.transform.position;
         prigione = GameObject.FindObjectOfType<Prigione>();
@@ -39,12 +46,11 @@ public class giocatore : MonoBehaviour {
         foreach (Casella item in GameObject.FindObjectsOfType<Casella>())
             if (item.name == "1")
                 partenza = item;
-
     }
 
 	void Update ()
     {
-        if (Vector3.Distance(this.transform.position, targetPosition) < 1f)
+        if (Vector3.Distance(this.transform.position, targetPosition) < 1)
         {
             if (percorso != null && indicePercorso < percorso.Length)
             {
@@ -59,6 +65,18 @@ public class giocatore : MonoBehaviour {
             }
         }
         this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref vettoreVelocita, tempoPerSpostamento);
+        
+        if (Mathf.Abs(soldiPrecedenti - soldi) > 10)
+        {
+            tempoAnimazioneSoldi += Time.deltaTime / durataAnimazioneSoldi;
+            soldiPrecedenti = (int)Mathf.Lerp(soldiPrecedenti, soldi, tempoAnimazioneSoldi);
+            this.testoSoldi.text = (soldiPrecedenti).ToString() + " $";
+        }
+        else
+        {
+            this.testoSoldi.text = (soldi).ToString() + " $";
+            this.testoSoldi.color = Color.white;
+        }
 	}
 
     public void SetNewTargetPosition(Vector3 pos)
@@ -69,11 +87,11 @@ public class giocatore : MonoBehaviour {
 
     private void OnMouseUp()
     {
-        if (controller.CurrentPlayerId != PlayerId || controller.IsDoneClicking == true) return;
+        if (controller.CurrentPlayerId != PlayerId || controller.IsDoneClicking) return;
 
-        if (controller.doppio == 3)
+        if (controller.Doppio == 3)
         {
-            controller.doppio = 0;
+            controller.Doppio = 0;
             this.contatorePrigione = 0;
             this.partenza = Muovi(partenza, prigione);
         }
@@ -86,10 +104,9 @@ public class giocatore : MonoBehaviour {
     {
         if (this.contatorePrigione != -1)
         {
-            controller.doppio = 0;
+            controller.Doppio = 0;
         }
 
-        tempoPerSpostamento = controller.tempoPerSpostamento;
         effettoCasella = false;
         Casella arrivo = partenza;
         percorso = new Casella[dado];
@@ -101,9 +118,9 @@ public class giocatore : MonoBehaviour {
             {
                 this.TrasferimentoDenaro(200);
             }
-            if (this.contatorePrigione == -2)
-                this.contatorePrigione = -1;
         }
+        if (this.contatorePrigione == -2)
+            this.contatorePrigione = -1;
 
         this.indicePercorso = 0;
         return arrivo;
@@ -125,7 +142,18 @@ public class giocatore : MonoBehaviour {
 
     public void TrasferimentoDenaro(int importo)
     {
+        if (importo > 0)
+        {
+            this.testoSoldi.color = Color.green;
+        }
+        else
+        {
+            this.testoSoldi.color = Color.red;
+        }
+        tempoAnimazioneSoldi = 0;
+        soldiPrecedenti = soldi;
         this.soldi += importo;
+
         this.testoSoldi.text = this.soldi.ToString() + " $";
         if (this.soldi < 0)
         {

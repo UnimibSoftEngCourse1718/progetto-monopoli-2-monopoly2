@@ -551,7 +551,6 @@ MonoBehaviour:
   - {fileID: 2068463019}
   - {fileID: 1394995935}
   - {fileID: 1134747640}
-  controller: {fileID: 1840371097}
 --- !u!1 &15569400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,11 +1017,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1866251476}
-  proprietario: {fileID: 0}
   nomeCasella: STAZIONE SUD
   schermataAcquisto: {fileID: 2103398459}
   costo: 200
-  ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
@@ -2085,11 +2082,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 2029841944}
-  proprietario: {fileID: 0}
   nomeCasella: MESSINA
   schermataAcquisto: {fileID: 2103398459}
   costo: 180
-  ipoteca: 90
   costoEdificio: 100
   pedaggio: 14
   pedaggio1Casa: 70
@@ -2992,11 +2987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1256397954}
-  proprietario: {fileID: 0}
   nomeCasella: VIAREGGIO
   schermataAcquisto: {fileID: 2103398459}
   costo: 160
-  ipoteca: 80
   costoEdificio: 100
   pedaggio: 12
   pedaggio1Casa: 60
@@ -3132,7 +3125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7329e590a7a372c4bb8f38b12d164534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terreno: {fileID: 0}
   schermata: {fileID: 177914586}
 --- !u!114 &177914589
 MonoBehaviour:
@@ -3763,11 +3755,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1393797621}
-  proprietario: {fileID: 0}
   nomeCasella: BRINDISI
   schermataAcquisto: {fileID: 2103398459}
   costo: 220
-  ipoteca: 110
   costoEdificio: 150
   pedaggio: 18
   pedaggio1Casa: 90
@@ -5247,11 +5237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1937972705}
-  proprietario: {fileID: 0}
   nomeCasella: ASCOLI PICENO
   schermataAcquisto: {fileID: 2103398459}
   costo: 360
-  ipoteca: 130
   costoEdificio: 150
   pedaggio: 22
   pedaggio1Casa: 110
@@ -5433,11 +5421,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1034592045}
-  proprietario: {fileID: 0}
   nomeCasella: REGGIO CALABRIA
   schermataAcquisto: {fileID: 2103398459}
   costo: 350
-  ipoteca: 175
   costoEdificio: 200
   pedaggio: 35
   pedaggio1Casa: 175
@@ -5811,11 +5797,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 2048578466}
-  proprietario: {fileID: 0}
   nomeCasella: CATANZARO
   schermataAcquisto: {fileID: 2103398459}
   costo: 320
-  ipoteca: 160
   costoEdificio: 200
   pedaggio: 28
   pedaggio1Casa: 150
@@ -7324,11 +7308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 175088026}
-  proprietario: {fileID: 0}
   nomeCasella: MILANO
   schermataAcquisto: {fileID: 2103398459}
   costo: 140
-  ipoteca: 70
   costoEdificio: 100
   pedaggio: 10
   pedaggio1Casa: 50
@@ -7779,11 +7761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1271015690}
-  proprietario: {fileID: 0}
   nomeCasella: COSENZA
   schermataAcquisto: {fileID: 2103398459}
   costo: 140
-  ipoteca: 70
   costoEdificio: 100
   pedaggio: 10
   pedaggio1Casa: 50
@@ -15355,11 +15335,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1755680066}
-  proprietario: {fileID: 0}
   nomeCasella: STAZIONE NORD
   schermataAcquisto: {fileID: 2103398459}
   costo: 200
-  ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
@@ -15729,11 +15707,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1646363770}
-  proprietario: {fileID: 0}
   nomeCasella: TRANI
   schermataAcquisto: {fileID: 2103398459}
   costo: 100
-  ipoteca: 50
   costoEdificio: 50
   pedaggio: 6
   pedaggio1Casa: 30
@@ -21013,11 +20989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1433453672}
-  proprietario: {fileID: 0}
   nomeCasella: STAZIONE EST
   schermataAcquisto: {fileID: 2103398459}
   costo: 200
-  ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
@@ -21219,11 +21193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 407018900}
-  proprietario: {fileID: 0}
   nomeCasella: "SOCIET\xC0 ELETTRICA"
   schermataAcquisto: {fileID: 2103398459}
-  costo: 150
-  ipoteca: 75
 --- !u!1001 &1300598239
 Prefab:
   m_ObjectHideFlags: 0
@@ -21388,11 +21359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1638843803}
-  proprietario: {fileID: 0}
   nomeCasella: ANDRIA
   schermataAcquisto: {fileID: 2103398459}
   costo: 300
-  ipoteca: 150
   costoEdificio: 200
   pedaggio: 26
   pedaggio1Casa: 130
@@ -22866,11 +22835,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 940914381}
-  proprietario: {fileID: 0}
   nomeCasella: ISCHIA
   schermataAcquisto: {fileID: 2103398459}
   costo: 240
-  ipoteca: 120
   costoEdificio: 150
   pedaggio: 20
   pedaggio1Casa: 100
@@ -23255,11 +23222,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 2146286167}
-  proprietario: {fileID: 0}
   nomeCasella: TERNI
   schermataAcquisto: {fileID: 2103398459}
   costo: 180
-  ipoteca: 90
   costoEdificio: 100
   pedaggio: 14
   pedaggio1Casa: 70
@@ -23801,11 +23766,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1227301979}
-  proprietario: {fileID: 0}
   nomeCasella: CASERTA
   schermataAcquisto: {fileID: 2103398459}
   costo: 220
-  ipoteca: 110
   costoEdificio: 150
   pedaggio: 18
   pedaggio1Casa: 90
@@ -24643,6 +24606,11 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: 7906da76a75048d49ba0c62f9b028144, type: 3}
+    - target: {fileID: 114620223159387606, guid: 996331e311863294d95a60de9e24ff29,
+        type: 2}
+      propertyPath: Attivo
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 996331e311863294d95a60de9e24ff29, type: 2}
   m_IsPrefabParent: 0
@@ -26798,11 +26766,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 193358750}
-  proprietario: {fileID: 0}
   nomeCasella: BARLETTA
   schermataAcquisto: {fileID: 2103398459}
   costo: 300
-  ipoteca: 150
   costoEdificio: 200
   pedaggio: 26
   pedaggio1Casa: 130
@@ -27100,11 +27066,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 843636735}
-  proprietario: {fileID: 0}
   nomeCasella: SANREMO
   schermataAcquisto: {fileID: 2103398459}
   costo: 60
-  ipoteca: 30
   costoEdificio: 50
   pedaggio: 4
   pedaggio1Casa: 20
@@ -27285,11 +27249,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1845705257}
-  proprietario: {fileID: 0}
   nomeCasella: TORINO
   schermataAcquisto: {fileID: 2103398459}
   costo: 120
-  ipoteca: 60
   costoEdificio: 50
   pedaggio: 8
   pedaggio1Casa: 40
@@ -27599,7 +27561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listaOverlay: []
   listaGiocatori: []
-  controller: {fileID: 0}
 --- !u!114 &1665585301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28047,11 +28008,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1559549010}
-  proprietario: {fileID: 0}
   nomeCasella: ISOLA D'ELBA
   schermataAcquisto: {fileID: 2103398459}
   costo: 280
-  ipoteca: 140
   costoEdificio: 150
   pedaggio: 24
   pedaggio1Casa: 120
@@ -28904,11 +28863,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 302615815}
-  proprietario: {fileID: 0}
   nomeCasella: MONOPOLI
   schermataAcquisto: {fileID: 2103398459}
   costo: 260
-  ipoteca: 130
   costoEdificio: 150
   pedaggio: 22
   pedaggio1Casa: 110
@@ -28970,7 +28927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   schermata: {fileID: 1755716337}
-  controller: {fileID: 1840371097}
 --- !u!114 &1755716340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30982,18 +30938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bab5793d08170b549b60e046f75331fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberOfPlayers: 0
-  listaGiocatori: []
-  CurrentPlayerId: 0
-  DiceTotal: 0
-  doppio: 0
-  IsDoneRolling: 0
-  IsDoneClicking: 0
   schermataAvviso: {fileID: 1755716339}
   uscitaPrigione: {fileID: 814367631}
-  NoLegalMovesPopup: {fileID: 0}
-  verifica: 0
-  tempoPerSpostamento: 0
   trattativa:
   - {fileID: 1327809591}
   - {fileID: 1008341691}
@@ -31239,11 +31185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1806506592}
-  proprietario: {fileID: 0}
   nomeCasella: TERAMO
   schermataAcquisto: {fileID: 2103398459}
   costo: 60
-  ipoteca: 30
   costoEdificio: 50
   pedaggio: 2
   pedaggio1Casa: 10
@@ -31854,11 +31798,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 404324342}
-  proprietario: {fileID: 0}
   nomeCasella: L'AQUILA
   schermataAcquisto: {fileID: 2103398459}
   costo: 100
-  ipoteca: 50
   costoEdificio: 50
   pedaggio: 6
   pedaggio1Casa: 30
@@ -32601,11 +32543,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 427875825}
-  proprietario: {fileID: 0}
   nomeCasella: CHIETI
   schermataAcquisto: {fileID: 2103398459}
   costo: 400
-  ipoteca: 200
   costoEdificio: 200
   pedaggio: 50
   pedaggio1Casa: 175
@@ -33547,11 +33487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1687588571}
-  proprietario: {fileID: 0}
   nomeCasella: 
   schermataAcquisto: {fileID: 2103398459}
-  costo: 150
-  ipoteca: 75
 --- !u!1 &1945938752
 GameObject:
   m_ObjectHideFlags: 0
@@ -34195,13 +34132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971af3da2c94e054790bde3e309933ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Passa: 0
   text:
   - {fileID: 1039527195}
   - {fileID: 1796235372}
   - {fileID: 1489355731}
-  risultato: 0
-  controller: {fileID: 1840371097}
 --- !u!4 &1962837532 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4030930736270734, guid: bfff8eabe7188f64a9dd5d356891d20d,
@@ -35015,11 +34949,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 377980426}
-  proprietario: {fileID: 0}
   nomeCasella: FOGGIA
   schermataAcquisto: {fileID: 2103398459}
   costo: 200
-  ipoteca: 100
   costoEdificio: 100
   pedaggio: 16
   pedaggio1Casa: 80
@@ -35620,11 +35552,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 531545482}
-  proprietario: {fileID: 0}
   nomeCasella: STAZIONE OVEST
   schermataAcquisto: {fileID: 2103398459}
   costo: 200
-  ipoteca: 100
   pedaggio: 25
   pedaggio2Stazioni: 50
   pedaggio3Stazioni: 100
@@ -36660,9 +36590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dba920efe9cd24744ad6d389ca1e0800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terreno: {fileID: 0}
-  societa: {fileID: 0}
-  stazione: {fileID: 0}
   schermata: {fileID: 2103398457}
 --- !u!114 &2103398460
 MonoBehaviour:

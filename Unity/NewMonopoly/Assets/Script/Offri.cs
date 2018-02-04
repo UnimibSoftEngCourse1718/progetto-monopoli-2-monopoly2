@@ -44,7 +44,7 @@ public class Offri : MonoBehaviour
     {
         bool attiva = true;
 
-        if (p1.attivo == true)
+        if (p1.Attivo)
         {
             if (int.Parse(Offerta1.text) > p1.soldi)
             {
@@ -54,7 +54,7 @@ public class Offri : MonoBehaviour
                 attiva = false;
             }
         }
-        else if (p2.attivo == true)
+        else if (p2.Attivo)
         {
             if (int.Parse(Offerta1.text) > p2.soldi)
             {
@@ -64,7 +64,7 @@ public class Offri : MonoBehaviour
                 attiva = false;
             }
         }
-        else if (p3.attivo == true)
+        else if (p3.Attivo)
         {
             if (int.Parse(Offerta1.text) > p3.soldi)
             {
@@ -74,7 +74,7 @@ public class Offri : MonoBehaviour
                 attiva = false;
             }
         }
-        else if (p4.attivo == true)
+        else if (p4.Attivo)
         {
             if (int.Parse(Offerta1.text) > p4.soldi)
             {
@@ -83,7 +83,7 @@ public class Offri : MonoBehaviour
                 attiva = false;
             }
         }
-        else if (p5.attivo == true)
+        else if (p5.Attivo)
         {
             if (int.Parse(Offerta1.text) > p5.soldi)
             {
@@ -92,7 +92,7 @@ public class Offri : MonoBehaviour
                 attiva = false;
             }
         }
-        else if  (p6.attivo == true)
+        else if  (p6.Attivo)
             {
             if (int.Parse(Offerta1.text) > p6.soldi)
             {
@@ -158,7 +158,7 @@ public class Offri : MonoBehaviour
                 attiva = false;
             }
         }
-        if (attiva == true)
+        if (attiva)
             offri();
     }
     public void unload()
@@ -178,27 +178,27 @@ public class Offri : MonoBehaviour
         if (Offerta2 != null)
             offertap2 = int.Parse(Offerta2.text);
 
-        if (p1.attivo == true)
+        if (p1.Attivo)
         {
             p1.TrasferimentoDenaro(offertap2 - oppertap1);
         }
-        else if (p2.attivo == true)
+        else if (p2.Attivo)
         {
             p2.TrasferimentoDenaro(offertap2 - oppertap1);
         }
-        else if (p3.attivo == true)
+        else if (p3.Attivo)
         {
             p3.TrasferimentoDenaro(offertap2 - oppertap1);
         }
-        else if (p4.attivo == true)
+        else if (p4.Attivo)
         {
             p4.TrasferimentoDenaro(offertap2 - oppertap1);
         }
-        else if (p5.attivo == true)
+        else if (p5.Attivo)
         {
             p5.TrasferimentoDenaro(offertap2 - oppertap1);
         }
-        else if (p6.attivo == true)
+        else if (p6.Attivo)
         {
             p6.TrasferimentoDenaro(offertap2 - oppertap1);
         }
@@ -229,6 +229,7 @@ public class Offri : MonoBehaviour
         }
 
         GameObject.Find("TRATTATIVA").SetActive(false);
+        GameObject.FindObjectOfType<StateController>().AttivaPulsantiFineTurno();
     }
 
     public void offri()

@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class SchermataAcquisto : MonoBehaviour
 {
-    public Terreno terreno;
-    public Societa societa;
-    public Stazione stazione;
+    public Terreno Terreno { get; set; }
+    public Societa Societa { get; set; }
+    public Stazione Stazione { get; set; }
     public GameObject schermata;
     giocatore giocatoreDiturno = null;
 
@@ -17,49 +17,46 @@ public class SchermataAcquisto : MonoBehaviour
         {
             giocatoreDiturno = GameObject.FindObjectOfType<StateController>().getGiocatoreAttivo();
         }
-        if (terreno != null)
+        if (Terreno != null)
         {
             this.GetComponentInChildren<Image>().GetComponentInChildren<Text>().text =
-                terreno.nomeCasella + "\n\nPREZZO : " + terreno.costo + "\nPEDAGGIO : " + terreno.pedaggio +
-                "\nCON 1 CASA : " + terreno.pedaggio1Casa + "\nCON 2 CASA : " + terreno.pedaggio2Case +
-                "\nCON 3 CASA : " + terreno.pedaggio3Case + "\nCON 4 CASA : " + terreno.pedaggio4Case +
-                "\nCON ALBERGO : " + terreno.pedaggioAlbergo + "\nIPOTECA : " + terreno.ipoteca + 
-                "\nCOSTO EDIFICIO : " + terreno.costoEdificio;
+                Terreno.nomeCasella + "\n\nPREZZO : " + Terreno.costo + "\nPEDAGGIO : " + Terreno.pedaggio +
+                "\nCON 1 CASA : " + Terreno.pedaggio1Casa + "\nCON 2 CASA : " + Terreno.pedaggio2Case +
+                "\nCON 3 CASA : " + Terreno.pedaggio3Case + "\nCON 4 CASA : " + Terreno.pedaggio4Case +
+                "\nCON ALBERGO : " + Terreno.pedaggioAlbergo + "\nCOSTO EDIFICIO : " + Terreno.costoEdificio;
         }
-        else if (societa != null)
+        else if (Societa != null)
         {
             this.GetComponentInChildren<Image>().GetComponentInChildren<Text>().text =
-                societa.nomeCasella + "\n\n" + "PREZZO : " + societa.costo + "\nIPOTECA : " + societa.ipoteca;
+                Societa.nomeCasella + "\n\n" + "PREZZO : " + Societa.Costo;
         }
-        else if (stazione != null)
+        else if (Stazione != null)
         {
             this.GetComponentInChildren<Image>().GetComponentInChildren<Text>().text =
-                stazione.nomeCasella + "\n\n" + "PREZZO : " + stazione.costo + "\nPEDAGGIO : " + stazione.pedaggio +
-                "\nCON 2 STAZIONI : " + stazione.pedaggio2Stazioni + "\nCON 3 STAZIONI : " + stazione.pedaggio3Stazioni +
-                "\nCON 4 STAZIONI : " + stazione.pedaggio4Stazioni + "\nIPOTECA : " + stazione.ipoteca;
+                Stazione.nomeCasella + "\n\n" + "PREZZO : " + Stazione.Costo + "\nPEDAGGIO : " + Stazione.Pedaggio +
+                "\nCON 2 STAZIONI : " + Stazione.Pedaggio2Stazioni + "\nCON 3 STAZIONI : " + Stazione.Pedaggio3Stazioni +
+                "\nCON 4 STAZIONI : " + Stazione.Pedaggio4Stazioni;
         }
-        giocatoreDiturno.controller.Passa.interactable = false;
-        giocatoreDiturno.controller.Costruisci.interactable = false;
-        giocatoreDiturno.controller.DisattivaTrattativa();
+        giocatoreDiturno.controller.DisattivaPulsantiFineTurno();
         schermata.SetActive(true);
     }
 
     public void PulsanteAcquista()
     {
-        if (giocatoreDiturno != null && terreno != null && terreno.costo <= giocatoreDiturno.soldi)
+        if (giocatoreDiturno != null && Terreno != null && Terreno.costo <= giocatoreDiturno.soldi)
         {
-            giocatoreDiturno.TrasferimentoDenaro(-terreno.costo);
-            giocatoreDiturno.AggiungiProprieta(terreno);
+            giocatoreDiturno.TrasferimentoDenaro(-Terreno.costo);
+            giocatoreDiturno.AggiungiProprieta(Terreno);
         }
-        else if (giocatoreDiturno != null && societa != null && societa.costo <= giocatoreDiturno.soldi)
+        else if (giocatoreDiturno != null && Societa != null && Societa.Costo <= giocatoreDiturno.soldi)
         {
-            giocatoreDiturno.TrasferimentoDenaro(-societa.costo);
-            giocatoreDiturno.AggiungiProprieta(societa);
+            giocatoreDiturno.TrasferimentoDenaro(-Societa.Costo);
+            giocatoreDiturno.AggiungiProprieta(Societa);
         }
-        else if (giocatoreDiturno != null && stazione != null && stazione.costo <= giocatoreDiturno.soldi)
+        else if (giocatoreDiturno != null && Stazione != null && Stazione.Costo <= giocatoreDiturno.soldi)
         {
-            giocatoreDiturno.TrasferimentoDenaro(-stazione.costo);
-            giocatoreDiturno.AggiungiProprieta(stazione);
+            giocatoreDiturno.TrasferimentoDenaro(-Stazione.Costo);
+            giocatoreDiturno.AggiungiProprieta(Stazione);
         }
 
         PulsanteAnnulla();
@@ -67,13 +64,11 @@ public class SchermataAcquisto : MonoBehaviour
 
     public void PulsanteAnnulla()
     {
-        giocatoreDiturno.controller.Passa.interactable = true;
-        giocatoreDiturno.controller.Costruisci.interactable = true;
-        giocatoreDiturno.controller.AttivaTrattativa();
+        giocatoreDiturno.controller.AttivaPulsantiFineTurno();
         this.giocatoreDiturno = null;
-        this.terreno = null;
-        this.societa = null;
-        this.stazione = null;
+        this.Terreno = null;
+        this.Societa = null;
+        this.Stazione = null;
         schermata.SetActive(false);
     }
 }

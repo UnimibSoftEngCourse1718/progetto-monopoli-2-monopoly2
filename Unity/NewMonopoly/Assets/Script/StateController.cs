@@ -6,20 +6,17 @@ using UnityEngine.UI;
 public class StateController : MonoBehaviour
 {
     static public int giocatoriSelezionati = 6;
-    public int NumberOfPlayers;
-    public GameObject[] listaGiocatori;
-    public int CurrentPlayerId = 0;
-    Button pulsante;
-    public int DiceTotal;
-    public int doppio;
-    public bool IsDoneRolling = false;
-    public bool IsDoneClicking = false;
+    GameObject[] listaGiocatori { get; set; }
+    public int CurrentPlayerId { get; set; }
+    giocatore giocatoreAttivo { get; set; }
+
+    public int DiceTotal { get; set; }
+    public int Doppio { get; set; }
+    public bool IsDoneRolling { get; set; }
+    public bool IsDoneClicking { get; set; }
+
     public SchermataAvviso schermataAvviso;
     public GameObject uscitaPrigione;
-    public GameObject NoLegalMovesPopup;
-    public bool verifica = false;
-    public float tempoPerSpostamento;
-    giocatore giocatoreAttivo = null;
     public Button Tira { get; set; }
     public Button Passa { get; set; }
     public Button Costruisci { get; set; }
@@ -27,21 +24,22 @@ public class StateController : MonoBehaviour
 
     void Start()
     {
-        tempoPerSpostamento = 0.15f;
-        NumberOfPlayers = giocatoriSelezionati;
-        for (int i = 6; i > NumberOfPlayers; i--) 
+        IsDoneRolling = false;
+        IsDoneClicking = false;
+        for (int i = 6; i > giocatoriSelezionati; i--) 
         {
             Destroy(GameObject.Find("Player" + i));
             Destroy(GameObject.Find("P" + i));
         }
 
-        listaGiocatori = new GameObject[NumberOfPlayers];
-        for (int i = 1; i <= NumberOfPlayers; i++)
+        listaGiocatori = new GameObject[giocatoriSelezionati];
+        for (int i = 1; i <= giocatoriSelezionati; i++)
         {
             listaGiocatori[i - 1] = GameObject.Find("P" + i);
         }
+        CurrentPlayerId = 0;
+        giocatoreAttivo = null;
         giocatoreAttivo = this.getGiocatoreAttivo();
-        //giocatoreAttivo.GetComponent<BoxCollider>().enabled = true;
 
         foreach (Button item in GameObject.FindObjectsOfType<Button>())
         {
@@ -52,17 +50,13 @@ public class StateController : MonoBehaviour
             if (item.name == "COSTRUISCI")
                 Costruisci = item;
         }
-        this.Passa.interactable = false;
-        this.Costruisci.interactable = false;
-        this.DisattivaTrattativa();
+        this.DisattivaPulsantiFineTurno();
     }
 
     public void NewTurn()
     {
         Tira.interactable = true;
-        Passa.interactable = false;
-        Costruisci.interactable = false;
-        this.DisattivaTrattativa();
+        this.DisattivaPulsantiFineTurno();
 
         if (giocatoreAttivo != null)
         {
@@ -70,7 +64,6 @@ public class StateController : MonoBehaviour
             giocatoreAttivo = null;
         }
 
-        this.verifica = false;
         giocatoreAttivo = this.getGiocatoreAttivo();
         uscitaPrigione.SetActive(giocatoreAttivo.uscitaDiPrigione);
 
@@ -85,7 +78,7 @@ public class StateController : MonoBehaviour
         if (this.giocatoreAttivo == null)
         {
             foreach (giocatore item in GameObject.FindObjectsOfType<giocatore>())
-                if (item.attivo)
+                if (item.Attivo)
                     this.giocatoreAttivo = item;
         }
         return giocatoreAttivo;
@@ -125,7 +118,7 @@ public class StateController : MonoBehaviour
         this.Passa.onClick.Invoke();
     }
 
-    public void DisattivaTrattativa()
+    public void DisattivaPulsantiFineTurno()
     {
         foreach (Button item in trattativa)
         {
@@ -134,9 +127,11 @@ public class StateController : MonoBehaviour
                 item.interactable = false;
             }
         }
+        this.Passa.interactable = false;
+        this.Costruisci.interactable = false;
     }
 
-    public void AttivaTrattativa()
+    public void AttivaPulsantiFineTurno()
     {
         foreach (Button item in trattativa)
         {
@@ -146,12 +141,14 @@ public class StateController : MonoBehaviour
             }
         }
         trattativa[CurrentPlayerId].interactable = false;
+        this.Passa.interactable = true;
+        this.Costruisci.interactable = true;
     }
 
     public void Avviso(string messaggio, bool attivoPulsanti)
     {
         schermataAvviso.gameObject.SetActive(true);
-        schermataAvviso.attivoPulsanti = attivoPulsanti;
+        schermataAvviso.AttivoPulsanti = attivoPulsanti;
         schermataAvviso.GetComponentInChildren<Image>().GetComponentInChildren<Text>().text = messaggio;
     }
 }

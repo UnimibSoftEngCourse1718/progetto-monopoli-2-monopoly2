@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class Stazione : CasellaAcquistabile
 {
-    public int costo = 200;
-    public int ipoteca = 100;
-    public int pedaggio = 25;
-    public int pedaggio2Stazioni = 50;
-    public int pedaggio3Stazioni = 100;
-    public int pedaggio4Stazioni = 200;
+    public int Costo { get; set; }
+    public int Pedaggio { get; set; }
+    public int Pedaggio2Stazioni { get; set; }
+    public int Pedaggio3Stazioni { get; set; }
+    public int Pedaggio4Stazioni { get; set; }
+
+    private void Start()
+    {
+        Costo = 200;
+        Pedaggio = 25;
+        Pedaggio2Stazioni = 50;
+        Pedaggio3Stazioni = 100;
+        Pedaggio4Stazioni = 200;
+    }
 
     public override void Fermata(giocatore giocatoreDiTurno)
     {
         if (proprietario == null)
         {
-            schermataAcquisto.stazione = this;
+            schermataAcquisto.Stazione = this;
             schermataAcquisto.Visualizza();
         }
         else
@@ -28,16 +36,15 @@ public class Stazione : CasellaAcquistabile
             }
 
             if (nStazioni == 1)
-                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio);
+                giocatoreDiTurno.TrasferimentoDenaro(-Pedaggio);
             else if (nStazioni == 2)
-                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio2Stazioni);
+                giocatoreDiTurno.TrasferimentoDenaro(-Pedaggio2Stazioni);
             else if (nStazioni == 3)
-                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio3Stazioni);
+                giocatoreDiTurno.TrasferimentoDenaro(-Pedaggio3Stazioni);
             else if (nStazioni == 4)
-                giocatoreDiTurno.TrasferimentoDenaro(-pedaggio4Stazioni);
-            giocatoreDiTurno.controller.Passa.interactable = true;
-            giocatoreDiTurno.controller.Costruisci.interactable = true;
-            giocatoreDiTurno.controller.AttivaTrattativa();
+                giocatoreDiTurno.TrasferimentoDenaro(-Pedaggio4Stazioni);
+
+            giocatoreDiTurno.controller.AttivaPulsantiFineTurno();
         }
     }
 }

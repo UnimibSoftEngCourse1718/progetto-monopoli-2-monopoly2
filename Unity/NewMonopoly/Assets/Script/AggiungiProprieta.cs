@@ -38,14 +38,14 @@ public class AggiungiProprieta : MonoBehaviour
     {
         b1.SetActive(false);
 
-        if (p1.attivo == true)
+        if (p1.Attivo)
         {
             for (int r = 0; r < 20; r++)
             {
                 array1[r].text = p1.proprieta[r].nomeCasella;
             }
         }
-        else if (p2.attivo == true)
+        else if (p2.Attivo)
         {
 
             for (int r = 0; r < 20; r++)
@@ -53,28 +53,28 @@ public class AggiungiProprieta : MonoBehaviour
                 array1[r].text = p2.proprieta[r].nomeCasella;
             }
         }
-        else if (p3.attivo == true)
+        else if (p3.Attivo)
         {
             for (int r = 0; r < 20; r++)
             {
                 array1[r].text = p3.proprieta[r].nomeCasella;
             }
         }
-        else if (p4.attivo == true)
+        else if (p4.Attivo)
         {
             for (int r = 0; r < 20; r++)
             {
                 array1[r].text = p4.proprieta[r].nomeCasella;
             }
         }
-        else if (p5.attivo == true)
+        else if (p5.Attivo)
         {
             for (int r = 0; r < 20; r++)
             {
                 array1[r].text = p5.proprieta[r].nomeCasella;
             }
         }
-        else if (p6.attivo == true)
+        else if (p6.Attivo)
         {
             for (int r = 0; r < 20; r++)
             {
@@ -168,27 +168,27 @@ public class AggiungiProprieta : MonoBehaviour
             {
                 if (item.nomeCasella == arr1[z])
                 {
-                    if (p1.attivo == true)
+                    if (p1.Attivo)
                     {
                         p1.RimuoviProprieta(item);
                     }
-                    if (p2.attivo == true)
+                    if (p2.Attivo)
                     {
                         p2.RimuoviProprieta(item);
                     }
-                    if (p3.attivo == true)
+                    if (p3.Attivo)
                     {
                         p3.RimuoviProprieta(item);
                     }
-                    if (p4.attivo == true)
+                    if (p4.Attivo)
                     {
                         p4.RimuoviProprieta(item);
                     }
-                    if (p5.attivo == true)
+                    if (p5.Attivo)
                     {
                         p5.RimuoviProprieta(item);
                     }
-                    if (p6.attivo == true)
+                    if (p6.Attivo)
                     {
                         p6.RimuoviProprieta(item);
                     }
@@ -222,27 +222,27 @@ public class AggiungiProprieta : MonoBehaviour
 
                 if (item.nomeCasella.Equals(arr2[z]))
                 {
-                    if (p1.attivo == true)
+                    if (p1.Attivo)
                     {
                         p1.AggiungiProprieta(item);
                     }
-                    if (p2.attivo == true)
+                    if (p2.Attivo)
                     {
                         p2.AggiungiProprieta(item);
                     }
-                    if (p3.attivo == true)
+                    if (p3.Attivo)
                     {
                         p3.AggiungiProprieta(item);
                     }
-                    if (p4.attivo == true)
+                    if (p4.Attivo)
                     {
                         p4.AggiungiProprieta(item);
                     }
-                    if (p5.attivo == true)
+                    if (p5.Attivo)
                     {
                         p5.AggiungiProprieta(item);
                     }
-                    if (p6.attivo == true)
+                    if (p6.Attivo)
                     {
                         p6.AggiungiProprieta(item);
                     }
@@ -310,6 +310,7 @@ public class AggiungiProprieta : MonoBehaviour
         y = 0;
 
         GameObject.Find("TRATTATIVA").SetActive(false);
+        GameObject.FindObjectOfType<StateController>().AttivaPulsantiFineTurno();
     }
 
     public void reset()

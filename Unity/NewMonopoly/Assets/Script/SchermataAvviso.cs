@@ -5,25 +5,25 @@ using UnityEngine;
 public class SchermataAvviso : MonoBehaviour
 {
     public GameObject schermata;
-    public StateController controller;
-    public bool attivoPulsanti { get; set; }
+    StateController Controller { get; set; }
+    public bool AttivoPulsanti { get; set; }
+
+    private void Start()
+    {
+        Controller = GameObject.FindObjectOfType<StateController>();
+    }
 
     private void OnEnable()
     {
-        controller.Passa.interactable = false;
-        controller.Costruisci.interactable = false;
-        controller.DisattivaTrattativa();
+        Controller.DisattivaPulsantiFineTurno();
         Time.timeScale = 0;
     }
 
     public void pulsanteOK()
     {
-        if (attivoPulsanti)
-        {
-            controller.Passa.interactable = true;
-            controller.Costruisci.interactable = true;
-            controller.AttivaTrattativa();
-        }
+        if (AttivoPulsanti)
+            Controller.AttivaPulsantiFineTurno();
+
         Time.timeScale = 1;
         schermata.SetActive(false);
     }

@@ -6,18 +6,18 @@ using UnityEngine.UI;
 public class Carta
 {
     public string testo { get; set; }
-    int valore { get; set; }
-    int movimento { get; set; }
-    public bool attivaPulsanti { get; set; }
+    int valore;
+    int movimento;
+    public bool AttivaPulsanti { get; set; }
 
     public Carta(string Testo, int Valore, int Movimento, bool attivaPulsanti)
     {
         this.testo = Testo;
         this.valore = Valore;
         this.movimento = Movimento;
-        this.attivaPulsanti = attivaPulsanti;
+        this.AttivaPulsanti = attivaPulsanti;
     }
-    
+
     public void Effetto(giocatore giocatoreDiTurno)
     {
         if (valore == 0 && movimento == 0)
@@ -44,16 +44,13 @@ public class Carta
             Casella[] caselle = GameObject.FindObjectsOfType<Casella>();
             Casella casella = null;
             foreach (Casella item in caselle)
-            {
                 if (item.name == movimento.ToString())
-                {
                     casella = item;
-                }
-            }
             if (casella.name == "11")
             {
                 giocatoreDiTurno.contatorePrigione = 0;
             }
+
             giocatoreDiTurno.partenza = giocatoreDiTurno.Muovi(giocatoreDiTurno.partenza, casella);
         }
     }

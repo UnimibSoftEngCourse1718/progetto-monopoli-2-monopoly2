@@ -8,8 +8,6 @@ public class Casella : MonoBehaviour
 
     public virtual void Fermata(giocatore giocatoreDiTurno)
     {
-        giocatoreDiTurno.controller.Passa.interactable = true;
-        giocatoreDiTurno.controller.Costruisci.interactable = true;
-        giocatoreDiTurno.controller.AttivaTrattativa();
+        giocatoreDiTurno.controller.AttivaPulsantiFineTurno();
     }
 }
