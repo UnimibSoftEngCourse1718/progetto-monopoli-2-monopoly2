@@ -136,7 +136,7 @@ public class Terreno : CasellaAcquistabile
     public void RimuoviEdifici()
     {
         foreach (GameObject item in edifici)
-            DestroyImmediate(item);
+            Destroy(item);
         edifici.Clear();
         this.nEdifici = 0;
     }

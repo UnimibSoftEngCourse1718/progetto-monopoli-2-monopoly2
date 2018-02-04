@@ -35,12 +35,6 @@ public class SchermataCostruzione : MonoBehaviour
                 colori[6]++;
             else if (item.nomeCasella == "REGGIO CALABRIA" || item.nomeCasella == "CHIETI")
                 colori[7]++;
-            /*
-            // Togliere il commento per poter costruire ovunque
-            if (item as Terreno != null)
-            {
-                listaTerreni.Add(item as Terreno);
-            }*/
         }
         
         foreach (CasellaAcquistabile item in giocatoreDiturno.proprieta)

@@ -15,6 +15,7 @@ public class SchermataAvviso : MonoBehaviour
 
     private void OnEnable()
     {
+        Controller = GameObject.FindObjectOfType<StateController>();
         Controller.DisattivaPulsantiFineTurno();
         Time.timeScale = 0;
     }

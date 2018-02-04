@@ -39,8 +39,6 @@ public class Carta
 
         if (movimento != 0)
         {
-            GameObject.FindObjectOfType<StateController>().IsDoneClicking = false;
-
             Casella[] caselle = GameObject.FindObjectsOfType<Casella>();
             Casella casella = null;
             foreach (Casella item in caselle)

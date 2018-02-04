@@ -103,7 +103,7 @@ public class StateController : MonoBehaviour
         this.Avviso(giocatoreDaRimuovere.name + " È Stato eliminato", false);
         trattativa[CurrentPlayerId].interactable = false;
         trattativa[CurrentPlayerId] = null;
-        DestroyImmediate(GameObject.Find(giocatoreDaRimuovere.name));
+        Destroy(GameObject.Find(giocatoreDaRimuovere.name));
         this.Passa.interactable = true;
 
         if (GameObject.FindObjectsOfType<giocatore>().Length == 1)
@@ -113,6 +113,7 @@ public class StateController : MonoBehaviour
             GameObject.Find("PASSA").SetActive(false);
             GameObject.Find("COSTRUISCI").SetActive(false);
         }
+        this.Doppio = 0;
         this.IsDoneClicking = true;
         this.IsDoneRolling = true;
         this.Passa.onClick.Invoke();

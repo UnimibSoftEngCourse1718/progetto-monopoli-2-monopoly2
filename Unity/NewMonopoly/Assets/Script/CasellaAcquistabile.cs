@@ -13,7 +13,7 @@ public class CasellaAcquistabile : Casella {
     {
         if (segnalinoProprietario != null)
         {
-            DestroyImmediate(segnalinoProprietario);
+            Destroy(segnalinoProprietario);
         }
         
         if (proprietario != null)

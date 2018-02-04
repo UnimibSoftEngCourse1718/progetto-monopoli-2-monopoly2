@@ -1019,11 +1019,6 @@ MonoBehaviour:
   prossimaCasella: {fileID: 1866251476}
   nomeCasella: STAZIONE SUD
   schermataAcquisto: {fileID: 2103398459}
-  costo: 200
-  pedaggio: 25
-  pedaggio2Stazioni: 50
-  pedaggio3Stazioni: 100
-  pedaggio4Stazioni: 200
 --- !u!1 &26356969
 GameObject:
   m_ObjectHideFlags: 0
@@ -15337,11 +15332,6 @@ MonoBehaviour:
   prossimaCasella: {fileID: 1755680066}
   nomeCasella: STAZIONE NORD
   schermataAcquisto: {fileID: 2103398459}
-  costo: 200
-  pedaggio: 25
-  pedaggio2Stazioni: 50
-  pedaggio3Stazioni: 100
-  pedaggio4Stazioni: 200
 --- !u!1 &942345964
 GameObject:
   m_ObjectHideFlags: 0
@@ -20991,11 +20981,6 @@ MonoBehaviour:
   prossimaCasella: {fileID: 1433453672}
   nomeCasella: STAZIONE EST
   schermataAcquisto: {fileID: 2103398459}
-  costo: 200
-  pedaggio: 25
-  pedaggio2Stazioni: 50
-  pedaggio3Stazioni: 100
-  pedaggio4Stazioni: 200
 --- !u!1 &1258402612
 GameObject:
   m_ObjectHideFlags: 0
@@ -33487,7 +33472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prossimaCasella: {fileID: 1687588571}
-  nomeCasella: 
+  nomeCasella: "SOCIET\xC0 ACQUA POTABILE"
   schermataAcquisto: {fileID: 2103398459}
 --- !u!1 &1945938752
 GameObject:
@@ -35554,11 +35539,6 @@ MonoBehaviour:
   prossimaCasella: {fileID: 531545482}
   nomeCasella: STAZIONE OVEST
   schermataAcquisto: {fileID: 2103398459}
-  costo: 200
-  pedaggio: 25
-  pedaggio2Stazioni: 50
-  pedaggio3Stazioni: 100
-  pedaggio4Stazioni: 200
 --- !u!1 &2066641945
 GameObject:
   m_ObjectHideFlags: 0
