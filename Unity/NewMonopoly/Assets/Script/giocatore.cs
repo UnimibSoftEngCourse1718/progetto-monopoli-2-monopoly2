@@ -24,7 +24,7 @@ public class giocatore : MonoBehaviour {
     int indicePercorso;
     Vector3 targetPosition;
     Vector3 vettoreVelocita;
-    float tempoPerSpostamento = 0.15f;
+    float tempoPerSpostamento = 0.00000000015f;
     bool arrivato;
     bool effettoCasella;
 
@@ -61,7 +61,6 @@ public class giocatore : MonoBehaviour {
             {
                 effettoCasella = true;
                 partenza.Fermata(this);
-                controller.IsDoneClicking = true;
             }
         }
         this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref vettoreVelocita, tempoPerSpostamento);
@@ -88,6 +87,8 @@ public class giocatore : MonoBehaviour {
     private void OnMouseUp()
     {
         if (controller.CurrentPlayerId != PlayerId || controller.IsDoneClicking) return;
+
+        controller.IsDoneClicking = true;
 
         if (controller.Doppio == 3)
         {
