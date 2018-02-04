@@ -14,7 +14,6 @@ public class TEST : MonoBehaviour {
 	void OnMouseUp ()
     {
         giocatoreAttivo = controller.getGiocatoreAttivo();
-        MandaInBancarotta();
     }
 
     void MandaInBancarotta()

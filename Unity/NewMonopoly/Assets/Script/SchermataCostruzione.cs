@@ -102,6 +102,9 @@ public class SchermataCostruzione : MonoBehaviour
 
     public void PulsanteAnnulla()
     {
+        giocatoreDiturno.controller.Passa.interactable = true;
+        giocatoreDiturno.controller.Costruisci.interactable = true;
+        giocatoreDiturno.controller.AttivaTrattativa();
         this.giocatoreDiturno = null;
         listaTerreni = new List<Terreno>();
         terreno = null;
@@ -113,9 +116,6 @@ public class SchermataCostruzione : MonoBehaviour
         for (int i = 0; i < listaPulsanti.Length; i++)
             listaPulsanti[i].GetComponentInChildren<Text>().text = "PROPRIETÀ";
 
-        giocatoreDiturno.controller.Passa.interactable = true;
-        giocatoreDiturno.controller.Costruisci.interactable = true;
-        giocatoreDiturno.controller.AttivaTrattativa();
         schermata.SetActive(false);
     }
 }
